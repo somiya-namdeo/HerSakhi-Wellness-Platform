@@ -3,8 +3,9 @@ import MessageBubble from './MessageBubble'
 import ChatInput from './ChatInput'
 import { motion } from 'framer-motion'
 import { useEffect, useRef } from 'react'
+import { Loader2 } from 'lucide-react'
 
-const ChatContainer = ({ messages, onSendMessage }) => {
+const ChatContainer = ({ messages, onSendMessage, isSending }) => {
   const messagesEndRef = useRef(null)
 
   const scrollToBottom = () => {
@@ -28,10 +29,18 @@ const ChatContainer = ({ messages, onSendMessage }) => {
         {messages.map((msg) => (
           <MessageBubble key={msg.id} message={msg} />
         ))}
+        {isSending && (
+          <div className="flex justify-start mb-4">
+            <div className="bg-gray-50 text-gray-400 text-xs px-4 py-2 rounded-2xl flex items-center gap-2">
+              <Loader2 className="w-3 h-3 animate-spin" />
+              Assistant is thinking...
+            </div>
+          </div>
+        )}
         <div ref={messagesEndRef} />
       </div>
 
-      <ChatInput onSend={onSendMessage} />
+      <ChatInput onSend={onSendMessage} disabled={isSending} />
     </motion.div>
   )
 }

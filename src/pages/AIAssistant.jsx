@@ -1,48 +1,96 @@
+import { useState, useEffect } from 'react'
 import Sidebar from '../components/dashboard/Sidebar'
 import Topbar from '../components/dashboard/Topbar'
 import ChatContainer from '../components/assistant/ChatContainer'
 import SuggestedQuestions from '../components/assistant/SuggestedQuestions'
-import { useState } from 'react'
+import { getStoredUser } from '../utils/userHelpers'
+import { getChatHistory, sendChatMessage } from '../api/aiApi'
+import { Loader2 } from 'lucide-react'
 
 const AIAssistant = () => {
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      text: "Hi there! I'm your HerSakhi AI wellness companion. How can I help you today?",
-      sender: 'ai',
-      timestamp: new Date().toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit'
-      })
-    }
-  ])
+  const user = getStoredUser()
+  const [messages, setMessages] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+  const [sending, setSending] = useState(false)
 
-  const handleSendMessage = (text) => {
-    const newUserMsg = {
-      id: Date.now(),
-      text,
-      sender: 'user',
-      timestamp: new Date().toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit'
-      })
-    }
+  const welcomeMessage = {
+    id: 'welcome',
+    text: "Hi there! I'm your HerSakhi AI wellness companion. How can I help you today?",
+    sender: 'ai',
+    timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+  }
 
-    setMessages(prev => [...prev, newUserMsg])
-
-    setTimeout(() => {
-      const newAIMsg = {
-        id: Date.now() + 1,
-        text: "I understand. Let me help you with that.",
-        sender: 'ai',
-        timestamp: new Date().toLocaleTimeString([], {
-          hour: '2-digit',
-          minute: '2-digit'
-        })
+  useEffect(() => {
+    const fetchHistory = async () => {
+      if (!user?.id) {
+        setLoading(false)
+        setMessages([welcomeMessage])
+        return
       }
 
-      setMessages(prev => [...prev, newAIMsg])
-    }, 1000)
+      try {
+        const history = await getChatHistory(user.id)
+        if (history && history.length > 0) {
+          const formatted = history.map(m => ({
+            id: m.id,
+            text: m.text,
+            sender: m.sender,
+            timestamp: new Date(m.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+          }))
+          setMessages(formatted)
+        } else {
+          setMessages([welcomeMessage])
+        }
+      } catch (err) {
+        console.error("Failed to load history:", err)
+        setError("Could not load previous messages.")
+        setMessages([welcomeMessage])
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchHistory()
+  }, [user?.id])
+
+  const handleSendMessage = async (text) => {
+    if (!text.trim() || !user?.id) return
+
+    setSending(true)
+    
+    // 1. Optimistic update for UI feel
+    const tempId = Date.now()
+    const tempMsg = {
+      id: tempId,
+      text,
+      sender: 'user',
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+    }
+    setMessages(prev => [...prev, tempMsg])
+
+    try {
+      // 2. Call backend
+      const turn = await sendChatMessage(user.id, text)
+      
+      // 3. Update with real data
+      const aiMsg = {
+        id: turn.ai_response.id,
+        text: turn.ai_response.text,
+        sender: turn.ai_response.sender,
+        timestamp: new Date(turn.ai_response.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      }
+
+      setMessages(prev => {
+        // Replace temp message with real one if needed, or just append AI response
+        // For simplicity and since text is same, I'll just append AI response
+        return [...prev, aiMsg]
+      })
+    } catch (err) {
+      console.error("Chat error:", err)
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -60,10 +108,25 @@ const AIAssistant = () => {
 
             {/* Chat Section */}
             <div className="flex-1 flex flex-col min-h-[500px] xl:min-h-0 relative z-10">
-              <ChatContainer
-                messages={messages}
-                onSendMessage={handleSendMessage}
-              />
+              {loading ? (
+                <div className="flex-1 bg-white rounded-[2rem] shadow-card border border-primary/5 flex flex-col items-center justify-center">
+                  <Loader2 className="w-10 h-10 text-primary animate-spin mb-4" />
+                  <p className="text-gray-500 font-medium">Loading conversation...</p>
+                </div>
+              ) : (
+                <>
+                  {error && (
+                    <div className="mb-4 p-4 bg-red-50 border border-red-100 text-red-500 text-sm rounded-2xl text-center font-medium">
+                      {error}
+                    </div>
+                  )}
+                  <ChatContainer
+                    messages={messages}
+                    onSendMessage={handleSendMessage}
+                    isSending={sending}
+                  />
+                </>
+              )}
             </div>
 
             {/* Suggested Questions */}

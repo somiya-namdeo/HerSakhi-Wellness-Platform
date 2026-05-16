@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Heart, ChevronRight, ChevronLeft, CheckCircle2, ArrowLeft } from 'lucide-react'
+import { Heart, ChevronRight, ChevronLeft, CheckCircle2, ArrowLeft, Loader2 } from 'lucide-react'
+import { saveOnboardingData } from '../api/userApi'
+import { getUser } from '../api/api'
 
 const SYMPTOMS_LIST = [
   'Cramps', 'Headaches', 'Mood Swings', 'Bloating',
@@ -17,6 +19,8 @@ const Onboarding = () => {
     cycleLength: '',
     symptoms: []
   })
+  const [loading, setLoading] = useState(false)
+  const [error, setError]     = useState('')
 
   const updateForm = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }))
@@ -41,9 +45,33 @@ const Onboarding = () => {
     if (step > 1) setStep(step - 1)
   }
 
-  const handleComplete = () => {
-    // Navigate to dashboard after completing onboarding
-    navigate('/dashboard')
+  const handleComplete = async () => {
+    setLoading(true)
+    setError('')
+
+    try {
+      // Retrieve the authenticated user stored after registration
+      const user = getUser()
+
+      if (!user?.id) {
+        throw new Error('User session not found. Please register or log in again.')
+      }
+
+      // Build the payload matching the backend OnboardingRequest schema
+      await saveOnboardingData({
+        user_id:              user.id,
+        age:                  formData.age    ? Number(formData.age)         : null,
+        last_period_date:     formData.lastPeriod  || null,
+        average_cycle_length: formData.cycleLength ? Number(formData.cycleLength) : null,
+        common_symptoms:      formData.symptoms,
+      })
+
+      navigate('/dashboard')
+    } catch (err) {
+      setError(err.message || 'Failed to save your data. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const progressPercentage = (step / 5) * 100
@@ -262,11 +290,26 @@ const Onboarding = () => {
                 Your personalized wellness dashboard is ready based on your profile.
               </p>
 
+              {/* Error message */}
+              {error && (
+                <p className="text-red-500 text-sm bg-red-50 border border-red-100 rounded-lg px-4 py-2 mb-6 max-w-sm">
+                  {error}
+                </p>
+              )}
+
               <button 
                 onClick={handleComplete}
-                className="bg-primary hover:bg-primary/90 text-white font-medium px-10 py-4 rounded-2xl shadow-soft transition-all transform hover:-translate-y-1 w-full sm:w-auto text-lg"
+                disabled={loading}
+                className="bg-primary hover:bg-primary/90 disabled:opacity-70 text-white font-medium px-10 py-4 rounded-2xl shadow-soft transition-all transform hover:-translate-y-1 w-full sm:w-auto text-lg flex items-center justify-center gap-2"
               >
-                Go to Dashboard
+                {loading ? (
+                  <>
+                    <Loader2 size={20} className="animate-spin" />
+                    Saving your profile…
+                  </>
+                ) : (
+                  'Go to Dashboard'
+                )}
               </button>
             </div>
           )}

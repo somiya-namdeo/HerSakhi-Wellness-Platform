@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Heart, LayoutDashboard, Calendar as CalendarIcon, Sparkles, LineChart, BookOpen, AlertCircle, User, LogOut, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { logoutUser } from '../../utils/userHelpers'
 
 const navItems = [
   { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
@@ -49,7 +50,10 @@ const Sidebar = () => {
       </nav>
 
       <div className="mt-auto pt-8 border-t border-primary/5">
-        <button className="flex items-center gap-3 px-4 py-3 rounded-2xl transition-all duration-200 font-medium text-gray-500 hover:bg-red-50 hover:text-red-500 w-full text-left">
+        <button 
+          onClick={logoutUser}
+          className="flex items-center gap-3 px-4 py-3 rounded-2xl transition-all duration-200 font-medium text-gray-500 hover:bg-red-50 hover:text-red-500 w-full text-left"
+        >
           <LogOut size={20} />
           Logout
         </button>

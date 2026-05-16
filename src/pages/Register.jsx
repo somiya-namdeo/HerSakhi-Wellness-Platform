@@ -1,18 +1,44 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { User, Mail, Lock, Chrome } from 'lucide-react'
+import { User, Mail, Lock, Chrome, Loader2 } from 'lucide-react'
 import AuthLayout from '../components/AuthLayout'
+import { registerUser } from '../api/authApi'
+import { saveToken, saveUser } from '../api/api'
 
 const Register = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  const [name, setName]         = useState('')
+  const [email, setEmail]       = useState('')
   const [password, setPassword] = useState('')
+  const [loading, setLoading]   = useState(false)
+  const [error, setError]       = useState('')
+
   const isValid = name.trim() !== '' && email.trim() !== '' && password.trim() !== ''
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-    if (isValid) navigate('/onboarding');
+    if (!isValid) return;
+
+    setLoading(true);
+    setError('');
+
+    try {
+      const data = await registerUser({
+        full_name: name.trim(),
+        email:     email.trim(),
+        password,
+      });
+
+      // Persist auth state
+      saveToken(data.access_token);
+      saveUser(data.user);
+
+      navigate('/onboarding');
+    } catch (err) {
+      setError(err.message || 'Registration failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -71,16 +97,30 @@ const Register = () => {
           </div>
         </div>
 
+        {/* Error message — only rendered when there is an error */}
+        {error && (
+          <p className="text-red-500 text-sm text-center bg-red-50 border border-red-100 rounded-lg px-3 py-2">
+            {error}
+          </p>
+        )}
+
         <button 
           type="submit" 
-          disabled={!isValid}
+          disabled={!isValid || loading}
           className={`w-full font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2 mt-4 ${
-            isValid 
+            isValid && !loading
               ? 'bg-[#8B5CF6] hover:bg-[#7C3AED] text-white shadow-soft transform hover:-translate-y-0.5' 
               : 'bg-primary/50 text-white cursor-not-allowed'
           }`}
         >
-          Create Account
+          {loading ? (
+            <>
+              <Loader2 size={18} className="animate-spin" />
+              Creating account…
+            </>
+          ) : (
+            'Create Account'
+          )}
         </button>
 
         <div className="relative my-6">

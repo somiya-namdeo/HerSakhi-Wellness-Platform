@@ -10,6 +10,7 @@ import Analytics from './pages/Analytics'
 import HealthTips from './pages/HealthTips'
 import Emergency from './pages/Emergency'
 import Profile from './pages/Profile'
+import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
   return (
@@ -19,14 +20,48 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/onboarding" element={<Onboarding />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/assistant" element={<AIAssistant />} />
-          <Route path="/tracker" element={<PeriodTracker />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/health-tips" element={<HealthTips />} />
-          <Route path="/emergency" element={<Emergency />} />
-          <Route path="/profile" element={<Profile />} />
+          
+          {/* Protected Routes */}
+          <Route path="/onboarding" element={
+            <ProtectedRoute>
+              <Onboarding />
+            </ProtectedRoute>
+          } />
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="/assistant" element={
+            <ProtectedRoute>
+              <AIAssistant />
+            </ProtectedRoute>
+          } />
+          <Route path="/tracker" element={
+            <ProtectedRoute>
+              <PeriodTracker />
+            </ProtectedRoute>
+          } />
+          <Route path="/analytics" element={
+            <ProtectedRoute>
+              <Analytics />
+            </ProtectedRoute>
+          } />
+          <Route path="/health-tips" element={
+            <ProtectedRoute>
+              <HealthTips />
+            </ProtectedRoute>
+          } />
+          <Route path="/emergency" element={
+            <ProtectedRoute>
+              <Emergency />
+            </ProtectedRoute>
+          } />
+          <Route path="/profile" element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          } />
         </Routes>
       </div>
     </BrowserRouter>

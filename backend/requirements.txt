@@ -1,0 +1,26 @@
+# HerSakhi Backend — Python Dependencies
+# ========================================
+
+# Web framework & server
+fastapi
+uvicorn[standard]
+
+# Environment variable loading
+python-dotenv
+
+# Supabase client
+supabase
+
+# Data validation
+pydantic
+pydantic[email]
+
+# Security — password hashing & JWT tokens
+passlib[bcrypt]
+python-jose[cryptography]
+
+# ML & data science
+pandas
+numpy
+scikit-learn
+google-generativeai

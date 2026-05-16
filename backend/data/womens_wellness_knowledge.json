@@ -1,0 +1,684 @@
+[
+    {
+        "id": 1,
+        "topic": "Menstrual Cramps",
+        "keywords": [
+            "cramps",
+            "period pain",
+            "abdomen pain",
+            "stomach cramps"
+        ],
+        "question": "How can I reduce menstrual cramps naturally?",
+        "answer": "Applying a heating pad, staying hydrated, gentle stretching, and light exercise may help reduce menstrual cramps. Severe pain that interrupts your daily life should be evaluated by a doctor.",
+        "category": "menstrual_health",
+        "severity": "medium"
+    },
+    {
+        "id": 2,
+        "topic": "Irregular Periods",
+        "keywords": [
+            "irregular periods",
+            "late period",
+            "missed period",
+            "cycle length"
+        ],
+        "question": "What causes irregular periods?",
+        "answer": "Irregular periods can be caused by stress, significant weight changes, excessive exercise, hormonal imbalances like PCOS, or thyroid issues. If your period is frequently irregular, it's best to consult a healthcare provider.",
+        "category": "menstrual_health",
+        "severity": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "Heavy Bleeding",
+        "keywords": [
+            "heavy flow",
+            "too much blood",
+            "heavy bleeding",
+            "clots"
+        ],
+        "question": "Is it normal to have very heavy bleeding during my period?",
+        "answer": "While some women naturally have heavier flows, changing a pad or tampon every hour or passing large clots can be a sign of an underlying issue like fibroids or endometriosis. Please see a doctor to ensure everything is okay.",
+        "category": "menstrual_health",
+        "severity": "high"
+    },
+    {
+        "id": 4,
+        "topic": "Bloating",
+        "keywords": [
+            "bloating",
+            "swollen stomach",
+            "water retention",
+            "feeling full"
+        ],
+        "question": "Why do I get so bloated before my period?",
+        "answer": "Hormonal fluctuations, specifically drops in progesterone and estrogen, cause your body to retain more water and salt. Staying hydrated and reducing sodium intake can help ease period bloating.",
+        "category": "menstrual_health",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "topic": "Fatigue",
+        "keywords": [
+            "tired",
+            "fatigue",
+            "exhaustion",
+            "low energy"
+        ],
+        "question": "Why do I feel so tired during my period?",
+        "answer": "A drop in hormone levels, combined with the loss of blood and iron, can make you feel extremely fatigued. Getting extra rest, staying hydrated, and eating iron-rich foods can help boost your energy.",
+        "category": "menstrual_health",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "topic": "Back Pain",
+        "keywords": [
+            "back pain",
+            "lower back hurting",
+            "back ache"
+        ],
+        "question": "Is lower back pain normal during menstruation?",
+        "answer": "Yes, it's very common. The same hormones (prostaglandins) that cause your uterus to contract can also affect the muscles in your lower back. Heat therapy and gentle yoga can provide relief.",
+        "category": "menstrual_health",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "topic": "Premenstrual Syndrome (PMS)",
+        "keywords": [
+            "PMS",
+            "before period",
+            "symptoms before period"
+        ],
+        "question": "What are common symptoms of PMS?",
+        "answer": "PMS can cause a variety of symptoms including mood swings, tender breasts, food cravings, fatigue, irritability, and depression. These usually occur a week or two before your period starts.",
+        "category": "menstrual_health",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "topic": "Spotting",
+        "keywords": [
+            "spotting",
+            "light bleeding",
+            "blood between periods"
+        ],
+        "question": "What does it mean if I have spotting between my periods?",
+        "answer": "Spotting can occur due to ovulation, hormonal birth control, stress, or sometimes infections. Occasional spotting is often harmless, but persistent spotting should be checked by a gynecologist.",
+        "category": "menstrual_health",
+        "severity": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "PCOS Symptoms",
+        "keywords": [
+            "PCOS",
+            "polycystic ovary syndrome",
+            "PCOS symptoms"
+        ],
+        "question": "What are the common signs of PCOS?",
+        "answer": "Common signs of PCOS include irregular or missed periods, excess facial or body hair, severe acne, and weight gain. If you suspect you have PCOS, a doctor can help diagnose and manage it.",
+        "category": "pcos_awareness",
+        "severity": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "Acne and Hormones",
+        "keywords": [
+            "acne",
+            "pimples",
+            "breakouts",
+            "hormonal acne"
+        ],
+        "question": "Why do I get acne around my period or with PCOS?",
+        "answer": "Hormonal acne is driven by fluctuations in estrogen, progesterone, and androgens. These hormones can increase oil production in your skin, leading to clogged pores and breakouts, especially along the jawline.",
+        "category": "pcos_awareness",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "topic": "PCOS Hair Loss",
+        "keywords": [
+            "hair loss",
+            "thinning hair",
+            "hair falling out",
+            "PCOS hair"
+        ],
+        "question": "Can PCOS cause hair thinning?",
+        "answer": "Yes, elevated androgen (male hormone) levels associated with PCOS can lead to hair thinning or male-pattern baldness. Medical treatments and lifestyle changes can help manage this symptom.",
+        "category": "pcos_awareness",
+        "severity": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "PCOS Hirsutism",
+        "keywords": [
+            "facial hair",
+            "body hair",
+            "hirsutism",
+            "extra hair"
+        ],
+        "question": "How can I manage excess facial hair from PCOS?",
+        "answer": "Excess hair growth (hirsutism) in PCOS is caused by higher androgen levels. It can be managed through hair removal techniques, prescription medications, or lifestyle changes. Discuss options with your dermatologist or endocrinologist.",
+        "category": "pcos_awareness",
+        "severity": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "PCOS Weight Management",
+        "keywords": [
+            "weight gain",
+            "hard to lose weight",
+            "PCOS weight"
+        ],
+        "question": "Why is it hard to lose weight with PCOS?",
+        "answer": "Many people with PCOS experience insulin resistance, which makes the body store fat more easily and makes weight loss challenging. A balanced diet and regular exercise, often guided by a professional, are key.",
+        "category": "pcos_awareness",
+        "severity": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "PCOS Diagnosis",
+        "keywords": [
+            "do I have PCOS",
+            "diagnose PCOS",
+            "testing for PCOS"
+        ],
+        "question": "How is PCOS diagnosed?",
+        "answer": "PCOS is typically diagnosed through a combination of checking your medical history, a physical exam, blood tests to measure hormone levels, and an ultrasound to look for cysts on your ovaries.",
+        "category": "pcos_awareness",
+        "severity": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "PCOS and Fertility",
+        "keywords": [
+            "getting pregnant",
+            "fertility",
+            "can I have a baby",
+            "PCOS pregnancy"
+        ],
+        "question": "Can I still get pregnant if I have PCOS?",
+        "answer": "Yes, many women with PCOS have healthy pregnancies. While it may take longer or require fertility assistance due to irregular ovulation, it is absolutely possible with proper medical guidance.",
+        "category": "pcos_awareness",
+        "severity": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "Iron-Rich Foods",
+        "keywords": [
+            "iron",
+            "anemia",
+            "foods for period",
+            "spinach"
+        ],
+        "question": "What iron-rich foods should I eat during my period?",
+        "answer": "To replenish iron lost during bleeding, eat leafy greens like spinach, lentils, beans, tofu, red meat, and fortified cereals. Pairing these with Vitamin C (like oranges) helps your body absorb the iron better.",
+        "category": "nutrition",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "topic": "Hydration",
+        "keywords": [
+            "water",
+            "drinking water",
+            "hydration",
+            "dehydration"
+        ],
+        "question": "How much water should I drink during my period?",
+        "answer": "Aim for at least 8-10 glasses of water a day. Staying well-hydrated helps reduce bloating, eases cramps, and prevents fatigue and headaches.",
+        "category": "nutrition",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "topic": "Sugar Cravings",
+        "keywords": [
+            "sugar",
+            "craving sweets",
+            "chocolate",
+            "sweet tooth"
+        ],
+        "question": "Why do I crave sugar before my period?",
+        "answer": "Changing estrogen and progesterone levels can cause a drop in blood sugar and serotonin, leading your brain to crave sugary, high-carb foods for a quick energy and mood boost. Dark chocolate is a great alternative!",
+        "category": "nutrition",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "topic": "Caffeine Impact",
+        "keywords": [
+            "coffee",
+            "caffeine",
+            "tea",
+            "cramps and coffee"
+        ],
+        "question": "Is it okay to drink coffee during my period?",
+        "answer": "While a little coffee is fine, too much caffeine can constrict blood vessels and make cramps worse. It can also increase anxiety and breast tenderness. Consider switching to decaf or herbal tea if you feel discomfort.",
+        "category": "nutrition",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "topic": "Foods for Bloating",
+        "keywords": [
+            "diet for bloating",
+            "reduce bloating foods",
+            "what to eat"
+        ],
+        "question": "What foods help reduce period bloating?",
+        "answer": "Potassium-rich foods like bananas, sweet potatoes, and avocados help regulate sodium levels and reduce bloating. Ginger and peppermint tea are also incredibly soothing for the digestive system.",
+        "category": "nutrition",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "topic": "Magnesium for Cramps",
+        "keywords": [
+            "magnesium",
+            "supplements",
+            "vitamins for cramps"
+        ],
+        "question": "Does magnesium help with period cramps?",
+        "answer": "Yes, magnesium can help relax the muscles of the uterus and reduce the prostaglandins that cause period pain. Foods like pumpkin seeds, almonds, and dark chocolate are excellent sources.",
+        "category": "nutrition",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "topic": "Changing Pads",
+        "keywords": [
+            "change pad",
+            "how often to change",
+            "hygiene pad"
+        ],
+        "question": "How often should I change my sanitary pad?",
+        "answer": "It is recommended to change your pad every 4 to 6 hours, even if your flow is light. This prevents the buildup of bacteria, unpleasant odors, and skin infections.",
+        "category": "hygiene",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "topic": "Menstrual Cup Cleaning",
+        "keywords": [
+            "menstrual cup",
+            "boil cup",
+            "clean cup"
+        ],
+        "question": "How do I properly clean my menstrual cup?",
+        "answer": "During your cycle, wash it with warm water and mild, unscented soap every time you empty it. Before and after each cycle, sterilize the cup by boiling it in water for 5-7 minutes.",
+        "category": "hygiene",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "topic": "Tampon Usage",
+        "keywords": [
+            "tampons",
+            "how long tampon",
+            "sleep with tampon"
+        ],
+        "question": "How long can I safely wear a tampon?",
+        "answer": "You should change your tampon every 4 to 8 hours. Never leave a tampon in for more than 8 hours, as this significantly increases the risk of Toxic Shock Syndrome (TSS), a rare but serious condition.",
+        "category": "hygiene",
+        "severity": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "Intimate Wash",
+        "keywords": [
+            "vaginal wash",
+            "v wash",
+            "soap",
+            "douching"
+        ],
+        "question": "Should I use intimate washes or soap inside my vagina?",
+        "answer": "No, the vagina is self-cleaning. Using soaps, douches, or scented washes inside can disrupt its natural pH and cause infections like bacterial vaginosis or yeast infections. Only wash the outside (vulva) with water or mild, unscented soap.",
+        "category": "hygiene",
+        "severity": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "Pad Rashes",
+        "keywords": [
+            "rash",
+            "itching",
+            "chafing",
+            "pad rash"
+        ],
+        "question": "How can I prevent rashes from using sanitary pads?",
+        "answer": "To prevent rashes, change your pad frequently, wear breathable cotton underwear, and avoid scented pads. If you get a rash, applying a gentle barrier cream and switching to cotton or cloth pads may help.",
+        "category": "hygiene",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "topic": "Toxic Shock Syndrome",
+        "keywords": [
+            "TSS",
+            "toxic shock",
+            "fever with tampon",
+            "emergency"
+        ],
+        "question": "What are the symptoms of Toxic Shock Syndrome?",
+        "answer": "Symptoms of TSS include a sudden high fever, vomiting, diarrhea, a sunburn-like rash, and dizziness. If you experience these while using a tampon, remove it immediately and seek emergency medical care.",
+        "category": "emergency_guidance",
+        "severity": "high"
+    },
+    {
+        "id": 28,
+        "topic": "Mood Swings",
+        "keywords": [
+            "mood swings",
+            "angry",
+            "sad",
+            "emotional"
+        ],
+        "question": "Why do my emotions fluctuate so much before my period?",
+        "answer": "Hormonal shifts affect neurotransmitters like serotonin in your brain, leading to sudden mood changes, tearfulness, or irritability. Being gentle with yourself and tracking your symptoms can help you prepare emotionally.",
+        "category": "mental_wellness",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "topic": "Anxiety During Periods",
+        "keywords": [
+            "anxiety",
+            "panic",
+            "worried",
+            "period anxiety"
+        ],
+        "question": "Is it normal to feel extra anxious during my period?",
+        "answer": "Yes, many women experience heightened anxiety due to drops in estrogen. Practicing mindfulness, deep breathing exercises, and reducing caffeine intake can help soothe period-related anxiety.",
+        "category": "mental_wellness",
+        "severity": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "Stress Management",
+        "keywords": [
+            "stress",
+            "overwhelmed",
+            "relax"
+        ],
+        "question": "How can stress affect my menstrual cycle?",
+        "answer": "High stress levels increase cortisol, which can delay ovulation and cause your period to be late, irregular, or even skipped entirely. Managing stress through yoga, meditation, or therapy is great for cycle health.",
+        "category": "mental_wellness",
+        "severity": "medium"
+    },
+    {
+        "id": 31,
+        "topic": "PMDD (Premenstrual Dysphoric Disorder)",
+        "keywords": [
+            "PMDD",
+            "severe depression",
+            "extreme anger",
+            "suicidal thoughts"
+        ],
+        "question": "What is the difference between PMS and PMDD?",
+        "answer": "PMDD is a severe form of PMS that causes extreme mood shifts, severe depression, crippling anxiety, and sometimes suicidal thoughts before a period. If you experience this, please seek help from a psychiatrist or gynecologist—treatment is available.",
+        "category": "mental_wellness",
+        "severity": "high"
+    },
+    {
+        "id": 32,
+        "topic": "Sleep Disruptions",
+        "keywords": [
+            "insomnia",
+            "can't sleep",
+            "waking up",
+            "sleep on period"
+        ],
+        "question": "Why is it so hard to sleep right before my period?",
+        "answer": "The sudden drop in progesterone (a hormone that helps you sleep) combined with changes in body temperature can cause insomnia. Keeping your room cool and maintaining a calming bedtime routine can help.",
+        "category": "mental_wellness",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "topic": "Brain Fog",
+        "keywords": [
+            "forgetful",
+            "brain fog",
+            "can't focus",
+            "concentration"
+        ],
+        "question": "Why do I feel like I have brain fog during my period?",
+        "answer": "Fluctuations in estrogen can briefly impact memory and focus. Paired with period fatigue and physical discomfort, it's normal to feel a bit scatterbrained. Rest and proper hydration can improve mental clarity.",
+        "category": "mental_wellness",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "topic": "Yoga for Cramps",
+        "keywords": [
+            "yoga",
+            "stretches",
+            "poses for pain",
+            "asana"
+        ],
+        "question": "Which yoga poses are best for menstrual cramps?",
+        "answer": "Child's Pose (Balasana), Cat-Cow stretch (Marjaryasana-Bitilasana), and Supine Twist (Supta Matsyendrasana) are excellent for relaxing the pelvic muscles and easing lower back pain during your cycle.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "topic": "Safe Exercise",
+        "keywords": [
+            "workout",
+            "gym",
+            "exercise",
+            "working out on period"
+        ],
+        "question": "Is it safe to exercise during my period?",
+        "answer": "Yes! Exercising during your period is perfectly safe and can actually help relieve cramps by releasing endorphins (natural painkillers). Listen to your body and opt for lighter workouts if you feel tired.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 36,
+        "topic": "Swimming on Period",
+        "keywords": [
+            "swimming",
+            "pool",
+            "swimming on period"
+        ],
+        "question": "Can I go swimming while I am on my period?",
+        "answer": "Absolutely. Just use a tampon or a menstrual cup before getting into the water, as pads will absorb the pool water and become ineffective. Swimming is a great low-impact exercise for cramps.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 37,
+        "topic": "Lifting Weights",
+        "keywords": [
+            "weight lifting",
+            "strength training",
+            "heavy weights"
+        ],
+        "question": "Should I avoid lifting heavy weights during my period?",
+        "answer": "You don't have to avoid lifting if you feel up to it. However, your energy levels might be lower on days 1-2. Pay attention to your body's signals and lower the weights if you feel overly fatigued.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 38,
+        "topic": "Fatigue and Exercise",
+        "keywords": [
+            "tired workout",
+            "too tired to exercise",
+            "rest days"
+        ],
+        "question": "What should I do if I am too exhausted to work out during my period?",
+        "answer": "It is completely okay to take rest days. Your body is doing a lot of work. If you still want to move, try gentle walking or restorative yoga. Always prioritize your comfort and recovery.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 39,
+        "topic": "Pelvic Floor Exercises",
+        "keywords": [
+            "kegels",
+            "pelvic floor",
+            "strengthening"
+        ],
+        "question": "Are pelvic floor exercises helpful during menstruation?",
+        "answer": "While kegels and pelvic floor exercises are great for long-term health, doing intense pelvic workouts during painful cramps might increase discomfort. It's best to focus on pelvic relaxation stretches instead during your period.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 40,
+        "topic": "Extreme Bleeding Emergency",
+        "keywords": [
+            "too much blood",
+            "hemorrhage",
+            "soaking pads fast",
+            "emergency bleeding"
+        ],
+        "question": "When is heavy period bleeding considered a medical emergency?",
+        "answer": "If you are soaking through one or more thick pads or tampons every hour for two consecutive hours, or passing blood clots larger than a quarter, please go to an urgent care clinic or emergency room immediately.",
+        "category": "emergency_guidance",
+        "severity": "high"
+    },
+    {
+        "id": 41,
+        "topic": "Severe Pelvic Pain",
+        "keywords": [
+            "extreme pain",
+            "sharp pain",
+            "can't stand up",
+            "unbearable cramps"
+        ],
+        "question": "What should I do if my period cramps are so bad I can't stand or walk?",
+        "answer": "Debilitating pain is not normal and could indicate conditions like endometriosis, ruptured cysts, or pelvic inflammatory disease. You should seek immediate medical evaluation by a healthcare professional.",
+        "category": "emergency_guidance",
+        "severity": "high"
+    },
+    {
+        "id": 42,
+        "topic": "Prolonged Missed Periods",
+        "keywords": [
+            "no period",
+            "missing periods",
+            "amenorrhea",
+            "6 months no period"
+        ],
+        "question": "I haven't had a period in 6 months but I'm not pregnant. Is this an emergency?",
+        "answer": "While not a life-threatening emergency requiring an ER visit today, missing periods for 3-6 months (secondary amenorrhea) needs prompt evaluation by an OB-GYN to investigate hormonal, thyroid, or ovarian health issues.",
+        "category": "emergency_guidance",
+        "severity": "medium"
+    },
+    {
+        "id": 43,
+        "topic": "Foul Smelling Discharge",
+        "keywords": [
+            "bad smell",
+            "fishy odor",
+            "green discharge",
+            "infection"
+        ],
+        "question": "What does it mean if my period blood or discharge smells really bad?",
+        "answer": "A distinct, strong foul or fishy odor, especially accompanied by itching, burning, or unusual colors, usually indicates a bacterial infection or STI. You should see a doctor for proper diagnosis and antibiotics.",
+        "category": "hygiene",
+        "severity": "medium"
+    },
+    {
+        "id": 44,
+        "topic": "Dizziness and Fainting",
+        "keywords": [
+            "fainting",
+            "passing out",
+            "dizzy",
+            "lightheaded"
+        ],
+        "question": "Is it normal to feel like I might pass out during my period?",
+        "answer": "Feeling slightly lightheaded can happen due to pain or minor blood loss, but frequently fainting or severe dizziness points to potential anemia or severe blood pressure drops. Please consult a physician.",
+        "category": "emergency_guidance",
+        "severity": "high"
+    },
+    {
+        "id": 45,
+        "topic": "Chest Pain on Period",
+        "keywords": [
+            "chest pain",
+            "shortness of breath",
+            "breathing hard"
+        ],
+        "question": "I have chest pain and shortness of breath during my period, what should I do?",
+        "answer": "Chest pain and shortness of breath are severe symptoms and are not typical period symptoms. This could be a sign of a blood clot or cardiac issue. Seek emergency medical attention immediately.",
+        "category": "emergency_guidance",
+        "severity": "high"
+    },
+    {
+        "id": 46,
+        "topic": "Suicidal Thoughts in PMDD",
+        "keywords": [
+            "want to die",
+            "suicidal",
+            "severe depression",
+            "PMDD crisis"
+        ],
+        "question": "I feel hopeless and have suicidal thoughts right before my period. What do I do?",
+        "answer": "Your feelings are valid, and this is a severe symptom of PMDD, a treatable medical condition. Please reach out to a trusted loved one, a mental health professional, or call a local crisis helpline immediately. You don't have to face this alone.",
+        "category": "emergency_guidance",
+        "severity": "high"
+    },
+    {
+        "id": 47,
+        "topic": "Post-Workout Hygiene",
+        "keywords": [
+            "sweat",
+            "showering",
+            "workout hygiene",
+            "smell"
+        ],
+        "question": "What is the best way to clean up after a workout on my period?",
+        "answer": "Shower as soon as possible, change out of sweaty workout clothes immediately to prevent yeast infections, and change your pad, tampon, or empty your menstrual cup to maintain freshness and comfort.",
+        "category": "exercise_and_yoga",
+        "severity": "low"
+    },
+    {
+        "id": 48,
+        "topic": "Cloth Pads Maintenance",
+        "keywords": [
+            "reusable pads",
+            "cloth pads",
+            "washing pads"
+        ],
+        "question": "How do I wash reusable cloth pads properly?",
+        "answer": "Rinse them in cold water immediately after use to prevent staining. Then, machine or hand wash them with a mild detergent. Avoid using fabric softeners as they reduce the absorbency of the fabric. Dry them thoroughly in sunlight if possible.",
+        "category": "hygiene",
+        "severity": "low"
+    },
+    {
+        "id": 49,
+        "topic": "Emotional Eating",
+        "keywords": [
+            "binge eating",
+            "eating a lot",
+            "food cravings",
+            "emotional eating"
+        ],
+        "question": "How can I stop binge eating junk food before my period?",
+        "answer": "Instead of restricting yourself completely, try to satisfy cravings with healthier swaps like dark chocolate, fruit, or baked sweet potatoes. Eating balanced meals with plenty of protein and fiber will also keep you full and stabilize blood sugar.",
+        "category": "mental_wellness",
+        "severity": "low"
+    },
+    {
+        "id": 50,
+        "topic": "Self-Care Routine",
+        "keywords": [
+            "self care",
+            "pampering",
+            "feel better",
+            "period routine"
+        ],
+        "question": "What are some good self-care ideas for my period?",
+        "answer": "Taking a warm bath, using a heating pad, reading a comforting book, drinking herbal tea, and giving yourself permission to rest are all wonderful ways to show your body love and patience during your cycle.",
+        "category": "mental_wellness",
+        "severity": "low"
+    }
+]

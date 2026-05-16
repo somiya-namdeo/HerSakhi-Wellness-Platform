@@ -1,16 +1,22 @@
-import { Calendar as CalendarIcon, Droplet, Smile, Meh, Frown, CheckCircle2 } from 'lucide-react'
+import { Calendar as CalendarIcon, Droplet, Smile, Meh, Frown, CheckCircle2, Loader2 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { saveCycleLog } from '../../api/cycleApi'
+import { getStoredUser } from '../../utils/userHelpers'
 
-const DailyLogPanel = ({ selectedDate }) => {
+const DailyLogPanel = ({ selectedDate, onLogSaved }) => {
   const [flow, setFlow] = useState(null)
   const [painLevel, setPainLevel] = useState(4)
   const [mood, setMood] = useState(null)
   const [symptoms, setSymptoms] = useState([])
   const [notes, setNotes] = useState('')
+  
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
   const [showToast, setShowToast] = useState(false)
 
   const flowOptions = ['Light', 'Medium', 'Heavy', 'Spotting']
+  
   const moodOptions = [
     { name: 'Happy', icon: Smile, color: 'text-primary' },
     { name: 'Neutral', icon: Meh, color: 'text-orange-400' },
@@ -18,8 +24,24 @@ const DailyLogPanel = ({ selectedDate }) => {
   ]
   const symptomOptions = ['Cramps', 'Headache', 'Bloating', 'Fatigue', 'Back Pain', 'Acne', 'Tender Breasts', 'Mood Swings']
 
+  // Format date for UI
+  const monthName = selectedDate.toLocaleString('default', { month: 'long' })
+  const dayNumber = selectedDate.getDate()
+
+  // Format date for Backend (YYYY-MM-DD)
+  const getFormattedBackendDate = () => {
+    const year = selectedDate.getFullYear()
+    const month = String(selectedDate.getMonth() + 1).padStart(2, '0')
+    const day = String(selectedDate.getDate()).padStart(2, '0')
+    return `${year}-${month}-${day}`
+  }
+
+  // Reset form / toast when date changes (in a real app we'd load the existing log for this date here)
   useEffect(() => {
     setShowToast(false)
+    setError('')
+    // Ideally we would populate state if `logs` array contains data for this date.
+    // We are keeping it simple per requirements for now.
   }, [selectedDate])
 
   const toggleSymptom = (symptom) => {
@@ -30,9 +52,41 @@ const DailyLogPanel = ({ selectedDate }) => {
     }
   }
 
-  const handleSave = () => {
-    setShowToast(true)
-    setTimeout(() => setShowToast(false), 3000)
+  const handleSave = async () => {
+    setLoading(true)
+    setError('')
+    setShowToast(false)
+
+    try {
+      const user = getStoredUser()
+      if (!user?.id) {
+        throw new Error("User session not found. Please log in again.")
+      }
+
+      const formattedDate = getFormattedBackendDate()
+
+      await saveCycleLog({
+        user_id: user.id,
+        log_date: formattedDate,
+        flow_intensity: flow,
+        pain_level: painLevel,
+        mood: mood,
+        symptoms: symptoms,
+        notes: notes.trim() || null
+      })
+
+      setShowToast(true)
+      setTimeout(() => setShowToast(false), 3000)
+      
+      // Refresh logs in parent
+      if (onLogSaved) {
+        onLogSaved()
+      }
+    } catch (err) {
+      setError(err.message || "Failed to save entry.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -43,7 +97,7 @@ const DailyLogPanel = ({ selectedDate }) => {
       className="bg-white rounded-[2rem] p-6 lg:p-8 shadow-card border border-primary/5 relative"
     >
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-xl font-poppins font-bold text-dark">Log for May {selectedDate}</h2>
+        <h2 className="text-xl font-poppins font-bold text-dark">Log for {monthName} {dayNumber}</h2>
         <CalendarIcon className="text-primary/50" size={24} />
       </div>
 
@@ -135,12 +189,26 @@ const DailyLogPanel = ({ selectedDate }) => {
           />
         </div>
 
+        {error && (
+          <p className="text-red-500 text-sm bg-red-50 border border-red-100 rounded-lg px-3 py-2 text-center">
+            {error}
+          </p>
+        )}
+
         {/* Save Button */}
         <button 
           onClick={handleSave}
-          className="w-full py-4 bg-primary hover:bg-primary/90 text-white rounded-2xl font-medium shadow-md shadow-primary/20 transition-all transform hover:-translate-y-0.5"
+          disabled={loading}
+          className="w-full py-4 bg-primary hover:bg-primary/90 disabled:opacity-70 text-white rounded-2xl font-medium shadow-md shadow-primary/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
         >
-          + Save Entry
+          {loading ? (
+            <>
+              <Loader2 size={20} className="animate-spin" />
+              Saving...
+            </>
+          ) : (
+            '+ Save Entry'
+          )}
         </button>
       </div>
 
@@ -154,7 +222,7 @@ const DailyLogPanel = ({ selectedDate }) => {
             className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-dark text-white px-5 py-3 rounded-full shadow-xl flex items-center gap-2 text-sm font-medium whitespace-nowrap z-50"
           >
             <CheckCircle2 size={16} className="text-green-400" />
-            Entry saved for selected date
+            Entry saved for {monthName} {dayNumber}
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,9 +1,12 @@
-import { Smile, Meh, Frown } from 'lucide-react'
+import { Smile, Meh, Frown, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { saveCycleLog } from '../../api/cycleApi'
+import { getStoredUser } from '../../utils/userHelpers'
 
 const MoodCard = () => {
   const [selectedMood, setSelectedMood] = useState('Happy')
+  const [saving, setSaving] = useState(false)
 
   const moods = [
     { name: 'Happy', icon: Smile, color: 'text-primary', bg: 'bg-primary/10' },
@@ -11,14 +14,38 @@ const MoodCard = () => {
     { name: 'Sad', icon: Frown, color: 'text-red-400', bg: 'bg-red-400/10' },
   ]
 
+  const handleMoodSelect = async (moodName) => {
+    setSelectedMood(moodName)
+    const user = getStoredUser()
+    if (!user?.id) return
+
+    setSaving(true)
+    const today = new Date().toISOString().split('T')[0]
+
+    try {
+      await saveCycleLog({
+        user_id: user.id,
+        log_date: today,
+        mood: moodName
+      })
+    } catch (err) {
+      console.error("Failed to sync mood to cycle logs:", err)
+    } finally {
+      setSaving(false)
+    }
+  }
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="bg-white rounded-[2rem] p-6 lg:p-8 shadow-card border border-primary/5"
+      className="bg-white rounded-[2rem] p-6 lg:p-8 shadow-card border border-primary/5 relative"
     >
-      <h3 className="font-poppins font-semibold text-xl text-dark mb-6">Today's Mood</h3>
+      <div className="flex justify-between items-center mb-6">
+        <h3 className="font-poppins font-semibold text-xl text-dark">Today's Mood</h3>
+        {saving && <Loader2 size={14} className="animate-spin text-primary" />}
+      </div>
       
       <div className="flex justify-between items-center px-4">
         {moods.map((mood) => {
@@ -26,7 +53,7 @@ const MoodCard = () => {
           return (
             <div 
               key={mood.name}
-              onClick={() => setSelectedMood(mood.name)}
+              onClick={() => handleMoodSelect(mood.name)}
               className="flex flex-col items-center gap-3 cursor-pointer group"
             >
               <motion.div 

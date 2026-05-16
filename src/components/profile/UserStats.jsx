@@ -1,8 +1,8 @@
-const UserStats = () => {
-  const stats = [
-    { label: "Days Tracked", value: "127", colorClass: "text-[#a78bfa]" },
-    { label: "Cycles Logged", value: "4", colorClass: "text-pink-400" },
-    { label: "Insights Gained", value: "32", colorClass: "text-orange-400" }
+const UserStats = ({ stats }) => {
+  const items = [
+    { label: "Days Tracked", value: stats?.days_tracked || 0, colorClass: "text-[#a78bfa]" },
+    { label: "Cycles Logged", value: stats?.cycles_logged || 0, colorClass: "text-pink-400" },
+    { label: "Insights Gained", value: stats?.insights_gained || 0, colorClass: "text-orange-400" }
   ]
 
   return (
@@ -10,7 +10,7 @@ const UserStats = () => {
       <h3 className="font-poppins font-semibold text-xl text-dark mb-6">Your Stats</h3>
 
       <div className="space-y-4">
-        {stats.map((stat, index) => (
+        {items.map((stat, index) => (
           <div key={index} className="bg-[#fdf7fb] rounded-2xl p-5 border border-primary/5">
             <p className="text-sm font-medium text-gray-500 mb-1">{stat.label}</p>
             <p className={`text-2xl font-poppins font-semibold ${stat.colorClass}`}>

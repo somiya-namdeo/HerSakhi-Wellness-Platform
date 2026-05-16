@@ -1,12 +1,12 @@
-import { Send, Mic } from 'lucide-react'
+import { Send, Mic, Loader2 } from 'lucide-react'
 import { useState } from 'react'
 
-const ChatInput = ({ onSend }) => {
+const ChatInput = ({ onSend, disabled }) => {
   const [inputValue, setInputValue] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (inputValue.trim()) {
+    if (inputValue.trim() && !disabled) {
       onSend(inputValue)
       setInputValue('')
     }
@@ -18,23 +18,25 @@ const ChatInput = ({ onSend }) => {
         <input 
           type="text" 
           value={inputValue}
+          disabled={disabled}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Type your message..." 
-          className="w-full bg-gray-50 border border-gray-200 rounded-full pl-6 pr-24 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+          placeholder={disabled ? "Assistant is thinking..." : "Type your message..."} 
+          className={`w-full bg-gray-50 border border-gray-200 rounded-full pl-6 pr-24 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         />
         <div className="absolute right-2 flex items-center gap-2">
           <button 
             type="button"
-            className="w-10 h-10 text-gray-400 hover:text-primary transition-colors flex items-center justify-center"
+            disabled={disabled}
+            className={`w-10 h-10 text-gray-400 hover:text-primary transition-colors flex items-center justify-center ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             <Mic size={20} />
           </button>
           <button 
             type="submit"
-            disabled={!inputValue.trim()}
+            disabled={disabled || !inputValue.trim()}
             className="w-10 h-10 bg-primary hover:bg-primary/90 disabled:bg-primary/50 text-white rounded-full flex items-center justify-center shadow-soft transition-transform transform hover:scale-105 disabled:hover:scale-100"
           >
-            <Send size={16} className="ml-0.5" />
+            {disabled ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} className="ml-0.5" />}
           </button>
         </div>
       </form>

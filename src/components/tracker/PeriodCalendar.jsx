@@ -1,23 +1,87 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 
-const PeriodCalendar = ({ selectedDate, onDateSelect }) => {
+const PeriodCalendar = ({ selectedDate, onDateSelect, logs = [], prediction = null }) => {
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
   
-  // Mock data for May 2026
-  const periodDays = [15, 16, 17, 18, 19]
-  const ovulationDays = [28, 29, 30]
-  const fertileDays = [26, 27, 31]
-  
-  const periodColor = "bg-red-100 text-red-400"
-  const ovulationColor = "bg-pink-400 text-white shadow-md shadow-pink-400/30"
-  const fertileColor = "bg-pink-50 text-pink-400"
-  const selectedColor = "bg-primary text-white shadow-lg shadow-primary/30 transform scale-105 ring-2 ring-primary ring-offset-2 z-10"
+  // State for navigating the calendar view
+  const [currentMonth, setCurrentMonth] = useState(selectedDate.getMonth())
+  const [currentYear, setCurrentYear] = useState(selectedDate.getFullYear())
 
-  // May 2026 starts on Friday.
-  const emptyDays = [null, null, null, null]
-  const calendarDays = Array.from({ length: 31 }, (_, i) => i + 1)
-  const allSlots = [...emptyDays, ...calendarDays]
+  // Keep calendar view in sync if selectedDate changes externally
+  useEffect(() => {
+    setCurrentMonth(selectedDate.getMonth())
+    setCurrentYear(selectedDate.getFullYear())
+  }, [selectedDate])
+
+  const handlePrevMonth = () => {
+    if (currentMonth === 0) {
+      setCurrentMonth(11)
+      setCurrentYear(currentYear - 1)
+    } else {
+      setCurrentMonth(currentMonth - 1)
+    }
+  }
+
+  const handleNextMonth = () => {
+    if (currentMonth === 11) {
+      setCurrentMonth(0)
+      setCurrentYear(currentYear + 1)
+    } else {
+      setCurrentMonth(currentMonth + 1)
+    }
+  }
+
+  // Helper to get formatted YYYY-MM-DD from any given parts
+  const formatDateString = (year, month, day) => {
+    return `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+  }
+
+  // Helper to generate a Set of date strings from a date range
+  const getDateSetInRange = (startStr, endStr) => {
+    const dates = new Set()
+    if (!startStr || !endStr) return dates;
+    const start = new Date(startStr);
+    const end = new Date(endStr);
+    let current = new Date(start);
+    while (current <= end) {
+      dates.add(formatDateString(current.getFullYear(), current.getMonth(), current.getDate()));
+      current.setDate(current.getDate() + 1);
+    }
+    return dates;
+  }
+
+  // Generate sets for quick lookup
+  const periodDateStrings = prediction ? getDateSetInRange(prediction.period_start, prediction.period_end) : new Set()
+  const fertileDateStrings = prediction ? getDateSetInRange(prediction.fertile_window_start, prediction.fertile_window_end) : new Set()
+  const ovulationStr = prediction?.ovulation_date ? prediction.ovulation_date : null
+  
+  const loggedDateStrings = new Set(logs.map(log => log.log_date))
+
+  // Calendar Math
+  const monthStart = new Date(currentYear, currentMonth, 1)
+  const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate()
+  
+  // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+  const startDayOfWeek = monthStart.getDay()
+  // Adjust so Monday is 0, Sunday is 6
+  const emptySlotsCount = startDayOfWeek === 0 ? 6 : startDayOfWeek - 1
+  
+  const emptySlots = Array(emptySlotsCount).fill(null)
+  const calendarDays = Array.from({ length: daysInMonth }, (_, i) => i + 1)
+  const allSlots = [...emptySlots, ...calendarDays]
+
+  // Formatting header
+  const monthName = monthStart.toLocaleString('default', { month: 'long' })
+  
+  const selectedDateStr = formatDateString(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate())
+
+  const periodColor = "bg-red-100 text-red-400 hover:opacity-80"
+  const ovulationColor = "bg-pink-400 text-white shadow-md shadow-pink-400/30 hover:opacity-80"
+  const fertileColor = "bg-pink-50 text-pink-400 hover:opacity-80"
+  const selectedColor = "bg-primary text-white shadow-lg shadow-primary/30 transform scale-105 ring-2 ring-primary ring-offset-2 z-10"
+  const loggedColor = "ring-2 ring-green-400 ring-offset-1"
 
   return (
     <motion.div 
@@ -29,11 +93,11 @@ const PeriodCalendar = ({ selectedDate, onDateSelect }) => {
       <div className="flex justify-between items-center mb-6 lg:mb-8">
         <h2 className="text-2xl font-poppins font-bold text-dark">Period Calendar</h2>
         <div className="flex items-center gap-2 sm:gap-4">
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-500">
+          <button onClick={handlePrevMonth} className="p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-500">
             <ChevronLeft size={20} />
           </button>
-          <span className="font-medium text-dark min-w-[80px] text-center">May 2026</span>
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-500">
+          <span className="font-medium text-dark min-w-[120px] text-center">{monthName} {currentYear}</span>
+          <button onClick={handleNextMonth} className="p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-500">
             <ChevronRight size={20} />
           </button>
         </div>
@@ -47,30 +111,37 @@ const PeriodCalendar = ({ selectedDate, onDateSelect }) => {
         {allSlots.map((day, index) => {
           if (!day) return <div key={`empty-${index}`}></div>
 
-          const isSelected = day === selectedDate
-          const isPeriod = periodDays.includes(day)
-          const isOvulation = ovulationDays.includes(day)
-          const isFertile = fertileDays.includes(day)
+          const cellDateStr = formatDateString(currentYear, currentMonth, day)
+          
+          const isSelected = cellDateStr === selectedDateStr
+          const isPeriod = periodDateStrings.has(cellDateStr)
+          const isOvulation = ovulationStr === cellDateStr
+          const isFertile = fertileDateStrings.has(cellDateStr) && !isOvulation
+          const isLogged = loggedDateStrings.has(cellDateStr)
           
           let dayClass = "w-11 h-11 sm:w-14 sm:h-14 lg:w-[72px] lg:h-[72px] mx-auto flex items-center justify-center rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 font-medium cursor-pointer "
           
           if (isSelected) {
             dayClass += selectedColor
           } else if (isPeriod) {
-            dayClass += periodColor + " hover:opacity-80"
+            dayClass += periodColor
           } else if (isOvulation) {
-            dayClass += ovulationColor + " hover:opacity-80"
+            dayClass += ovulationColor
           } else if (isFertile) {
-            dayClass += fertileColor + " hover:opacity-80"
+            dayClass += fertileColor
           } else {
             dayClass += "text-dark hover:bg-gray-50"
           }
 
+          if (isLogged && !isSelected) {
+            dayClass += " " + loggedColor
+          }
+
           return (
-            <div key={day} className="flex items-center justify-center">
+            <div key={cellDateStr} className="flex items-center justify-center">
               <div 
                 className={dayClass}
-                onClick={() => onDateSelect(day)}
+                onClick={() => onDateSelect(new Date(currentYear, currentMonth, day))}
               >
                 {day}
               </div>
@@ -93,8 +164,8 @@ const PeriodCalendar = ({ selectedDate, onDateSelect }) => {
           <span className="text-xs text-gray-500 font-medium">Fertile Window</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-4 h-4 rounded-md bg-primary"></div>
-          <span className="text-xs text-gray-500 font-medium">Selected</span>
+          <div className="w-4 h-4 rounded-full border-2 border-green-400"></div>
+          <span className="text-xs text-gray-500 font-medium">Logged Entry</span>
         </div>
       </div>
     </motion.div>

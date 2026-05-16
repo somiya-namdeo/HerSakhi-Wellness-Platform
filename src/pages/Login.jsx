@@ -1,12 +1,40 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { Mail, Lock, Chrome } from 'lucide-react'
+import { Link, useNavigate } from 'react-router-dom'
+import { Mail, Lock, Chrome, Loader2 } from 'lucide-react'
 import AuthLayout from '../components/AuthLayout'
+import { loginUser } from '../api/authApi'
+import { saveToken, saveUser } from '../api/api'
 
 const Login = () => {
-  const [email, setEmail] = useState('')
+  const navigate = useNavigate();
+  const [email, setEmail]       = useState('')
   const [password, setPassword] = useState('')
+  const [loading, setLoading]   = useState(false)
+  const [error, setError]       = useState('')
+
   const isValid = email.trim() !== '' && password.trim() !== ''
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    if (!isValid) return;
+
+    setLoading(true);
+    setError('');
+
+    try {
+      const data = await loginUser({ email: email.trim(), password });
+
+      // Persist auth state
+      saveToken(data.access_token);
+      saveUser(data.user);
+
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.message || 'Login failed. Please check your credentials.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <AuthLayout>
@@ -15,7 +43,7 @@ const Login = () => {
         <p className="text-gray-500 text-sm">Continue your wellness journey</p>
       </div>
 
-      <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+      <form className="space-y-5" onSubmit={handleLogin}>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
           <div className="relative">
@@ -58,16 +86,30 @@ const Login = () => {
           </Link>
         </div>
 
+        {/* Error message — only rendered when there is an error */}
+        {error && (
+          <p className="text-red-500 text-sm text-center bg-red-50 border border-red-100 rounded-lg px-3 py-2">
+            {error}
+          </p>
+        )}
+
         <button 
           type="submit" 
-          disabled={!isValid}
+          disabled={!isValid || loading}
           className={`w-full font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2 mt-2 ${
-            isValid 
+            isValid && !loading
               ? 'bg-[#8B5CF6] hover:bg-[#7C3AED] text-white shadow-soft transform hover:-translate-y-0.5' 
               : 'bg-primary/50 text-white cursor-not-allowed'
           }`}
         >
-          Sign In
+          {loading ? (
+            <>
+              <Loader2 size={18} className="animate-spin" />
+              Signing in…
+            </>
+          ) : (
+            'Sign In'
+          )}
         </button>
 
         <div className="relative my-6">
