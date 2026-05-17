@@ -1,0 +1,404 @@
+[
+    {
+        "id": 1,
+        "category": "self_care",
+        "topic": "rest",
+        "keywords": [
+            "rest",
+            "productivity",
+            "guilt",
+            "slowing down"
+        ],
+        "question": "How do I stop feeling guilty about resting during my period?",
+        "answer": "Resting isn't a luxury, it's a biological necessity! Your body is working incredibly hard right now. Remind yourself that taking time to recharge today allows you to show up with better energy tomorrow. Be gentle with yourself.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "self_care",
+        "topic": "rest",
+        "keywords": [
+            "active rest",
+            "boundaries",
+            "saying no"
+        ],
+        "question": "What should I do when I need rest but have a busy schedule?",
+        "answer": "When you can't clear your schedule, try 'micro-rests.' Take five minutes to close your eyes, say 'no' to non-essential tasks, or simply sit instead of standing while doing chores. Small moments of rest add up beautifully.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "self_care",
+        "topic": "rest",
+        "keywords": [
+            "fatigue",
+            "exhaustion",
+            "slowing down"
+        ],
+        "question": "Is it okay to just do the bare minimum when I'm on my period?",
+        "answer": "Absolutely. Lowering your expectations and doing the bare minimum is a wonderful act of self-care. Give yourself full permission to order takeout, skip the laundry, and just let your body rest.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "self_care",
+        "topic": "rest",
+        "keywords": [
+            "screen time",
+            "social media",
+            "mental rest"
+        ],
+        "question": "Does scrolling on my phone count as resting?",
+        "answer": "While sitting down is physical rest, scrolling can actually overstimulate your brain. For true mental rest, try placing your phone out of reach and closing your eyes, listening to an audiobook, or just enjoying a quiet moment.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "self_care",
+        "topic": "hydration",
+        "keywords": [
+            "water",
+            "drinking",
+            "fatigue",
+            "energy"
+        ],
+        "question": "Can drinking more water actually make me feel less tired?",
+        "answer": "Yes, it really can! Dehydration naturally makes your body feel sluggish and drains your energy. Sipping cool water throughout the day helps your blood circulate better, giving you a gentle, natural energy lift.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "self_care",
+        "topic": "hydration",
+        "keywords": [
+            "herbal tea",
+            "warmth",
+            "comforting drinks"
+        ],
+        "question": "What are the most comforting teas to drink during my period?",
+        "answer": "Chamomile, peppermint, and ginger teas are absolute hugs in a mug! They are caffeine-free, deeply hydrating, and have wonderful natural properties that soothe both an upset stomach and an anxious mind.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "self_care",
+        "topic": "hydration",
+        "keywords": [
+            "water tracker",
+            "forgetting",
+            "hydration habits"
+        ],
+        "question": "I always forget to drink water. How can I build a better habit?",
+        "answer": "Try attaching hydration to your existing routines! Drink a glass of water right when you wake up, one when you brush your teeth, and one with every meal. Keeping a beautiful, reusable bottle right in your line of sight also works wonders.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "self_care",
+        "topic": "comfort",
+        "keywords": [
+            "clothes",
+            "tight",
+            "bloating",
+            "comfort"
+        ],
+        "question": "Why do my clothes feel so uncomfortable during my period?",
+        "answer": "Bloating and breast tenderness make your skin much more sensitive to pressure. Embrace soft, stretchy, oversized clothes! A cozy pair of sweatpants or a loose dress is exactly what your beautiful body needs right now.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "self_care",
+        "topic": "comfort",
+        "keywords": [
+            "sensory overload",
+            "lights",
+            "noise",
+            "relaxing"
+        ],
+        "question": "I feel easily overwhelmed by noise and lights during PMS. What can I do?",
+        "answer": "Sensory overload is very common during PMS! Create a cozy 'cave' for yourself: dim the lights, wear soft earplugs or noise-canceling headphones, and wrap up in your favorite heavy blanket to help your nervous system feel safe and calm.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "self_care",
+        "topic": "comfort",
+        "keywords": [
+            "pampering",
+            "simple treats",
+            "feeling good"
+        ],
+        "question": "What is a simple way to comfort myself when I feel awful?",
+        "answer": "Focus on gentle warmth. Draw a warm bath, put on a pair of fuzzy socks straight from the dryer, or make a warm cup of cocoa. Treating your body with physical warmth often melts away emotional heaviness.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "self_care",
+        "topic": "heat therapy",
+        "keywords": [
+            "heating pad",
+            "cramps",
+            "relief",
+            "back pain"
+        ],
+        "question": "Why does a heating pad feel so good on my cramps?",
+        "answer": "Heat therapy is magical for cramps! The warmth increases blood flow to your pelvic area and helps relax the contracting muscles in your uterus. It’s like a warm, soothing hug for your insides.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "self_care",
+        "topic": "heat therapy",
+        "keywords": [
+            "hot water bottle",
+            "alternatives",
+            "heat"
+        ],
+        "question": "I don't have a heating pad. What else can I use for cramps?",
+        "answer": "A hot water bottle is wonderful! You can also make a quick DIY heating pad by filling a clean tube sock with uncooked rice and microwaving it for 1-2 minutes. Just make sure it’s warm, not burning hot, before placing it on your tummy.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "self_care",
+        "topic": "heat therapy",
+        "keywords": [
+            "bath",
+            "warm water",
+            "relaxing",
+            "muscles"
+        ],
+        "question": "Does taking a hot bath actually help with period pain?",
+        "answer": "It is one of the best remedies! Being immersed in warm water relaxes all the muscles in your body, takes the pressure off your lower back, and provides instant, full-body comfort and pain relief.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "self_care",
+        "topic": "heat therapy",
+        "keywords": [
+            "safety",
+            "sleeping",
+            "heating pad"
+        ],
+        "question": "Is it safe to fall asleep with my heating pad on?",
+        "answer": "It's best to turn off your heating pad before drifting off to sleep to prevent accidental burns. If you need warmth while you sleep, a warm water bottle or a microwavable rice pack are much safer, cozy options as they naturally cool down.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "self_care",
+        "topic": "journaling",
+        "keywords": [
+            "writing",
+            "mental health",
+            "dumping thoughts"
+        ],
+        "question": "How do I start journaling when my mind feels too messy?",
+        "answer": "Don't worry about making it neat or perfect! Try a 'brain dump.' Just set a timer for 5 minutes and write down every single thought that crosses your mind. Getting it out of your head and onto paper brings immediate relief.",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "self_care",
+        "topic": "journaling",
+        "keywords": [
+            "gratitude",
+            "low mood",
+            "shifting mindset"
+        ],
+        "question": "What can I write about when I feel sad during my period?",
+        "answer": "When you feel low, try making a simple list of three things that bring you gentle comfort today. It could be your favorite tea, a soft blanket, or the sound of rain. Focusing on small comforts can gently lift a heavy mood.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "self_care",
+        "topic": "journaling",
+        "keywords": [
+            "tracking",
+            "cycle",
+            "mood",
+            "reflections"
+        ],
+        "question": "How can journaling help me understand my cycle better?",
+        "answer": "By jotting down how you feel physically and emotionally each day, you'll start to see your unique patterns! You might discover you need more rest on day 22, or that you're super creative on day 10. It’s a beautiful way to learn your body’s language.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "self_care",
+        "topic": "relaxation",
+        "keywords": [
+            "breathing",
+            "calm",
+            "deep breath",
+            "fast relief"
+        ],
+        "question": "What is a quick breathing trick to instantly relax?",
+        "answer": "Try the 'physiological sigh.' Take two quick, deep breaths in through your nose, and then let out a long, slow sigh through your mouth. Doing this just three times acts as a natural reset button for a stressed nervous system.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "self_care",
+        "topic": "relaxation",
+        "keywords": [
+            "reading",
+            "escape",
+            "unwinding"
+        ],
+        "question": "Is reading a good way to relax during PMS?",
+        "answer": "Absolutely! Getting lost in a good fiction book is a wonderful escape. It gently distracts your mind from physical discomfort and daily worries, allowing your body to rest comfortably while your imagination takes a gentle journey.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "self_care",
+        "topic": "relaxation",
+        "keywords": [
+            "music",
+            "sound healing",
+            "calming vibes"
+        ],
+        "question": "What kind of music is best for relaxing a tense body?",
+        "answer": "Slow, instrumental music or nature sounds (like rain or ocean waves) are incredibly soothing. They can help lower your heart rate and ease muscle tension. Create a cozy 'calm down' playlist that makes you feel safe and peaceful.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "self_care",
+        "topic": "relaxation",
+        "keywords": [
+            "meditation",
+            "beginners",
+            "hard to focus"
+        ],
+        "question": "I want to meditate to relax, but my mind wanders. What should I do?",
+        "answer": "A wandering mind is completely normal! Instead of trying to empty your mind, try a guided meditation or simply focus on the feeling of your belly rising and falling with each breath. Be gentle with yourself—it's practice, not perfection.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "self_care",
+        "topic": "healthy routines",
+        "keywords": [
+            "morning routine",
+            "gentle start",
+            "slow morning"
+        ],
+        "question": "What is a good morning routine for when I feel exhausted?",
+        "answer": "Keep it beautifully simple. Open the blinds to let in natural light, drink a warm glass of water, and do two minutes of gentle stretching while still in bed. A slow, loving start sets a calm tone for the whole day.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "self_care",
+        "topic": "healthy routines",
+        "keywords": [
+            "evening routine",
+            "wind down",
+            "bedtime"
+        ],
+        "question": "How can I build a relaxing evening routine?",
+        "answer": "Start winding down an hour before bed. Swap overhead lights for soft lamps, put your phone on 'do not disturb,' and do a quiet activity like reading or sipping chamomile tea. This signals to your brain that it's time to transition into rest.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "self_care",
+        "topic": "healthy routines",
+        "keywords": [
+            "consistency",
+            "self-care habits",
+            "realistic"
+        ],
+        "question": "How do I maintain self-care routines when life gets too busy?",
+        "answer": "The secret is to make your routines tiny! Instead of a 30-minute yoga session, commit to just 3 deep breaths before starting your car. Tiny habits are easy to keep, even on your most chaotic days, and they still provide wonderful comfort.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "self_care",
+        "topic": "sleep",
+        "keywords": [
+            "cramps",
+            "sleeping position",
+            "bed"
+        ],
+        "question": "What is the best sleeping position when I have bad cramps?",
+        "answer": "Sleeping in the fetal position (on your side with your knees tucked up to your chest) is usually the most comforting. It takes the pressure off your abdominal muscles and helps relieve tension in your lower back.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "self_care",
+        "topic": "sleep",
+        "keywords": [
+            "night sweats",
+            "hot flashes",
+            "PMS",
+            "cooling"
+        ],
+        "question": "I get so hot and sweaty sleeping before my period. Help!",
+        "answer": "Hormone shifts can definitely cause night sweats! Keep your bedroom cool, sleep in light, breathable cotton pajamas, and try keeping a cool damp cloth on your forehead or neck to gently lower your body temperature as you drift off.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "self_care",
+        "topic": "sleep",
+        "keywords": [
+            "insomnia",
+            "can't sleep",
+            "overthinking"
+        ],
+        "question": "What should I do if I wake up in the middle of the night and can't go back to sleep?",
+        "answer": "If you've been awake for more than 20 minutes, don't force it! Gently get out of bed, keep the lights very dim, and read a book or do some light stretching until you feel sleepy again. This prevents your brain from associating your bed with frustration.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "self_care",
+        "topic": "skincare during periods",
+        "keywords": [
+            "breakouts",
+            "acne",
+            "gentle care",
+            "pimples"
+        ],
+        "question": "My skin breaks out before my period. Should I use harsh acne scrubs?",
+        "answer": "Actually, gentle is better! Your skin is often more sensitive during this time. Instead of harsh scrubs, stick to a gentle cleanser, a soothing moisturizer, and perhaps a targeted spot treatment. Treat your skin with kindness while it navigates the hormonal shifts.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "self_care",
+        "topic": "skincare during periods",
+        "keywords": [
+            "dry skin",
+            "dullness",
+            "hydration",
+            "glow"
+        ],
+        "question": "Why does my skin look so dull and dry during my period?",
+        "answer": "As estrogen levels drop, your skin holds onto less moisture, which can leave it feeling a bit dry or lackluster. A hydrating sheet mask, a rich moisturizer, and drinking plenty of water will help bring back your beautiful, natural glow.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "self_care",
+        "topic": "skincare during periods",
+        "keywords": [
+            "skincare routine",
+            "self-care",
+            "massage",
+            "relaxing"
+        ],
+        "question": "How can I make my skincare routine feel more like self-care?",
+        "answer": "Take your time! While applying your moisturizer or serum, use your fingertips to give your face a gentle, upward massage. Light a candle, play soft music, and treat these few minutes as a sacred, quiet pause just for you.",
+        "severity": "low"
+    }
+]

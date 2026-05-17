@@ -20,7 +20,7 @@ const ChatInput = ({ onSend, disabled }) => {
           value={inputValue}
           disabled={disabled}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder={disabled ? "Assistant is thinking..." : "Type your message..."} 
+          placeholder={disabled ? "HerSakhi is thinking..." : "Type your message..."} 
           className={`w-full bg-gray-50 border border-gray-200 rounded-full pl-6 pr-24 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         />
         <div className="absolute right-2 flex items-center gap-2">

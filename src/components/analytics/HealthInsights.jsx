@@ -1,38 +1,14 @@
-import { Droplet, Moon, Sun, Activity } from 'lucide-react'
+import { Droplet, HeartPulse, AlertTriangle, Activity } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-const HealthInsights = ({ analytics, cycleLogs = [] }) => {
+const HealthInsights = ({ analytics }) => {
   const {
-    topSymptom,
-    avgPainLevel,
-    moodTrend,
     cycleRegularity,
-    avgMoodScore,
     hasEnoughData,
+    symptom_summary,
+    wellness_insight,
+    risk_flags
   } = analytics
-
-  // --- Sleep proxy: low pain = better sleep ---
-  const sleepHours = avgPainLevel != null
-    ? Math.max(5, +(8 - avgPainLevel * 0.3).toFixed(1))
-    : null
-
-  // --- Energy label from mood score ---
-  const energyLabel = () => {
-    if (!hasEnoughData) return '—'
-    if (avgMoodScore >= 7) return 'Great'
-    if (avgMoodScore >= 5) return 'Good'
-    if (avgMoodScore >= 3) return 'Fair'
-    return 'Low'
-  }
-
-  const energyScore = hasEnoughData
-    ? `avg ${avgMoodScore}/10`
-    : 'Log moods to track'
-
-  // --- Activity proxy: count logs per week ---
-  const logsPerWeek = cycleLogs.length > 0
-    ? Math.min(7, Math.round(cycleLogs.length / Math.max(1, Math.ceil(cycleLogs.length / 7))))
-    : null
 
   return (
     <motion.div
@@ -43,63 +19,56 @@ const HealthInsights = ({ analytics, cycleLogs = [] }) => {
     >
       <h3 className="font-poppins font-semibold text-xl text-dark mb-6">Health Insights</h3>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        {/* Most Common Symptom */}
-        <div className="p-5 rounded-2xl border border-primary/10 bg-primary/5 hover:bg-primary/10 transition-colors">
+        {/* Wellness Insight */}
+        <div className="p-5 rounded-2xl border border-pink-400/10 bg-pink-400/5 hover:bg-pink-400/10 transition-colors cursor-default">
+          <div className="flex items-center gap-2 mb-3">
+            <HeartPulse size={18} className="text-pink-400" />
+            <span className="text-sm font-medium text-gray-700">Wellness Overview</span>
+          </div>
+          <div className="text-sm text-gray-700 leading-relaxed">
+            {hasEnoughData ? (wellness_insight || 'Track more cycles to unlock deeper insights.') : 'Log data to see your wellness overview.'}
+          </div>
+        </div>
+
+        {/* Symptom Summary */}
+        <div className="p-5 rounded-2xl border border-primary/10 bg-primary/5 hover:bg-primary/10 transition-colors cursor-default">
           <div className="flex items-center gap-2 mb-3">
             <Droplet size={18} className="text-primary" />
-            <span className="text-sm font-medium text-gray-700">Top Symptom</span>
+            <span className="text-sm font-medium text-gray-700">Symptom Patterns</span>
           </div>
-          <div className="text-2xl font-poppins font-semibold text-primary mb-1 truncate" title={topSymptom ?? '—'}>
-            {topSymptom ?? '—'}
-          </div>
-          <div className="text-xs text-gray-500">
-            {topSymptom ? 'Most reported this period' : 'No symptoms logged yet'}
+          <div className="text-sm text-gray-700 leading-relaxed">
+            {hasEnoughData ? (symptom_summary || 'No major symptoms reported recently.') : 'Log symptoms to track patterns.'}
           </div>
         </div>
 
-        {/* Sleep (proxy via pain) */}
-        <div className="p-5 rounded-2xl border border-pink-400/10 bg-pink-400/5 hover:bg-pink-400/10 transition-colors">
+        {/* Risk Flags */}
+        <div className={`p-5 rounded-2xl border transition-colors cursor-default ${risk_flags?.length > 0 ? 'border-red-100 bg-red-50 hover:bg-red-100' : 'border-peach/20 bg-peach/10 hover:bg-peach/20'}`}>
           <div className="flex items-center gap-2 mb-3">
-            <Moon size={18} className="text-pink-400" />
-            <span className="text-sm font-medium text-gray-700">Avg Pain Level</span>
+            <AlertTriangle size={18} className={risk_flags?.length > 0 ? "text-red-500" : "text-orange-400"} />
+            <span className={`text-sm font-medium ${risk_flags?.length > 0 ? "text-red-600" : "text-gray-700"}`}>
+              Pattern Alerts
+            </span>
           </div>
-          <div className="text-2xl font-poppins font-semibold text-pink-400 mb-1">
-            {avgPainLevel != null ? `${avgPainLevel}/10` : '—'}
-          </div>
-          <div className="text-xs text-gray-500">
-            {avgPainLevel != null
-              ? avgPainLevel <= 3 ? 'Low — great!'
-                : avgPainLevel <= 6 ? 'Moderate'
-                : 'High — consider consulting a doctor'
-              : 'Log pain to see data'}
+          <div className="text-sm text-gray-700 leading-relaxed">
+            {hasEnoughData 
+              ? (risk_flags?.length > 0 ? risk_flags.join(' ') : 'No concerning patterns detected.') 
+              : 'Log data to track pattern alerts.'}
           </div>
         </div>
 
-        {/* Mood Trend */}
-        <div className="p-5 rounded-2xl border border-peach/20 bg-peach/10 hover:bg-peach/20 transition-colors">
+        {/* Regularity */}
+        <div className="p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-gray-100 transition-colors cursor-default">
           <div className="flex items-center gap-2 mb-3">
-            <Sun size={18} className="text-orange-400" />
-            <span className="text-sm font-medium text-gray-700">Mood Trend</span>
+            <Activity size={18} className="text-gray-500" />
+            <span className="text-sm font-medium text-gray-700">Cycle Regularity</span>
           </div>
-          <div className="text-2xl font-poppins font-semibold text-orange-400 mb-1">
-            {energyLabel()}
-          </div>
-          <div className="text-xs text-gray-500">{energyScore}</div>
-        </div>
-
-        {/* Regularity Score */}
-        <div className="p-5 rounded-2xl border border-primary/10 bg-background hover:bg-gray-50 transition-colors">
-          <div className="flex items-center gap-2 mb-3">
-            <Activity size={18} className="text-primary" />
-            <span className="text-sm font-medium text-gray-700">Mood Pattern</span>
-          </div>
-          <div className="text-2xl font-poppins font-semibold text-primary mb-1 truncate" title={moodTrend}>
-            {moodTrend}
+          <div className="text-xl font-poppins font-semibold text-gray-700 mb-1">
+            {cycleRegularity}
           </div>
           <div className="text-xs text-gray-500">
-            {cycleRegularity === 'Regular' ? 'Cycle: Regular ✓' : 'Keep logging to analyze'}
+            Based on your historical cycle data
           </div>
         </div>
 

@@ -4,6 +4,77 @@ import { motion } from 'framer-motion'
 const MessageBubble = ({ message }) => {
   const isAI = message.sender === 'ai'
 
+  const renderTextWithBold = (rawText) => {
+    if (rawText === undefined || rawText === null) return '';
+    const textStr = String(rawText);
+    const parts = textStr.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return (
+          <strong key={index} className="font-bold">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      return part;
+    });
+  };
+
+  const formatMessageText = (text) => {
+    if (!text) return null;
+    
+    const lines = text.split('\n');
+    let inList = false;
+    const elements = [];
+    let currentListItems = [];
+
+    const flushList = (key) => {
+      if (currentListItems.length > 0) {
+        elements.push(
+          <ul key={`ul-${key}`} className="list-disc pl-5 my-1.5 space-y-1">
+            {currentListItems}
+          </ul>
+        );
+        currentListItems = [];
+      }
+    };
+
+    lines.forEach((line, index) => {
+      const trimmed = line.trim();
+      const bulletMatch = trimmed.match(/^[-*•]\s+(.*)$/);
+
+      if (bulletMatch) {
+        inList = true;
+        const content = bulletMatch[1];
+        currentListItems.push(
+          <li key={`li-${index}`} className="text-sm">
+            {renderTextWithBold(content)}
+          </li>
+        );
+      } else {
+        if (inList) {
+          flushList(index);
+          inList = false;
+        }
+        if (trimmed === '') {
+          elements.push(<div key={`br-${index}`} className="h-2" />);
+        } else {
+          elements.push(
+            <p key={`p-${index}`} className="text-sm leading-relaxed mb-1">
+              {renderTextWithBold(line)}
+            </p>
+          );
+        }
+      }
+    });
+
+    if (inList) {
+      flushList(lines.length);
+    }
+
+    return <div className="space-y-0.5">{elements}</div>;
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 10 }}
@@ -24,7 +95,7 @@ const MessageBubble = ({ message }) => {
               : 'bg-primary text-white rounded-2xl rounded-tr-sm shadow-md shadow-primary/20'
           }`}
         >
-          {message.text}
+          {formatMessageText(message.text)}
         </div>
         <span className="text-[10px] text-gray-400 font-medium mt-1 mx-1">
           {message.timestamp}

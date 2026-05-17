@@ -15,6 +15,9 @@ from models.prediction_models import (
     InsightsResponse,
     FullPredictionResponse
 )
+from ml.cycle_predictor import CyclePredictor
+from ml.symptom_analyzer import SymptomAnalyzer
+from ml.recommendation_engine import RecommendationEngine
 
 
 async def _generate_and_save_prediction(user_id: str) -> dict:
@@ -44,15 +47,6 @@ async def _generate_and_save_prediction(user_id: str) -> dict:
         )
 
     onboarding_data = onboarding_res.data
-    last_period_date_str = onboarding_data.get("last_period_date")
-    avg_cycle_length = onboarding_data.get("average_cycle_length")
-    common_symptoms = onboarding_data.get("common_symptoms") or []
-
-    if not last_period_date_str or not avg_cycle_length:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Incomplete onboarding data. Missing last period date or cycle length.",
-        )
 
     # 2. Fetch cycle logs
     try:
@@ -61,52 +55,79 @@ async def _generate_and_save_prediction(user_id: str) -> dict:
             .select("*")
             .eq("user_id", user_id)
             .order("log_date", desc=True)
-            .limit(30)
+            .limit(100) # Increased limit to capture multiple cycles
             .execute()
         )
         cycle_logs = cycle_logs_res.data or []
     except Exception:
         cycle_logs = []
 
-    # 3. Calculate baseline predictions
-    last_period_date = datetime.strptime(last_period_date_str, "%Y-%m-%d").date()
-    predicted_cycle_length = avg_cycle_length
+    # 3. Calculate baseline predictions via CyclePredictor
+    predictor = CyclePredictor(cycle_logs=cycle_logs, onboarding_data=onboarding_data)
+    metrics = predictor.generate_prediction_metrics()
     
-    next_period_date = last_period_date + timedelta(days=predicted_cycle_length)
-    period_start = next_period_date
-    period_end = next_period_date + timedelta(days=4)
+    # 4. Analyze Symptoms
+    analyzer = SymptomAnalyzer(cycle_logs=cycle_logs)
+    symptom_analysis = analyzer.get_full_analysis(cycle_regularity=metrics["cycle_regularity"])
     
-    ovulation_date = next_period_date - timedelta(days=14)
-    fertile_window_start = ovulation_date - timedelta(days=5)
-    fertile_window_end = ovulation_date + timedelta(days=1)
+    most_common_symptom = symptom_analysis["most_common_symptom"]
+    if most_common_symptom:
+        symptom_summary = f"Your most frequent symptom is {most_common_symptom}."
+    else:
+        symptom_summary = "No major symptoms reported recently."
+
+    # 5. Generate dynamic insights and recommendations
+    # Determine cycle phase based on dates
+    today = datetime.now().date()
+    cycle_phase = "menstrual"
+    if today >= metrics["fertile_window_start"] and today <= metrics["fertile_window_end"]:
+        cycle_phase = "ovulatory"
+    elif today > metrics["period_end"] and today < metrics["fertile_window_start"]:
+        cycle_phase = "follicular"
+    elif today > metrics["fertile_window_end"]:
+        cycle_phase = "luteal"
+        
+    flow_intensities = [log.get("flow_intensity", "") for log in cycle_logs if log.get("flow_intensity")]
+        
+    rec_engine = RecommendationEngine(
+        cycle_phase=cycle_phase,
+        top_symptoms=[most_common_symptom] if most_common_symptom else [],
+        mood_pattern=symptom_analysis["mood_pattern"],
+        average_pain=symptom_analysis["average_pain_level"],
+        high_pain_days=symptom_analysis["high_pain_days_count"],
+        flow_intensities=flow_intensities
+    )
     
-    confidence_score = 90
-    regularity_score = 95
+    structured_recs = rec_engine.get_structured_recommendations()
     
-    cycle_regularity = "Regular" if len(cycle_logs) < 5 else "Analyzing historical logs..."
-    symptoms_text = ", ".join(common_symptoms) if common_symptoms else "No major symptoms reported"
-    symptom_summary = f"Common symptoms include: {symptoms_text}."
-    wellness_insight = "Your cycle appears to follow a standard pattern. Stay hydrated during your luteal phase."
-    recommendation = "Consider light yoga and increasing iron intake as your next period approaches."
+    if metrics["cycle_regularity"] == "Irregular":
+        wellness_insight = "Your cycle shows some irregularity. Prioritize stress management and adequate sleep."
+    elif metrics["cycle_regularity"] == "Slightly Irregular":
+        wellness_insight = "Your cycle is slightly irregular. Make sure you are staying hydrated and resting well."
+    else:
+        wellness_insight = "Your cycle appears to follow a standard pattern. Stay hydrated and rested."
+
+    # Recommendation string for database fallback
+    recommendation_str = " ".join(structured_recs[:2]) if structured_recs else "Maintain a balanced diet and regular rest."
 
     prediction_dict = {
         "user_id": user_id,
-        "next_period_date": str(next_period_date),
-        "period_start": str(period_start),
-        "period_end": str(period_end),
-        "predicted_cycle_length": predicted_cycle_length,
-        "ovulation_date": str(ovulation_date),
-        "fertile_window_start": str(fertile_window_start),
-        "fertile_window_end": str(fertile_window_end),
-        "confidence_score": confidence_score,
-        "regularity_score": regularity_score,
-        "cycle_regularity": cycle_regularity,
+        "next_period_date": str(metrics["next_period_date"]),
+        "period_start": str(metrics["period_start"]),
+        "period_end": str(metrics["period_end"]),
+        "predicted_cycle_length": metrics["predicted_cycle_length"],
+        "ovulation_date": str(metrics["ovulation_date"]),
+        "fertile_window_start": str(metrics["fertile_window_start"]),
+        "fertile_window_end": str(metrics["fertile_window_end"]),
+        "confidence_score": metrics["confidence_score"],
+        "regularity_score": metrics["regularity_score"],
+        "cycle_regularity": metrics["cycle_regularity"],
         "symptom_summary": symptom_summary,
         "wellness_insight": wellness_insight,
-        "recommendation": recommendation,
+        "recommendation": recommendation_str,
     }
 
-    # 4. Upsert into predictions table
+    # 6. Upsert into predictions table
     try:
         upsert_res = (
             supabase.table("predictions")
@@ -125,7 +146,15 @@ async def _generate_and_save_prediction(user_id: str) -> dict:
             detail="Failed to save prediction to database.",
         )
 
-    return upsert_res.data[0]
+    result_data = upsert_res.data[0]
+    
+    # Inject dynamically computed arrays for the API response without breaking DB schema
+    result_data["risk_flags"] = symptom_analysis["risk_flags"]
+    result_data["recommendations"] = structured_recs
+    result_data["period_length"] = metrics["period_length"]
+    result_data["predicted_cycle_length"] = metrics["predicted_cycle_length"]
+    
+    return result_data
 
 
 async def predict_next_cycle(user_id: str) -> NextCycleResponse:

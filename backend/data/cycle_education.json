@@ -1,0 +1,561 @@
+[
+    {
+        "id": 1,
+        "category": "cycle_education",
+        "topic": "menstrual cycle phases",
+        "keywords": [
+            "phases",
+            "cycle stages",
+            "four phases",
+            "overview"
+        ],
+        "question": "What are the four phases of the menstrual cycle?",
+        "answer": "The menstrual cycle has four main phases: the menstrual phase (your period), the follicular phase (preparing an egg), the ovulation phase (releasing the egg), and the luteal phase (preparing for pregnancy or a new cycle).",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "cycle_education",
+        "topic": "menstrual cycle phases",
+        "keywords": [
+            "follicular phase",
+            "egg",
+            "estrogen",
+            "energy"
+        ],
+        "question": "What happens during the follicular phase?",
+        "answer": "The follicular phase starts on the first day of your period and lasts until ovulation. During this time, your brain tells your ovaries to prepare an egg, and rising estrogen levels help thicken your uterine lining and boost your energy.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "cycle_education",
+        "topic": "menstrual cycle phases",
+        "keywords": [
+            "luteal phase",
+            "progesterone",
+            "after ovulation",
+            "PMS"
+        ],
+        "question": "What is the luteal phase?",
+        "answer": "The luteal phase occurs right after ovulation and lasts until your next period. Your body produces progesterone to support a potential pregnancy. If you don't get pregnant, hormone levels drop, which can cause PMS and eventually trigger your period.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "cycle_education",
+        "topic": "menstrual cycle phases",
+        "keywords": [
+            "energy",
+            "cycle",
+            "feeling good",
+            "estrogen"
+        ],
+        "question": "Why do I feel so much more energetic right after my period?",
+        "answer": "As your period ends, your estrogen levels begin to rise during the follicular phase. Estrogen is a 'feel-good' hormone that naturally boosts your energy, mood, and even your brain fog!",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "cycle_education",
+        "topic": "menstrual cycle phases",
+        "keywords": [
+            "tired",
+            "sleepy",
+            "luteal",
+            "progesterone"
+        ],
+        "question": "Why do I feel so sleepy the week before my period?",
+        "answer": "During the luteal phase (the week before your period), your body produces high levels of progesterone. Progesterone has a natural, calming, sedative effect, which is why you often feel sleepier and crave more rest.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "ovulation",
+            "egg",
+            "release",
+            "what is it"
+        ],
+        "question": "What exactly happens during ovulation?",
+        "answer": "Ovulation is the main event of your cycle! It happens when a mature egg is released from one of your ovaries and travels down the fallopian tube, where it waits for about 24 hours to potentially be fertilized by sperm.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "ovulation timing",
+            "when",
+            "days",
+            "middle of cycle"
+        ],
+        "question": "When does ovulation usually happen?",
+        "answer": "In a typical 28-day cycle, ovulation usually happens around Day 14. However, every body is different! It generally occurs about 12 to 16 days before your next period starts, regardless of your total cycle length.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "egg lifespan",
+            "hours",
+            "fertilization",
+            "time"
+        ],
+        "question": "How long does an egg survive after ovulation?",
+        "answer": "Once an egg is released during ovulation, it only survives for a very short window—about 12 to 24 hours. If it is not fertilized by sperm within that time, it dissolves and is shed with your uterine lining during your period.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "ovulation signs",
+            "physical symptoms",
+            "body",
+            "discharge"
+        ],
+        "question": "What are the common physical signs that I am ovulating?",
+        "answer": "Common signs include a slight increase in basal body temperature, clear and stretchy cervical mucus (like raw egg whites), a heightened sense of smell, increased sex drive, and sometimes a mild twinge of pain on one side of your lower belly.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "ovulation pain",
+            "mittelschmerz",
+            "cramps",
+            "middle cycle"
+        ],
+        "question": "Is it normal to feel a sharp pain in my side in the middle of my cycle?",
+        "answer": "Yes, this is called 'mittelschmerz' (German for 'middle pain'). It is a mild, one-sided pelvic ache that happens when an ovary releases an egg. It usually only lasts a few hours to a day and is completely normal.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "missing ovulation",
+            "anovulatory",
+            "every month",
+            "cycles"
+        ],
+        "question": "Do I ovulate every single month?",
+        "answer": "Not necessarily! It is perfectly normal to have an occasional 'anovulatory' cycle where your body skips ovulation, often due to stress, travel, or illness. However, if you frequently miss ovulation, it's worth discussing with a doctor.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "cycle_education",
+        "topic": "fertile window",
+        "keywords": [
+            "fertile window",
+            "pregnancy",
+            "chances",
+            "days"
+        ],
+        "question": "What is the fertile window?",
+        "answer": "The fertile window is the specific timeframe in your menstrual cycle when pregnancy is possible. It spans about 6 days: the 5 days leading up to ovulation, plus the day of ovulation itself.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "cycle_education",
+        "topic": "fertile window",
+        "keywords": [
+            "sperm survival",
+            "days",
+            "pregnancy",
+            "fertile"
+        ],
+        "question": "Why is the fertile window 6 days long if an egg only lives for 24 hours?",
+        "answer": "While an egg only lives for up to 24 hours, sperm can actually survive inside the female reproductive tract for up to 5 days! If you have sex a few days before ovulation, the sperm can wait in the fallopian tubes for the egg to be released.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "cycle_education",
+        "topic": "fertile window",
+        "keywords": [
+            "period pregnancy",
+            "bleeding",
+            "risk",
+            "getting pregnant"
+        ],
+        "question": "Can I get pregnant if I have sex during my period?",
+        "answer": "While it is less likely, it is still possible. If you have a very short menstrual cycle, you could ovulate soon after your period ends. Since sperm can live for up to 5 days, having sex toward the end of your period could overlap with your fertile window.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "cycle_education",
+        "topic": "fertile window",
+        "keywords": [
+            "calculation",
+            "timing",
+            "ovulation test",
+            "finding out"
+        ],
+        "question": "How can I figure out when my fertile window is?",
+        "answer": "You can find your fertile window by tracking your cycle lengths to estimate ovulation, checking your cervical mucus for a clear and stretchy texture, tracking your morning body temperature, or using over-the-counter ovulation predictor kits (OPKs).",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "day 1",
+            "start date",
+            "counting",
+            "first day"
+        ],
+        "question": "What exactly counts as 'Day 1' of my menstrual cycle?",
+        "answer": "Day 1 of your cycle is the first day of full, bright red bleeding. If you just have a tiny bit of brown spotting the day before, that doesn't count. Day 1 is when you need to use a pad, tampon, or cup.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "tracking benefits",
+            "why track",
+            "health",
+            "app"
+        ],
+        "question": "Why is it a good idea to track my cycle?",
+        "answer": "Your menstrual cycle is like a vital sign for your overall health. Tracking it helps you predict your period, understand your mood and energy shifts, pinpoint ovulation, and easily spot any irregularities that you might want to mention to a doctor.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "cervical mucus",
+            "discharge",
+            "changes",
+            "tracking"
+        ],
+        "question": "What does my cervical mucus tell me about my cycle?",
+        "answer": "Cervical mucus changes due to hormones! It is usually dry right after your period, becomes sticky/creamy as days pass, and turns clear, wet, and stretchy (like raw egg white) right around ovulation to help sperm swim.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "BBT",
+            "basal body temperature",
+            "tracking",
+            "thermometer"
+        ],
+        "question": "What is Basal Body Temperature (BBT) tracking?",
+        "answer": "BBT tracking involves taking your temperature first thing every morning before getting out of bed. Your resting temperature slightly dips right before ovulation and spikes slightly right after, helping you confirm that ovulation happened.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "apps",
+            "accuracy",
+            "predictions",
+            "period tracker"
+        ],
+        "question": "Are period tracking apps always accurate?",
+        "answer": "Period apps are helpful estimators, but they aren't flawless. They use math averages to guess your ovulation and period dates. Since human bodies aren't clocks, it's normal for your actual cycle to vary a few days from the app's prediction.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "what to track",
+            "symptoms",
+            "mood",
+            "data"
+        ],
+        "question": "Besides my bleeding days, what else should I track?",
+        "answer": "To get a full picture of your health, it is great to track your daily mood, energy levels, physical symptoms (like breast tenderness or headaches), cervical mucus texture, and sleep quality. You'll start to see amazing patterns!",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "cycle_education",
+        "topic": "normal cycle length",
+        "keywords": [
+            "normal length",
+            "days",
+            "average",
+            "cycle time"
+        ],
+        "question": "What is considered a normal length for a menstrual cycle?",
+        "answer": "A healthy, normal menstrual cycle typically ranges anywhere from 21 to 35 days in adults. Every woman has a unique rhythm, so as long as your cycle is relatively consistent, it is considered normal for you.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "cycle_education",
+        "topic": "normal cycle length",
+        "keywords": [
+            "short cycle",
+            "21 days",
+            "frequent periods",
+            "normal"
+        ],
+        "question": "My cycle is only 22 days long. Is that too short?",
+        "answer": "A 22-day cycle is on the shorter end, but it is completely within the normal medical range of 21-35 days. If this is your consistent pattern and you feel healthy, there is usually no need to worry.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "cycle_education",
+        "topic": "normal cycle length",
+        "keywords": [
+            "long cycle",
+            "35 days",
+            "late periods",
+            "normal"
+        ],
+        "question": "Is it okay if my cycle takes 35 days every time?",
+        "answer": "Yes! A 35-day cycle is considered the upper limit of the normal range. It just means your body takes a little longer to mature and release an egg during the follicular phase.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "cycle_education",
+        "topic": "normal cycle length",
+        "keywords": [
+            "teens",
+            "irregular",
+            "young",
+            "new period"
+        ],
+        "question": "Is cycle length different for teenagers?",
+        "answer": "Yes, during the first few years after getting your period, cycles can be longer and more irregular, often ranging from 21 to 45 days. It takes time for the body's hormonal communication to fully mature and settle into a rhythm.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "cycle_education",
+        "topic": "normal cycle length",
+        "keywords": [
+            "age",
+            "changes",
+            "older",
+            "perimenopause"
+        ],
+        "question": "Does my cycle length change as I get older?",
+        "answer": "Yes, it is very natural for your cycle to change as you age. In your 20s and 30s, cycles tend to be most stable. As you approach your 40s (perimenopause), it is common for cycles to become shorter or more irregular.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "cycle_education",
+        "topic": "hormonal changes",
+        "keywords": [
+            "estrogen",
+            "hormones",
+            "role",
+            "effects"
+        ],
+        "question": "What is the main role of estrogen in my cycle?",
+        "answer": "Estrogen is the star of the first half of your cycle. It thickens the lining of your uterus to prepare for a potential pregnancy, helps mature the egg, and boosts your energy, mood, and even your skin's glow.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "cycle_education",
+        "topic": "hormonal changes",
+        "keywords": [
+            "progesterone",
+            "hormones",
+            "role",
+            "pregnancy"
+        ],
+        "question": "What does progesterone do in my body?",
+        "answer": "Progesterone dominates the second half of your cycle. Its main job is to stabilize the uterine lining so a fertilized egg can implant. It also slightly raises your body temperature and has a relaxing, sometimes sleep-inducing effect.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "cycle_education",
+        "topic": "hormonal changes",
+        "keywords": [
+            "FSH",
+            "LH",
+            "brain hormones",
+            "ovulation"
+        ],
+        "question": "What are FSH and LH?",
+        "answer": "Follicle-Stimulating Hormone (FSH) and Luteinizing Hormone (LH) are hormones sent from your brain to your ovaries. FSH tells the ovaries to prepare an egg, and a sudden surge in LH is the trigger that actually causes the egg to be released (ovulation).",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "cycle_education",
+        "topic": "hormonal changes",
+        "keywords": [
+            "sore breasts",
+            "chest pain",
+            "tender",
+            "hormones"
+        ],
+        "question": "Why do my breasts swell and hurt before my period?",
+        "answer": "Breast tenderness is caused by the surge of progesterone during the luteal phase. Progesterone stimulates the milk glands in your breasts, which can cause them to swell, retain water, and feel sore or heavy until your period starts.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "cycle_education",
+        "topic": "spotting",
+        "keywords": [
+            "spotting",
+            "ovulation spotting",
+            "mid-cycle",
+            "light blood"
+        ],
+        "question": "What is ovulation spotting?",
+        "answer": "Ovulation spotting is a very light pink or brown discharge that happens right around the time you ovulate. It is caused by the brief drop in estrogen before progesterone takes over. It only lasts a day or two and is completely normal.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "cycle_education",
+        "topic": "spotting",
+        "keywords": [
+            "pre-period spotting",
+            "brown discharge",
+            "before period"
+        ],
+        "question": "Why do I have brown spotting a few days before my actual period?",
+        "answer": "Brown spotting a few days before your period is usually just your uterine lining beginning to shed slowly. Because the blood is older and takes longer to exit your body, it oxidizes and turns brown instead of bright red.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "cycle_education",
+        "topic": "spotting",
+        "keywords": [
+            "implantation bleeding",
+            "pregnancy",
+            "early signs",
+            "spotting"
+        ],
+        "question": "How can I tell the difference between a period and implantation bleeding?",
+        "answer": "Implantation bleeding happens when a fertilized egg attaches to the uterus. It is usually much lighter than a period, lasts only 1-2 days, and is light pink or rusty brown. A period typically gets progressively heavier and brighter red.",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "cycle_education",
+        "topic": "PMS timing",
+        "keywords": [
+            "PMS start",
+            "timing",
+            "when",
+            "symptoms"
+        ],
+        "question": "When do PMS symptoms typically start?",
+        "answer": "Premenstrual Syndrome (PMS) symptoms usually begin during the luteal phase, about 5 to 11 days before your period starts. This is when your hormone levels reach their peak and then begin to sharply drop.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "cycle_education",
+        "topic": "PMS timing",
+        "keywords": [
+            "why PMS",
+            "cause",
+            "hormone drop",
+            "mood"
+        ],
+        "question": "Why does PMS happen in the first place?",
+        "answer": "PMS is largely caused by the natural, sharp drop in estrogen and progesterone if you don't get pregnant. These hormone fluctuations also affect brain chemicals like serotonin, which explains the physical aches and mood changes.",
+        "severity": "low"
+    },
+    {
+        "id": 36,
+        "category": "cycle_education",
+        "topic": "PMS timing",
+        "keywords": [
+            "PMS end",
+            "relief",
+            "symptoms stop",
+            "period starts"
+        ],
+        "question": "When should my PMS symptoms go away?",
+        "answer": "For most women, PMS symptoms begin to fade away within a day or two after your period starts. As you enter the new cycle, your estrogen levels begin to rise again, bringing relief to your mood and body.",
+        "severity": "low"
+    },
+    {
+        "id": 37,
+        "category": "cycle_education",
+        "topic": "hormonal changes",
+        "keywords": [
+            "testosterone",
+            "libido",
+            "sex drive",
+            "cycle"
+        ],
+        "question": "Does testosterone play a role in the female menstrual cycle?",
+        "answer": "Yes! Women produce small amounts of testosterone. During ovulation, a tiny spike in testosterone occurs, which is nature's way of giving your energy and sex drive a little boost right when you are most fertile.",
+        "severity": "low"
+    },
+    {
+        "id": 38,
+        "category": "cycle_education",
+        "topic": "cycle tracking",
+        "keywords": [
+            "irregular",
+            "tracking",
+            "unpredictable",
+            "how to"
+        ],
+        "question": "Can I still track my cycle if it's very irregular?",
+        "answer": "Absolutely! In fact, tracking an irregular cycle is very helpful. By noting your symptoms, temperatures, or cervical mucus, you can learn to spot your own signs of ovulation rather than relying on a calendar date.",
+        "severity": "low"
+    },
+    {
+        "id": 39,
+        "category": "cycle_education",
+        "topic": "menstrual cycle phases",
+        "keywords": [
+            "lining",
+            "endometrium",
+            "shedding",
+            "period blood"
+        ],
+        "question": "What is the uterine lining made of?",
+        "answer": "The uterine lining, or endometrium, is a soft, nutrient-rich tissue made of blood and cells. It builds up every month to create a cozy environment for a potential baby, and if you don't get pregnant, your body simply sheds it as your period.",
+        "severity": "low"
+    },
+    {
+        "id": 40,
+        "category": "cycle_education",
+        "topic": "ovulation",
+        "keywords": [
+            "multiple eggs",
+            "twins",
+            "release",
+            "hyperovulation"
+        ],
+        "question": "Can I ovulate more than once in a single cycle?",
+        "answer": "You can release more than one egg, but it happens within the same 24-hour window (this is how fraternal twins are conceived). Once that window closes, rising progesterone levels prevent any further ovulation until the next cycle.",
+        "severity": "low"
+    }
+]

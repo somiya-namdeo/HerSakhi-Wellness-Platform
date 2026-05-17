@@ -16,7 +16,7 @@ const AIAssistant = () => {
 
   const welcomeMessage = {
     id: 'welcome',
-    text: "Hi there! I'm your HerSakhi AI wellness companion. How can I help you today?",
+    text: "Hi, I’m HerSakhi — your AI wellness companion. How can I support you today?",
     sender: 'ai',
     timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
   }
@@ -73,7 +73,14 @@ const AIAssistant = () => {
       // 2. Call backend
       const turn = await sendChatMessage(user.id, text)
       
-      // 3. Update with real data
+      // 3. Extract exact records from backend ChatTurnResponse
+      const userMsg = {
+        id: turn.user_message.id,
+        text: turn.user_message.text,
+        sender: turn.user_message.sender,
+        timestamp: new Date(turn.user_message.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      }
+
       const aiMsg = {
         id: turn.ai_response.id,
         text: turn.ai_response.text,
@@ -82,12 +89,20 @@ const AIAssistant = () => {
       }
 
       setMessages(prev => {
-        // Replace temp message with real one if needed, or just append AI response
-        // For simplicity and since text is same, I'll just append AI response
-        return [...prev, aiMsg]
+        // Replace the optimistic tempMsg with the official backend database record
+        const filtered = prev.filter(m => m.id !== tempId)
+        return [...filtered, userMsg, aiMsg]
       })
     } catch (err) {
       console.error("Chat error:", err)
+      // 4. Requirement 7: Fallback bubble if message sending fails
+      const errMsg = {
+        id: `err-${Date.now()}`,
+        text: "Sorry, I couldn’t respond right now. Please try again.",
+        sender: "ai",
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      }
+      setMessages(prev => [...prev, errMsg])
     } finally {
       setSending(false)
     }

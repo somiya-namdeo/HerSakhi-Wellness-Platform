@@ -2,25 +2,13 @@
 ml/recommendation_engine.py
 ----------------------------
 Generates personalised wellness recommendations based on cycle phase,
-symptom history, and user preferences.
-
-Recommendation categories:
-  - Nutrition     : foods to eat/avoid per cycle phase
-  - Exercise      : workout intensity suggestions
-  - Sleep         : rest recommendations
-  - Mental health : stress management and self-care tips
-
-Usage:
-    from ml.recommendation_engine import RecommendationEngine
-
-    engine = RecommendationEngine(cycle_phase="luteal", top_symptoms=["cramps", "fatigue"])
-    tips = engine.get_recommendations()
+symptom history, mood, and pain levels.
 """
 
 from typing import List, Dict
 
 # ---------------------------------------------------------------------------
-# Phase-specific knowledge base (rule-based fallback)
+# Phase-specific knowledge base
 # ---------------------------------------------------------------------------
 PHASE_RECOMMENDATIONS: Dict[str, Dict[str, List[str]]] = {
     "menstrual": {
@@ -99,53 +87,69 @@ PHASE_RECOMMENDATIONS: Dict[str, Dict[str, List[str]]] = {
 
 # Symptom-specific additions
 SYMPTOM_TIPS: Dict[str, str] = {
-    "cramps": "Apply a warm compress to the lower abdomen for 15–20 minutes.",
+    "cramps": "Heat therapy, gentle stretching, and hydration can alleviate cramps.",
     "headache": "Stay hydrated and try peppermint oil on your temples.",
-    "fatigue": "Short 20-minute naps can restore energy without disrupting sleep.",
+    "fatigue": "Prioritize rest, eat iron-rich foods, and aim for adequate sleep.",
     "bloating": "Avoid carbonated drinks and eat smaller, more frequent meals.",
-    "mood swings": "Breathwork (4-7-8 breathing) can quickly calm emotional surges.",
+    "mood swings": "Journaling, breathwork, and complex carbs can help stabilize mood swings.",
     "acne": "Reduce dairy intake and increase zinc-rich foods.",
     "breast tenderness": "Wear a supportive bra and reduce caffeine consumption.",
+    "heavy flow": "Focus on hydration, iron-rich foods, and consistently tracking your bleeding.",
 }
 
 
 class RecommendationEngine:
     """
-    Generates personalised wellness tips based on cycle phase and symptoms.
-
-    Args:
-        cycle_phase:   One of 'menstrual', 'follicular', 'ovulatory', 'luteal'.
-        top_symptoms:  List of symptoms currently reported by the user.
+    Generates personalised wellness tips based on cycle phase, symptoms, mood, and pain.
     """
 
-    def __init__(self, cycle_phase: str, top_symptoms: List[str] = None):
+    def __init__(self, cycle_phase: str, top_symptoms: List[str] = None, 
+                 mood_pattern: str = None, average_pain: float = 0.0, 
+                 high_pain_days: int = 0, flow_intensities: List[str] = None):
         self.cycle_phase = cycle_phase.lower() if cycle_phase else "menstrual"
-        self.top_symptoms = top_symptoms or []
+        self.top_symptoms = [s.lower() for s in (top_symptoms or [])]
+        self.mood_pattern = mood_pattern.lower() if mood_pattern else ""
+        self.average_pain = average_pain
+        self.high_pain_days = high_pain_days
+        self.flow_intensities = [f.lower() for f in (flow_intensities or [])]
 
-    def get_recommendations(self) -> Dict[str, List[str]]:
+    def get_structured_recommendations(self) -> List[str]:
         """
-        Return a dict of recommendations grouped by category.
-
-        Includes phase-based tips + symptom-specific additions.
+        Return a flattened list of personalized recommendation strings.
         """
-        base = PHASE_RECOMMENDATIONS.get(
-            self.cycle_phase, PHASE_RECOMMENDATIONS["menstrual"]
-        )
-        # Deep copy to avoid mutating the knowledge base
-        recommendations = {k: list(v) for k, v in base.items()}
+        recommendations = []
 
-        # Append symptom-specific tips to the relevant category
-        symptom_additions = [
-            SYMPTOM_TIPS[symptom]
-            for symptom in self.top_symptoms
-            if symptom in SYMPTOM_TIPS
-        ]
-        if symptom_additions:
-            recommendations.setdefault("symptom_care", []).extend(symptom_additions)
+        # 1. Symptom-based recommendations
+        for symptom, tip in SYMPTOM_TIPS.items():
+            if symptom in self.top_symptoms:
+                recommendations.append(tip)
+                
+        # 2. Pain-based recommendations (Medically safe)
+        if self.high_pain_days >= 2 or self.average_pain >= 7:
+            recommendations.append("High pain levels detected. Please consult a doctor if pain is severe or recurrent.")
+        elif self.average_pain >= 4:
+            recommendations.append("Moderate pain detected. Over-the-counter pain relief and rest may help. Track to see if it persists.")
 
-        return recommendations
+        # 3. Mood-based recommendations
+        if self.mood_pattern in ["anxious", "sad", "stressed"]:
+            recommendations.append("Noticeable emotional shifts. Consider mindfulness, light exercise, or talking to a friend.")
 
-    def get_flat_tips(self) -> List[str]:
-        """Return all tips as a flat list (useful for AI prompt context)."""
-        recs = self.get_recommendations()
-        return [tip for tips in recs.values() for tip in tips]
+        # 4. Flow-based recommendations
+        if any(f in ["heavy", "very heavy"] for f in self.flow_intensities):
+            recommendations.append(SYMPTOM_TIPS["heavy flow"])
+            
+        # 5. Phase-based fallbacks if list is too short
+        if len(recommendations) < 3:
+            phase_base = PHASE_RECOMMENDATIONS.get(self.cycle_phase, PHASE_RECOMMENDATIONS["menstrual"])
+            recommendations.extend(phase_base.get("nutrition", [])[:1])
+            recommendations.extend(phase_base.get("mental_health", [])[:1])
+
+        # Deduplicate while preserving order
+        seen = set()
+        unique_recs = []
+        for rec in recommendations:
+            if rec not in seen:
+                unique_recs.append(rec)
+                seen.add(rec)
+                
+        return unique_recs

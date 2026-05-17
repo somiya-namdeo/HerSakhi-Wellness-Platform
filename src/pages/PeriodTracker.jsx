@@ -81,7 +81,7 @@ const PeriodTracker = () => {
                 logs={logs}
                 prediction={prediction}
               />
-              <CycleStats />
+              <CycleStats prediction={prediction} />
               <PredictionSummary 
                 prediction={prediction} 
                 loading={loadingPrediction} 

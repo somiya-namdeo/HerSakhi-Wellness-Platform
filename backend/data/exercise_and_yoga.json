@@ -1,0 +1,496 @@
+[
+    {
+        "id": 1,
+        "category": "exercise_and_yoga",
+        "topic": "yoga for cramps",
+        "keywords": [
+            "yoga",
+            "cramps",
+            "childs pose",
+            "relief",
+            "pain"
+        ],
+        "question": "What is the best yoga pose to relieve period cramps?",
+        "answer": "Child's Pose (Balasana) is incredibly soothing for cramps! It gently stretches your lower back and relaxes your pelvic muscles. Kneel, sit back on your heels, and stretch your arms forward on the floor while resting your forehead down. Breathe deeply.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "exercise_and_yoga",
+        "topic": "yoga for cramps",
+        "keywords": [
+            "yoga",
+            "cat cow",
+            "back pain",
+            "cramps"
+        ],
+        "question": "How does the Cat-Cow stretch help with menstrual pain?",
+        "answer": "Cat-Cow warms up the spine and massages your abdominal organs. As you alternate between arching and rounding your back on your hands and knees, it increases blood flow to your pelvis and eases the tension that causes cramping.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "exercise_and_yoga",
+        "topic": "yoga for cramps",
+        "keywords": [
+            "yoga",
+            "supine twist",
+            "cramps",
+            "digestion",
+            "bloating"
+        ],
+        "question": "Are twisting poses safe to do when I have my period?",
+        "answer": "Gentle twists are very safe and can actually help! A reclined spinal twist (lying on your back and dropping your knees to one side) provides a gentle massage to your abdomen, which can relieve both cramping and period bloating.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "exercise_and_yoga",
+        "topic": "yoga for cramps",
+        "keywords": [
+            "yoga",
+            "inversions",
+            "headstand",
+            "period safety"
+        ],
+        "question": "Should I avoid going upside down in yoga during my cycle?",
+        "answer": "Traditionally, inversions like headstands or shoulder stands are skipped during menstruation because they require a lot of core energy. If you feel tired or heavy, it's best to stick to grounding, restorative poses instead.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "exercise_and_yoga",
+        "topic": "stretching",
+        "keywords": [
+            "stretching",
+            "morning",
+            "stiffness",
+            "wake up"
+        ],
+        "question": "What is a good morning stretch to start my day feeling refreshed?",
+        "answer": "A simple overhead reach is perfect! Stand tall, interlace your fingers, reach your arms high above your head, and take a deep breath. Gently lean to the left, then the right. It wakes up your spine and boosts your circulation instantly.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "exercise_and_yoga",
+        "topic": "stretching",
+        "keywords": [
+            "stretching",
+            "desk",
+            "work",
+            "neck pain",
+            "shoulders"
+        ],
+        "question": "My neck and shoulders hurt from sitting at my desk. How can I stretch them?",
+        "answer": "Try some simple shoulder rolls: roll them up to your ears, back, and down. Then, gently tilt your right ear to your right shoulder, hold for a few breaths, and switch sides. It melts away desk tension beautifully!",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "exercise_and_yoga",
+        "topic": "stretching",
+        "keywords": [
+            "stretching",
+            "bedtime",
+            "sleep",
+            "relax"
+        ],
+        "question": "Is it helpful to stretch right before going to sleep?",
+        "answer": "Yes, gentle stretching before bed is a wonderful way to signal to your nervous system that it's time to rest. Try lying on your back and hugging your knees to your chest for a minute to release lower back tension.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "exercise_and_yoga",
+        "topic": "stretching",
+        "keywords": [
+            "stretching",
+            "hips",
+            "tight hips",
+            "emotions"
+        ],
+        "question": "Why do my hips feel so tight, and how can I stretch them?",
+        "answer": "We often hold physical and emotional stress in our hips! A gentle seated butterfly stretch—sitting with the soles of your feet together and knees opening out to the sides—is a safe, beginner-friendly way to open them up.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "exercise_and_yoga",
+        "topic": "walking",
+        "keywords": [
+            "walking",
+            "period",
+            "benefits",
+            "cramps"
+        ],
+        "question": "Is walking actually a good workout during my period?",
+        "answer": "Walking is one of the absolute best activities you can do on your period! It gets your blood pumping, which reduces pelvic congestion and cramping, but it’s gentle enough not to drain your energy.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "exercise_and_yoga",
+        "topic": "walking",
+        "keywords": [
+            "walking",
+            "pace",
+            "speed",
+            "tired"
+        ],
+        "question": "Do I need to power walk for it to count as exercise?",
+        "answer": "Not at all! Especially during your cycle, a leisurely, mindful stroll is completely valid exercise. The goal is simply to move your body and get some fresh air. Listen to your body and walk at a pace that feels good.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "exercise_and_yoga",
+        "topic": "walking",
+        "keywords": [
+            "walking",
+            "mood",
+            "nature",
+            "PMS"
+        ],
+        "question": "Can walking outside help with my PMS mood swings?",
+        "answer": "Absolutely. Walking outdoors combines the mood-boosting benefits of exercise (endorphins) with the calming effects of nature. Even a 15-minute walk around the block can help lift a heavy PMS mood.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "exercise_and_yoga",
+        "topic": "low-energy workouts",
+        "keywords": [
+            "low energy",
+            "bed",
+            "workout",
+            "stretching"
+        ],
+        "question": "I have zero energy today. Can I do any exercises in bed?",
+        "answer": "Yes! You can do gentle exercises without even leaving your bed. Try doing ankle circles, lying down pelvic tilts, or hugging your knees to your chest. Any movement counts, so be proud of yourself for trying!",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "exercise_and_yoga",
+        "topic": "low-energy workouts",
+        "keywords": [
+            "low energy",
+            "pilates",
+            "alternatives",
+            "gentle movement"
+        ],
+        "question": "I'm too tired for my usual Pilates class. What's a good alternative?",
+        "answer": "When full Pilates feels like too much, try a short, 10-minute mat stretching routine, or switch to a slow-paced restorative yoga video. The key is to keep the movement gentle and floor-based so you don't overexert yourself.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "exercise_and_yoga",
+        "topic": "low-energy workouts",
+        "keywords": [
+            "low energy",
+            "motivation",
+            "tired",
+            "exercise"
+        ],
+        "question": "Should I force myself to workout if I feel totally exhausted?",
+        "answer": "No, you should never force a tough workout if you are truly exhausted. Pushing too hard can increase your cortisol (stress hormone) levels. Give your body the rest it is asking for, or opt for a 5-minute gentle stretch instead.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "exercise_and_yoga",
+        "topic": "low-energy workouts",
+        "keywords": [
+            "rest day",
+            "active recovery",
+            "stretching",
+            "movement"
+        ],
+        "question": "What is the difference between a rest day and active recovery?",
+        "answer": "A true rest day means taking a total break from exercise to let your body heal. Active recovery means doing very light, effortless movement—like a casual walk or gentle stretching—just to keep your blood flowing without building fatigue.",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "exercise_and_yoga",
+        "topic": "workouts during periods",
+        "keywords": [
+            "period workout",
+            "first day",
+            "safety",
+            "bleeding"
+        ],
+        "question": "Is it medically safe to exercise on the first day of my period?",
+        "answer": "It is completely safe to exercise on day one! Moving your body can help relieve cramps and boost your mood. Just be sure to listen to your body and scale back the intensity if you feel tired or if your flow is very heavy.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "exercise_and_yoga",
+        "topic": "workouts during periods",
+        "keywords": [
+            "period workout",
+            "HIIT",
+            "heavy lifting",
+            "intensity"
+        ],
+        "question": "Should I avoid high-intensity workouts (HIIT) on my period?",
+        "answer": "You don't have to avoid them if you feel energetic! However, during the first few days of your cycle, your energy might naturally be lower. If HIIT feels too draining, it's a great time to swap it for yoga, swimming, or cycling.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "exercise_and_yoga",
+        "topic": "workouts during periods",
+        "keywords": [
+            "period workout",
+            "adjusting",
+            "intensity",
+            "weights"
+        ],
+        "question": "How should I adjust my strength training routine while menstruating?",
+        "answer": "If you feel weaker or more tired than usual, simply lower the weights and increase your rest time between sets. Focus on maintaining good form rather than hitting personal bests. Your strength will return as your hormones shift!",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "exercise_and_yoga",
+        "topic": "workouts during periods",
+        "keywords": [
+            "swimming",
+            "period",
+            "water",
+            "exercise"
+        ],
+        "question": "Is swimming a good exercise for period pain?",
+        "answer": "Swimming is fantastic! The buoyancy of the water takes pressure off your lower back, and the gentle resistance helps relieve cramps. Just be sure to use a tampon or menstrual cup while you are in the water.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "exercise_and_yoga",
+        "topic": "pelvic relaxation",
+        "keywords": [
+            "pelvic floor",
+            "supta baddha konasana",
+            "cramps",
+            "relax"
+        ],
+        "question": "What is the best pose to deeply relax my pelvic area?",
+        "answer": "Reclined Bound Angle Pose is deeply relaxing. Lie on your back, bring the soles of your feet together, and let your knees fall open like a book. You can place pillows under your knees for extra support. It releases deep pelvic tension.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "exercise_and_yoga",
+        "topic": "pelvic relaxation",
+        "keywords": [
+            "pelvic floor",
+            "breathing",
+            "tension",
+            "kegels"
+        ],
+        "question": "Can breathing actually help relax a tight pelvic floor?",
+        "answer": "Yes! When you take a deep belly breath, your diaphragm lowers, which naturally stretches and relaxes your pelvic floor muscles. Focus on relaxing your pelvic area completely as you inhale.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "exercise_and_yoga",
+        "topic": "pelvic relaxation",
+        "keywords": [
+            "pelvic floor",
+            "happy baby",
+            "stretch",
+            "hips"
+        ],
+        "question": "How do I do Happy Baby pose for pelvic pain?",
+        "answer": "Lie on your back, bring your knees toward your armpits, and grab the outside edges of your feet. Gently rock side to side if it feels good. This pose is wonderful for opening the hips and releasing tightness in the pelvic floor.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "exercise_and_yoga",
+        "topic": "breathing exercises",
+        "keywords": [
+            "breathing",
+            "belly breathing",
+            "cramps",
+            "nervous system"
+        ],
+        "question": "How do I practice deep belly breathing?",
+        "answer": "Place one hand on your chest and one on your belly. Breathe in slowly through your nose, letting your belly push your hand out (keep your chest still). Exhale slowly through your mouth. This instantly calms the nervous system.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "exercise_and_yoga",
+        "topic": "breathing exercises",
+        "keywords": [
+            "breathing",
+            "4-7-8",
+            "sleep",
+            "anxiety",
+            "relax"
+        ],
+        "question": "What is the 4-7-8 breathing method?",
+        "answer": "It's a great relaxation tool! Inhale quietly through your nose for 4 seconds, hold your breath for 7 seconds, and exhale completely through your mouth with a whoosh sound for 8 seconds. Repeat 4 times to feel deeply grounded.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "exercise_and_yoga",
+        "topic": "breathing exercises",
+        "keywords": [
+            "breathing",
+            "diaphragm",
+            "core",
+            "workout"
+        ],
+        "question": "How should I breathe when doing exercises or lifting weights?",
+        "answer": "A good rule of thumb is to exhale on the hardest part of the movement (the exertion) and inhale on the easier part. For example, if doing a squat, inhale as you lower down, and exhale as you push back up.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "exercise_and_yoga",
+        "topic": "breathing exercises",
+        "keywords": [
+            "breathing",
+            "yoga",
+            "mindfulness",
+            "flow"
+        ],
+        "question": "Why do yoga teachers always tell you to link breath with movement?",
+        "answer": "Linking breath with movement helps keep your mind focused on the present moment, turning exercise into a moving meditation. It also ensures your muscles get plenty of oxygen right when they are working the hardest.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "exercise_and_yoga",
+        "topic": "fatigue recovery",
+        "keywords": [
+            "fatigue",
+            "legs up the wall",
+            "viparita karani",
+            "recovery"
+        ],
+        "question": "What is the easiest pose for when I feel completely physically drained?",
+        "answer": "Legs Up the Wall (Viparita Karani) is the ultimate recovery pose. Simply lie on your back and rest your straight legs up against a wall. It helps drain fluid from your legs, lowers your heart rate, and restores your energy effortlessly.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "exercise_and_yoga",
+        "topic": "fatigue recovery",
+        "keywords": [
+            "fatigue",
+            "restorative yoga",
+            "pillows",
+            "props"
+        ],
+        "question": "What exactly is restorative yoga?",
+        "answer": "Restorative yoga focuses on deep relaxation rather than stretching or strengthening. You use props like blankets and pillows to fully support your body in gentle poses, holding them for several minutes to allow deep cellular rest.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "exercise_and_yoga",
+        "topic": "fatigue recovery",
+        "keywords": [
+            "fatigue",
+            "post-workout",
+            "tired",
+            "cooling down"
+        ],
+        "question": "I feel exhausted right after my workouts. How can I recover better?",
+        "answer": "Make sure you aren't skipping your cool-down! Spend 5-10 minutes doing light stretching and deep breathing after you exercise. Also, hydrating and eating a small snack with protein and carbs within 45 minutes will help refill your energy.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "exercise_and_yoga",
+        "topic": "posture",
+        "keywords": [
+            "posture",
+            "slouching",
+            "desk",
+            "hunched"
+        ],
+        "question": "I slouch all day at my desk. How can I fix my posture?",
+        "answer": "Take mini posture breaks! Every hour, sit up tall, squeeze your shoulder blades together gently for 5 seconds, and release. Setting up your screen at eye level so you aren't looking down all day makes a huge difference, too.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "exercise_and_yoga",
+        "topic": "posture",
+        "keywords": [
+            "posture",
+            "chest opener",
+            "doorway stretch",
+            "shoulders"
+        ],
+        "question": "What is a good stretch to open up a tight, hunched chest?",
+        "answer": "The doorway stretch is fantastic! Stand in a doorway, place your forearms on the doorframe at a 90-degree angle, and gently step one foot forward until you feel a stretch across your chest. Hold for 20 seconds and breathe.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "exercise_and_yoga",
+        "topic": "posture",
+        "keywords": [
+            "posture",
+            "core",
+            "abs",
+            "sitting up straight"
+        ],
+        "question": "Does having a strong core really help my posture?",
+        "answer": "Yes, absolutely! Your core muscles (your abs, back, and pelvic floor) act like a corset that supports your spine. Strengthening your core with gentle exercises like planks or bird-dog takes the pressure off your lower back.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "exercise_and_yoga",
+        "topic": "lower back pain relief",
+        "keywords": [
+            "lower back",
+            "knee to chest",
+            "stretch",
+            "pain"
+        ],
+        "question": "My lower back is throbbing from my period. What stretch helps?",
+        "answer": "The Knees-to-Chest stretch is incredibly soothing. Lie on your back and slowly pull both knees toward your chest, wrapping your arms around your shins. Gently rock side to side to massage your lower back against the floor.",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "exercise_and_yoga",
+        "topic": "lower back pain relief",
+        "keywords": [
+            "lower back",
+            "pelvic tilts",
+            "floor",
+            "core"
+        ],
+        "question": "How do I do a pelvic tilt to relieve back pain?",
+        "answer": "Lie on your back with your knees bent and feet flat on the floor. You'll notice a small natural curve under your lower back. Flatten that curve by gently pressing your lower back into the floor, hold for a second, and release.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "exercise_and_yoga",
+        "topic": "lower back pain relief",
+        "keywords": [
+            "lower back",
+            "heating pad",
+            "movement",
+            "cramps"
+        ],
+        "question": "Is it better to use a heating pad or exercise for period back pain?",
+        "answer": "You can use both! Doing some gentle movement like walking or light stretching helps increase blood flow to heal the pain, while using a heating pad afterward relaxes the tight muscles beautifully. Do whatever feels most comforting to your body.",
+        "severity": "low"
+    }
+]

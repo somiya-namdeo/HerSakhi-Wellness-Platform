@@ -1,37 +1,10 @@
 import { CalendarDays, Flower2, Sparkles, Activity, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { calculateDaysUntil, formatDaysUntil, formatShortDate, formatDateRange } from '../../utils/dateHelpers'
 
 const PredictionSummary = ({ prediction, loading, error }) => {
 
-  const formatWindow = (startStr, endStr) => {
-    if (!startStr || !endStr) return '';
-    const start = new Date(startStr);
-    const end = new Date(endStr);
-    const month = start.toLocaleDateString('en-US', { month: 'short' });
-    return `${month} ${start.getDate()}–${end.getDate()}`;
-  }
-
-  const formatDate = (dateString) => {
-    if (!dateString) return '';
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
-  }
-
-  // Calculate days remaining until next period
-  const getDaysRemaining = () => {
-    if (!prediction?.next_period_date) return '';
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const nextPeriod = new Date(prediction.next_period_date);
-    nextPeriod.setHours(0, 0, 0, 0);
-    
-    const diffTime = nextPeriod - today;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
-    if (diffDays === 0) return 'expected today';
-    if (diffDays < 0) return `${Math.abs(diffDays)} days late`;
-    return `expected in ${diffDays} days`;
-  }
+  const daysRemaining = calculateDaysUntil(prediction?.next_period_date)
 
   const defaultPredictions = [
     {
@@ -64,25 +37,27 @@ const PredictionSummary = ({ prediction, loading, error }) => {
     {
       icon: CalendarDays,
       title: "Next Period Prediction",
-      detail: `Your next period is ${getDaysRemaining()}.`,
+      detail: `Your next period is ${formatDaysUntil(daysRemaining)}.`,
       colorClass: "bg-primary/5 border-primary/10 text-primary"
     },
     {
       icon: Flower2,
       title: "Fertile Window",
-      detail: `Estimated fertile window: ${formatWindow(prediction.fertile_window_start, prediction.fertile_window_end)}.`,
+      detail: `Estimated fertile window: ${formatDateRange(prediction.fertile_window_start, prediction.fertile_window_end)}.`,
       colorClass: "bg-pink-50 border-pink-100 text-pink-400"
     },
     {
       icon: Sparkles,
       title: "Ovulation Day",
-      detail: `Predicted ovulation: ${formatDate(prediction.ovulation_date)}.`,
+      detail: `Predicted ovulation: ${formatShortDate(prediction.ovulation_date)}.`,
       colorClass: "bg-orange-50 border-orange-100 text-orange-400"
     },
     {
       icon: Activity,
       title: "Cycle Regularity",
-      detail: `Your cycle looks ${prediction.regularity_score}% regular based on recent logs.`,
+      detail: prediction.cycle_regularity
+        ? `Your cycle is ${prediction.cycle_regularity.toLowerCase()} based on recent logs.`
+        : `Your cycle looks ${prediction.regularity_score}% regular based on recent logs.`,
       colorClass: "bg-green-50 border-green-100 text-green-500"
     }
   ] : defaultPredictions;
@@ -141,3 +116,4 @@ const PredictionSummary = ({ prediction, loading, error }) => {
 }
 
 export default PredictionSummary
+

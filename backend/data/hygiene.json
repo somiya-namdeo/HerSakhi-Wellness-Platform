@@ -1,0 +1,492 @@
+[
+    {
+        "id": 1,
+        "category": "hygiene",
+        "topic": "pad hygiene",
+        "keywords": [
+            "pads",
+            "changing",
+            "frequency",
+            "sanitary napkin"
+        ],
+        "question": "How often should I change my pad during the day?",
+        "answer": "It is a good rule of thumb to change your pad every 4 to 6 hours, even if your flow is light. Changing it regularly helps prevent odor, keeps you feeling fresh, and protects your skin from irritation.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "hygiene",
+        "topic": "pad hygiene",
+        "keywords": [
+            "pads",
+            "overnight",
+            "sleeping",
+            "long wear"
+        ],
+        "question": "Is it safe to wear a pad all night while I sleep?",
+        "answer": "Yes, it is perfectly safe! Overnight pads are designed to be extra absorbent for longer wear. Just be sure to put a fresh one on right before you go to bed and change it as soon as you wake up.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "hygiene",
+        "topic": "pad hygiene",
+        "keywords": [
+            "cloth pads",
+            "reusable",
+            "washing",
+            "cleaning"
+        ],
+        "question": "How do I properly clean my reusable cloth pads?",
+        "answer": "Rinse your cloth pads in cold water first to prevent stains from setting. Then, you can hand wash them or toss them in the washing machine with your regular unscented detergent. Let them air dry completely before using them again.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "hygiene",
+        "topic": "pad hygiene",
+        "keywords": [
+            "disposal",
+            "throwing away",
+            "pads",
+            "toilet"
+        ],
+        "question": "Can I flush my pad down the toilet?",
+        "answer": "Pads should never be flushed down the toilet, as they expand in water and will quickly cause a severe plumbing blockage. Always wrap your used pad in its original wrapper or toilet paper and toss it in the trash bin.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "hygiene",
+        "topic": "tampon safety",
+        "keywords": [
+            "tampons",
+            "changing",
+            "time",
+            "how long"
+        ],
+        "question": "How many hours can I safely leave a tampon in?",
+        "answer": "You should change your tampon every 4 to 8 hours. Leaving a tampon in for longer than 8 hours increases the risk of bacterial infections, so it's best to set a reminder if you have a busy day!",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "hygiene",
+        "topic": "tampon safety",
+        "keywords": [
+            "tampons",
+            "sleeping",
+            "overnight",
+            "bedtime"
+        ],
+        "question": "Can I wear a tampon while I sleep?",
+        "answer": "You can safely wear a tampon to sleep as long as you plan to sleep for 8 hours or less. Insert a fresh one right before bed and remove it immediately when you wake up. If you plan to sleep longer, a pad is a better choice.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "hygiene",
+        "topic": "tampon safety",
+        "keywords": [
+            "tampons",
+            "swimming",
+            "pool",
+            "water"
+        ],
+        "question": "Is it hygienic to swim with a tampon in?",
+        "answer": "Yes, it is very safe and hygienic! The tampon absorbs your menstrual fluid before it leaves your body. Just remember to change your tampon soon after you finish swimming, as it can absorb a little bit of pool or ocean water too.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "hygiene",
+        "topic": "tampon safety",
+        "keywords": [
+            "TSS",
+            "toxic shock syndrome",
+            "safety",
+            "infection"
+        ],
+        "question": "What is TSS and how do I prevent it?",
+        "answer": "Toxic Shock Syndrome (TSS) is a rare but serious bacterial infection. You can easily protect yourself by using the lowest absorbency tampon needed for your flow, changing it every 4 to 8 hours, and washing your hands before insertion.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "hygiene",
+        "topic": "menstrual cups",
+        "keywords": [
+            "menstrual cup",
+            "cleaning",
+            "boiling",
+            "sterilize"
+        ],
+        "question": "How often do I need to boil my menstrual cup?",
+        "answer": "You only need to boil your menstrual cup to sterilize it between cycles—once before your period starts, or right after it ends. During your period, simply emptying it and washing it with warm water and mild, unscented soap is perfectly fine.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "hygiene",
+        "topic": "menstrual cups",
+        "keywords": [
+            "menstrual cup",
+            "public bathroom",
+            "cleaning",
+            "stall"
+        ],
+        "question": "How do I clean my menstrual cup in a public bathroom?",
+        "answer": "Don't worry, it's easier than it seems! Simply wash your hands before entering the stall, empty the cup into the toilet, and wipe it out with some clean toilet paper or a damp paper towel before reinserting it. Wash it with water next time you're home.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "hygiene",
+        "topic": "menstrual cups",
+        "keywords": [
+            "menstrual cup",
+            "removal",
+            "stuck",
+            "suction"
+        ],
+        "question": "What if I can't get my menstrual cup out?",
+        "answer": "First, take a deep breath to relax your pelvic muscles. Bear down gently as if you are having a bowel movement to push the cup lower. Reach in and pinch the base of the cup to break the suction seal, then gently wiggle it out.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "hygiene",
+        "topic": "menstrual cups",
+        "keywords": [
+            "menstrual cup",
+            "how long",
+            "changing",
+            "wear time"
+        ],
+        "question": "How long can I leave my menstrual cup in?",
+        "answer": "One of the great benefits of a menstrual cup is that it can safely be worn for up to 12 hours before it needs to be emptied and rinsed. This makes it a fantastic, low-maintenance option for busy days or sleeping.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "hygiene",
+        "topic": "infections",
+        "keywords": [
+            "wiping",
+            "bathroom",
+            "toilet paper",
+            "hygiene"
+        ],
+        "question": "Why is it important to wipe from front to back?",
+        "answer": "Wiping from front to back is crucial because it prevents bacteria from your anal area from being transferred to your urethra and vagina. This simple habit is the best way to prevent painful urinary tract infections (UTIs) and vaginal infections.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "hygiene",
+        "topic": "infections",
+        "keywords": [
+            "yeast infection",
+            "itching",
+            "discharge",
+            "signs"
+        ],
+        "question": "What are the common signs of a yeast infection?",
+        "answer": "Common signs include intense itching, redness, or swelling around your vulva, accompanied by a thick, white, odorless discharge that looks a bit like cottage cheese. It is very common and easily treated with over-the-counter or prescription medication.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "hygiene",
+        "topic": "infections",
+        "keywords": [
+            "cotton underwear",
+            "breathable",
+            "fabric",
+            "prevention"
+        ],
+        "question": "Does wearing cotton underwear actually prevent infections?",
+        "answer": "Yes, it really does! Cotton is a natural, breathable fabric that absorbs moisture and allows air to circulate. This prevents a warm, damp environment where bacteria and yeast love to grow, keeping your intimate area healthy.",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "hygiene",
+        "topic": "infections",
+        "keywords": [
+            "BV",
+            "bacterial vaginosis",
+            "odor",
+            "discharge"
+        ],
+        "question": "What is Bacterial Vaginosis (BV)?",
+        "answer": "Bacterial Vaginosis, or BV, happens when there is an imbalance of the natural bacteria in your vagina. Symptoms often include a thin, grayish discharge and a strong, 'fishy' odor. It's not a hygiene issue, but it does require a doctor's visit for antibiotics.",
+        "severity": "medium"
+    },
+    {
+        "id": 17,
+        "category": "hygiene",
+        "topic": "odor concerns",
+        "keywords": [
+            "odor",
+            "period smell",
+            "blood",
+            "metallic"
+        ],
+        "question": "Is it normal for my period blood to have a metallic smell?",
+        "answer": "Yes, absolutely! Period blood contains iron, so a slight metallic smell is completely normal and healthy. It just means your body is doing exactly what it's supposed to do.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "hygiene",
+        "topic": "odor concerns",
+        "keywords": [
+            "scented pads",
+            "scented tampons",
+            "fragrance",
+            "odor"
+        ],
+        "question": "Should I use scented pads or tampons to cover up period odor?",
+        "answer": "It is best to avoid scented period products altogether. The added fragrances and chemicals can easily irritate your sensitive intimate skin and disrupt your natural pH balance, which can actually lead to infections and worse odors.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "hygiene",
+        "topic": "odor concerns",
+        "keywords": [
+            "bad smell",
+            "strong odor",
+            "when to worry",
+            "infection"
+        ],
+        "question": "How do I know if a vaginal odor is normal or a sign of an issue?",
+        "answer": "A mild, musky, or slightly tangy scent is normal. However, if you notice a very strong, unpleasant odor—like rotting meat or a strong fishy smell—especially if it's accompanied by itching or unusual discharge, it's a good idea to consult a doctor.",
+        "severity": "medium"
+    },
+    {
+        "id": 20,
+        "category": "hygiene",
+        "topic": "odor concerns",
+        "keywords": [
+            "sweat",
+            "odor",
+            "period",
+            "groin"
+        ],
+        "question": "Why do I feel like I smell more sweaty down there during my period?",
+        "answer": "Hormone fluctuations during your period can cause your apocrine sweat glands (located in the groin area) to produce more sweat. Wearing breathable cotton underwear and changing your pad regularly can help keep you feeling fresh.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "hygiene",
+        "topic": "odor concerns",
+        "keywords": [
+            "diet",
+            "food",
+            "smell",
+            "garlic"
+        ],
+        "question": "Can the food I eat change the way my vagina smells?",
+        "answer": "Yes, it can. Strong-smelling foods like garlic, onions, asparagus, and certain spices can temporarily alter your natural scent. Drinking plenty of water and eating a balanced diet helps maintain a mild, neutral odor.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "hygiene",
+        "topic": "changing products",
+        "keywords": [
+            "hand washing",
+            "before changing",
+            "bacteria",
+            "tampons"
+        ],
+        "question": "Do I really need to wash my hands before changing my tampon or pad?",
+        "answer": "Yes, washing your hands before is just as important as washing them after! Your hands carry bacteria from doorknobs and phones. Washing them first ensures you aren't introducing harmful bacteria to your sensitive intimate area.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "hygiene",
+        "topic": "changing products",
+        "keywords": [
+            "light flow",
+            "changing",
+            "spotting",
+            "pads"
+        ],
+        "question": "If my flow is super light, can I wear the same pad all day?",
+        "answer": "Even if the pad doesn't look full, it's important to change it every 4 to 6 hours. Menstrual blood combined with body heat and sweat creates an environment where bacteria can multiply, which can cause odor or irritation.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "hygiene",
+        "topic": "changing products",
+        "keywords": [
+            "double protection",
+            "pad and tampon",
+            "heavy flow",
+            "leaks"
+        ],
+        "question": "Is it safe to wear a tampon and a pad at the same time?",
+        "answer": "Yes, wearing a tampon with a pantyliner or pad as a backup is a very safe and common way to prevent leaks on heavy flow days. Just remember to change both products regularly!",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "hygiene",
+        "topic": "changing products",
+        "keywords": [
+            "busy schedule",
+            "school",
+            "work",
+            "reminders"
+        ],
+        "question": "I always forget to change my pad when I'm busy. How can I remember?",
+        "answer": "Setting a quiet alarm or calendar reminder on your phone for every 4-5 hours is a great trick. You can also make it a habit to change your product every time you use the restroom, even if it’s just to pee.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "hygiene",
+        "topic": "intimate hygiene",
+        "keywords": [
+            "vulva vs vagina",
+            "washing",
+            "cleaning",
+            "inside"
+        ],
+        "question": "Should I wash the inside of my vagina with soap?",
+        "answer": "No, never wash the inside! Your vagina is self-cleaning and maintains a delicate pH balance. You only need to gently wash the outside area (the vulva) with warm water and your fingers.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "hygiene",
+        "topic": "intimate hygiene",
+        "keywords": [
+            "soap",
+            "body wash",
+            "vulva",
+            "cleansers"
+        ],
+        "question": "Is it safe to use my regular body wash on my vulva?",
+        "answer": "It is best to avoid using heavily fragranced body washes on your vulva, as they can cause burning or irritation. Warm water is usually all you need, but if you prefer a cleanser, choose a mild, unscented, pH-balanced wash.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "hygiene",
+        "topic": "intimate hygiene",
+        "keywords": [
+            "douching",
+            "flushing",
+            "cleaning inside",
+            "safe"
+        ],
+        "question": "Is douching a good way to stay clean after my period?",
+        "answer": "Douching is highly discouraged by doctors. It washes away the healthy bacteria that protect you from infections and can actually push harmful bacteria higher up into your reproductive system. Let your body clean itself naturally!",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "hygiene",
+        "topic": "intimate hygiene",
+        "keywords": [
+            "wipes",
+            "baby wipes",
+            "freshen up",
+            "period"
+        ],
+        "question": "Are feminine wipes safe to use during my period?",
+        "answer": "If you want to use a wipe to feel fresh, opt for unscented, water-based wipes. Avoid anything with strong fragrances, alcohol, or harsh chemicals, and only use them on the outside of your vulva.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "hygiene",
+        "topic": "rashes",
+        "keywords": [
+            "pad rash",
+            "chafing",
+            "prevention",
+            "redness"
+        ],
+        "question": "How can I prevent getting a rash from my sanitary pads?",
+        "answer": "Pad rashes are usually caused by friction or trapped moisture. To prevent them, change your pad frequently, wear loose-fitting clothing to let the area breathe, and try switching to a pad with a softer, cotton-based cover.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "hygiene",
+        "topic": "rashes",
+        "keywords": [
+            "soothing",
+            "rash",
+            "cream",
+            "irritation"
+        ],
+        "question": "My skin is irritated from my pad. How can I soothe the rash?",
+        "answer": "Gently clean the area with warm water and pat it completely dry. You can apply a thin layer of a soothing, fragrance-free barrier cream (like plain petroleum jelly or a zinc-based diaper cream) to protect the skin while it heals.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "hygiene",
+        "topic": "rashes",
+        "keywords": [
+            "alternatives",
+            "sensitive skin",
+            "period underwear",
+            "cups"
+        ],
+        "question": "Pads always give me a rash. What are some good alternatives?",
+        "answer": "If disposable pads irritate your skin, you might love period underwear or reusable cloth pads, which are made of soft, breathable fabrics. Menstrual cups or tampons are also great options that eliminate external friction entirely.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "hygiene",
+        "topic": "cleaning habits",
+        "keywords": [
+            "showering",
+            "bathing",
+            "period",
+            "daily"
+        ],
+        "question": "Do I need to shower more often when I'm on my period?",
+        "answer": "A daily shower or bath is perfect! There is no medical need to shower multiple times a day unless you want to. Warm water is wonderfully soothing for cramps and helps you feel fresh and relaxed.",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "hygiene",
+        "topic": "cleaning habits",
+        "keywords": [
+            "workout",
+            "sweat",
+            "gym",
+            "showering"
+        ],
+        "question": "Should I change my period product immediately after working out?",
+        "answer": "Yes, it is highly recommended to change your pad or tampon and ideally take a quick shower right after a sweaty workout. Trapped sweat mixed with menstrual blood can cause chafing and increase the risk of bacterial growth.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "hygiene",
+        "topic": "cleaning habits",
+        "keywords": [
+            "pubic hair",
+            "trimming",
+            "shaving",
+            "hygiene"
+        ],
+        "question": "Do I need to shave my pubic hair for better hygiene during my period?",
+        "answer": "Not at all! Pubic hair is natural and actually protects your sensitive skin from friction and bacteria. Whether you choose to trim, shave, or leave it completely natural is purely a personal preference and does not affect your hygiene.",
+        "severity": "low"
+    }
+]

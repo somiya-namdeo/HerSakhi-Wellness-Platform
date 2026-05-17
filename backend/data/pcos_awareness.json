@@ -1,0 +1,565 @@
+[
+    {
+        "id": 1,
+        "category": "pcos_awareness",
+        "topic": "PCOS basics",
+        "keywords": [
+            "PCOS",
+            "what is pcos",
+            "syndrome",
+            "definition",
+            "ovaries"
+        ],
+        "question": "What exactly is PCOS?",
+        "answer": "PCOS, or Polycystic Ovary Syndrome, is a very common hormonal condition that affects how your ovaries work. It typically involves a combination of irregular periods, higher levels of certain hormones called androgens, and sometimes small fluid-filled sacs on the ovaries.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "pcos_awareness",
+        "topic": "PCOS basics",
+        "keywords": [
+            "cause",
+            "genetics",
+            "why",
+            "development",
+            "basics"
+        ],
+        "question": "What causes someone to develop PCOS?",
+        "answer": "The exact cause isn't completely understood yet, but it's believed to be a mix of genetics and lifestyle factors. Things like insulin resistance and low-grade inflammation play a big role in shifting your hormone balance.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "pcos_awareness",
+        "topic": "PCOS basics",
+        "keywords": [
+            "diagnosis",
+            "symptoms",
+            "doctor",
+            "test",
+            "signs"
+        ],
+        "question": "How do I know if I have PCOS?",
+        "answer": "If you are experiencing irregular periods, unexplained weight gain, acne, or excess facial hair, it's a good idea to speak with a healthcare provider. They can perform blood tests and an ultrasound to help give you a proper diagnosis.",
+        "severity": "medium"
+    },
+    {
+        "id": 4,
+        "category": "pcos_awareness",
+        "topic": "PCOS basics",
+        "keywords": [
+            "cure",
+            "permanent",
+            "management",
+            "treatment"
+        ],
+        "question": "Is there a permanent cure for PCOS?",
+        "answer": "Currently, there is no permanent cure for PCOS, but please don't let that discourage you! The symptoms are highly manageable through lifestyle changes, nutrition, and sometimes medication, allowing you to live a healthy, vibrant life.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "pcos_awareness",
+        "topic": "irregular cycles",
+        "keywords": [
+            "irregular periods",
+            "missed period",
+            "cycle",
+            "late"
+        ],
+        "question": "Why does PCOS make my periods so irregular?",
+        "answer": "PCOS can cause your body to produce higher levels of androgens (male hormones), which can interfere with ovulation. When you don't ovulate regularly, your body doesn't get the signal to shed your uterine lining, leading to missed or delayed periods.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "pcos_awareness",
+        "topic": "irregular cycles",
+        "keywords": [
+            "absent period",
+            "missing months",
+            "amenorrhea",
+            "no period"
+        ],
+        "question": "I haven't had a period in several months due to PCOS. Is this safe?",
+        "answer": "Going for many months without a period can increase the risk of thickening in the uterine lining. It is highly recommended to see a gynecologist, as they can safely help induce a period and protect your long-term uterine health.",
+        "severity": "medium"
+    },
+    {
+        "id": 7,
+        "category": "pcos_awareness",
+        "topic": "irregular cycles",
+        "keywords": [
+            "tracking",
+            "unpredictable",
+            "app",
+            "ovulation"
+        ],
+        "question": "How can I track my cycle if it's completely unpredictable?",
+        "answer": "Tracking can be frustrating when cycles are irregular! Focus on logging other bodily signs, like changes in your cervical mucus, basal body temperature, or mood shifts. Over time, these clues can help you identify if and when you are ovulating.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "pcos_awareness",
+        "topic": "irregular cycles",
+        "keywords": [
+            "pregnancy",
+            "infertility",
+            "conceiving",
+            "babies"
+        ],
+        "question": "Does having PCOS mean I won't be able to get pregnant?",
+        "answer": "Not at all! While PCOS is a common cause of fertility struggles due to irregular ovulation, many women with PCOS go on to have healthy pregnancies. Working with a doctor to balance your hormones and track ovulation can make a huge difference.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "pcos_awareness",
+        "topic": "acne",
+        "keywords": [
+            "acne",
+            "pimples",
+            "breakouts",
+            "hormonal"
+        ],
+        "question": "Why does PCOS cause me to have bad acne?",
+        "answer": "PCOS often leads to elevated levels of androgens (like testosterone). These hormones signal your skin to produce more oil (sebum). The excess oil can easily clog your pores, leading to hormonal breakouts.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "pcos_awareness",
+        "topic": "acne",
+        "keywords": [
+            "jawline",
+            "chin acne",
+            "hormonal acne",
+            "location"
+        ],
+        "question": "Where does PCOS-related acne usually show up?",
+        "answer": "Hormonal acne related to PCOS typically appears on the lower third of the face. You might notice deep, tender breakouts primarily along your jawline, chin, and sometimes on your upper neck, chest, or back.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "pcos_awareness",
+        "topic": "acne",
+        "keywords": [
+            "skincare",
+            "ingredients",
+            "wash",
+            "routine"
+        ],
+        "question": "What kind of skincare ingredients help with PCOS acne?",
+        "answer": "Look for gentle exfoliants like salicylic acid or benzoyl peroxide to help clear clogged pores. Because hormonal acne can be sensitive, make sure to pair these treatments with a soothing, non-comedogenic moisturizer to protect your skin barrier.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "pcos_awareness",
+        "topic": "acne",
+        "keywords": [
+            "dermatologist",
+            "severe acne",
+            "treatment",
+            "doctor"
+        ],
+        "question": "Over-the-counter products aren't helping my PCOS acne. What should I do?",
+        "answer": "Hormonal acne can be incredibly stubborn, so don't blame yourself if standard face washes aren't working. It's a great idea to see a dermatologist; they can prescribe targeted topical treatments or medications that balance the hormones causing the breakouts.",
+        "severity": "medium"
+    },
+    {
+        "id": 13,
+        "category": "pcos_awareness",
+        "topic": "hair growth",
+        "keywords": [
+            "hirsutism",
+            "body hair",
+            "excess hair",
+            "male pattern"
+        ],
+        "question": "What is hirsutism in the context of PCOS?",
+        "answer": "Hirsutism is a medical term for excessive hair growth in areas where men typically grow hair, such as the face, chest, and back. In PCOS, this is caused by higher levels of androgen hormones stimulating the hair follicles.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "pcos_awareness",
+        "topic": "hair growth",
+        "keywords": [
+            "facial hair",
+            "chin hair",
+            "mustache",
+            "women"
+        ],
+        "question": "Is it normal to grow thick facial hair with PCOS?",
+        "answer": "Yes, it is a very common symptom of PCOS. The extra androgens in your body can change fine, light 'peach fuzz' on your chin or upper lip into thicker, darker hairs. You are definitely not alone in experiencing this.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "pcos_awareness",
+        "topic": "hair growth",
+        "keywords": [
+            "shaving",
+            "waxing",
+            "removal",
+            "safe"
+        ],
+        "question": "Is it safe to shave or wax the facial hair caused by PCOS?",
+        "answer": "Absolutely. Shaving, waxing, threading, or using depilatory creams are all safe ways to manage facial hair. Shaving does not actually make the hair grow back thicker or darker—that is a common myth!",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "pcos_awareness",
+        "topic": "hair growth",
+        "keywords": [
+            "medication",
+            "laser",
+            "electrolysis",
+            "treatment"
+        ],
+        "question": "Can anything actually stop the excess hair from growing back?",
+        "answer": "Yes! While hair removal manages the surface, treating the hormonal root cause with medications (like birth control or anti-androgens) can slow new growth. Laser hair removal and electrolysis are also fantastic options for long-term reduction.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "pcos_awareness",
+        "topic": "weight gain",
+        "keywords": [
+            "weight loss",
+            "hard to lose",
+            "stubborn fat",
+            "metabolism"
+        ],
+        "question": "Why is it so difficult to lose weight when you have PCOS?",
+        "answer": "It is frustrating, but it's not your fault! Up to 70% of women with PCOS have insulin resistance, which causes the body to store extra fat (especially around the abdomen) and makes losing weight much slower and harder than average.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "pcos_awareness",
+        "topic": "weight gain",
+        "keywords": [
+            "weight gain",
+            "belly fat",
+            "cause",
+            "body shape"
+        ],
+        "question": "Does PCOS directly cause weight gain?",
+        "answer": "Yes, the hormonal imbalances of PCOS, specifically high insulin levels, can drive hunger and promote fat storage, leading to weight gain. It creates a cycle where weight gain worsens PCOS symptoms, and PCOS makes weight harder to manage.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "pcos_awareness",
+        "topic": "weight gain",
+        "keywords": [
+            "diet",
+            "management",
+            "healthy weight",
+            "tips"
+        ],
+        "question": "What is a healthy approach to managing weight with PCOS?",
+        "answer": "Focus on balancing your blood sugar rather than strict calorie counting. Eating balanced meals with plenty of protein, healthy fats, and fiber-rich carbs can help keep insulin levels steady, which naturally supports healthy weight management.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "pcos_awareness",
+        "topic": "weight gain",
+        "keywords": [
+            "cure",
+            "losing weight",
+            "symptoms",
+            "relief"
+        ],
+        "question": "Will losing weight completely cure my PCOS?",
+        "answer": "While it won't 'cure' PCOS, losing even 5% to 10% of your body weight can dramatically improve symptoms! It can help regulate your menstrual cycle, lower insulin levels, and reduce acne and excess hair growth.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "pcos_awareness",
+        "topic": "insulin resistance",
+        "keywords": [
+            "insulin resistance",
+            "blood sugar",
+            "what is it",
+            "hormone"
+        ],
+        "question": "What exactly is insulin resistance?",
+        "answer": "Insulin is a hormone that helps your cells use sugar for energy. In insulin resistance, your cells stop responding well to insulin. To compensate, your body pumps out extra insulin, which ends up driving inflammation and fat storage.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "pcos_awareness",
+        "topic": "insulin resistance",
+        "keywords": [
+            "link",
+            "PCOS connection",
+            "testosterone",
+            "ovaries"
+        ],
+        "question": "How is insulin resistance connected to my PCOS symptoms?",
+        "answer": "High levels of insulin act as a loud signal to your ovaries, telling them to produce more testosterone (androgens). This spike in testosterone is what triggers the classic PCOS symptoms like acne, hair growth, and stalled ovulation.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "pcos_awareness",
+        "topic": "insulin resistance",
+        "keywords": [
+            "signs",
+            "fatigue",
+            "sugar cravings",
+            "dark skin"
+        ],
+        "question": "What are some common signs that I might have insulin resistance?",
+        "answer": "Common signs include intense sugar cravings, feeling exhausted after meals, difficulty losing weight, and sometimes dark, velvety patches of skin around your neck or armpits (a condition called acanthosis nigricans).",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "pcos_awareness",
+        "topic": "insulin resistance",
+        "keywords": [
+            "improvement",
+            "sensitivity",
+            "lifestyle",
+            "blood sugar"
+        ],
+        "question": "How can I naturally improve my insulin sensitivity?",
+        "answer": "Moving your body regularly is one of the best ways to improve insulin sensitivity! Additionally, pairing carbohydrates with a protein or healthy fat (like an apple with peanut butter) helps prevent rapid blood sugar spikes.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "pcos_awareness",
+        "topic": "lifestyle tips",
+        "keywords": [
+            "lifestyle",
+            "habits",
+            "changes",
+            "impact"
+        ],
+        "question": "Can simple lifestyle changes actually make a difference for PCOS?",
+        "answer": "Absolutely! In fact, lifestyle adjustments are considered the first-line treatment for PCOS. Consistent, gentle changes to how you eat, sleep, and move can dramatically lower your insulin levels and balance your hormones.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "pcos_awareness",
+        "topic": "lifestyle tips",
+        "keywords": [
+            "sleep",
+            "rest",
+            "insomnia",
+            "hormones"
+        ],
+        "question": "Does my sleep schedule affect my PCOS symptoms?",
+        "answer": "Yes, sleep is deeply connected to your hormones. Poor sleep can increase cortisol (your stress hormone) and worsen insulin resistance. Aiming for 7 to 9 hours of quality sleep helps your body repair and balance its hormone levels.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "pcos_awareness",
+        "topic": "lifestyle tips",
+        "keywords": [
+            "supplements",
+            "inositol",
+            "vitamins",
+            "natural"
+        ],
+        "question": "Are there any supplements that are good for managing PCOS?",
+        "answer": "Many women find success with Inositol (specifically a 40:1 ratio of Myo and D-Chiro inositol), which naturally supports insulin sensitivity and ovulation. Omega-3s and Vitamin D are also fantastic. Always check with your doctor before starting new supplements!",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "pcos_awareness",
+        "topic": "lifestyle tips",
+        "keywords": [
+            "routine",
+            "morning",
+            "habits",
+            "consistency"
+        ],
+        "question": "What is a good morning habit to help with PCOS?",
+        "answer": "Starting your day with a high-protein, savory breakfast instead of a sweet one is amazing for PCOS. It stabilizes your blood sugar for the rest of the day, reducing sugar cravings and keeping your energy steady.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "pcos_awareness",
+        "topic": "exercise",
+        "keywords": [
+            "best exercise",
+            "workout",
+            "fitness",
+            "activity"
+        ],
+        "question": "What is the absolute best type of exercise for PCOS?",
+        "answer": "The 'best' exercise is simply the one you enjoy and can do consistently! However, a mix of strength training and low-intensity cardio (like brisk walking or swimming) is particularly highly recommended for improving insulin resistance.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "pcos_awareness",
+        "topic": "exercise",
+        "keywords": [
+            "weightlifting",
+            "strength training",
+            "muscles",
+            "insulin"
+        ],
+        "question": "Does weightlifting help with PCOS symptoms?",
+        "answer": "Yes, strength training is incredible for PCOS! Building muscle increases your body's metabolic rate and provides more 'storage space' for glucose, which naturally lowers your insulin levels and helps balance hormones.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "pcos_awareness",
+        "topic": "exercise",
+        "keywords": [
+            "HIIT",
+            "high intensity",
+            "cortisol",
+            "stress"
+        ],
+        "question": "Is High-Intensity Interval Training (HIIT) bad for PCOS?",
+        "answer": "HIIT isn't bad, but it can be a double-edged sword. While it's great for cardiovascular health, doing too much HIIT can spike cortisol (stress hormones), which can worsen PCOS symptoms. Try limiting it to 1-2 times a week and see how your body feels.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "pcos_awareness",
+        "topic": "exercise",
+        "keywords": [
+            "walking",
+            "low impact",
+            "LISS",
+            "daily steps"
+        ],
+        "question": "Is regular walking enough exercise to manage PCOS?",
+        "answer": "Yes, walking is an incredibly powerful tool! It lowers blood sugar, reduces stress, and doesn't spike cortisol. A brisk 30-minute walk a day is a perfect, sustainable way to support your PCOS management.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "pcos_awareness",
+        "topic": "nutrition",
+        "keywords": [
+            "diet",
+            "what to eat",
+            "food",
+            "balance"
+        ],
+        "question": "What is a good overall dietary approach for PCOS?",
+        "answer": "An anti-inflammatory, blood-sugar-balancing approach works best. Focus on whole foods: plenty of colorful vegetables, high-quality proteins (chicken, fish, tofu), healthy fats (avocado, olive oil), and complex carbohydrates (quinoa, sweet potatoes).",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "pcos_awareness",
+        "topic": "nutrition",
+        "keywords": [
+            "carbs",
+            "keto",
+            "low carb",
+            "bread"
+        ],
+        "question": "Do I have to cut out carbs completely to manage my PCOS?",
+        "answer": "No, you don't need to banish carbs! Your body needs carbohydrates for energy and hormone function. The trick is choosing complex, high-fiber carbs (like oats or beans) and pairing them with protein to keep your blood sugar stable.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "pcos_awareness",
+        "topic": "nutrition",
+        "keywords": [
+            "dairy",
+            "milk",
+            "cheese",
+            "inflammation"
+        ],
+        "question": "Should I stop eating dairy if I have PCOS?",
+        "answer": "It depends on your unique body. For some women with PCOS, dairy can trigger inflammation and worsen acne or insulin resistance. If you're curious, you could try a brief dairy-free period to see if your symptoms improve, but it's not a universal rule.",
+        "severity": "low"
+    },
+    {
+        "id": 36,
+        "category": "pcos_awareness",
+        "topic": "nutrition",
+        "keywords": [
+            "breakfast",
+            "protein",
+            "meals",
+            "morning food"
+        ],
+        "question": "What is an ideal breakfast to help manage my PCOS symptoms?",
+        "answer": "An ideal breakfast is savory and packed with at least 25-30 grams of protein. Scrambled eggs with spinach and avocado, or a protein-rich smoothie with flaxseeds and nut butter, are wonderful ways to set your hormones up for success.",
+        "severity": "low"
+    },
+    {
+        "id": 37,
+        "category": "pcos_awareness",
+        "topic": "stress management",
+        "keywords": [
+            "stress",
+            "cortisol",
+            "symptoms",
+            "worse"
+        ],
+        "question": "Does being stressed out actually make my PCOS worse?",
+        "answer": "Yes, chronic stress tells your adrenal glands to pump out cortisol and DHEA-S (an androgen). This can worsen insulin resistance, trigger acne, and disrupt your cycle. Managing stress is a genuine medical strategy for PCOS!",
+        "severity": "low"
+    },
+    {
+        "id": 38,
+        "category": "pcos_awareness",
+        "topic": "stress management",
+        "keywords": [
+            "relaxation",
+            "yoga",
+            "meditation",
+            "calm"
+        ],
+        "question": "What are some good ways to manage stress for my hormones?",
+        "answer": "Mind-body practices are incredibly helpful. Restorative yoga, deep belly breathing, meditation, or simply spending time in nature can help shift your nervous system out of 'fight or flight' mode and lower cortisol levels.",
+        "severity": "low"
+    },
+    {
+        "id": 39,
+        "category": "pcos_awareness",
+        "topic": "stress management",
+        "keywords": [
+            "depression",
+            "anxiety",
+            "mental health",
+            "mood"
+        ],
+        "question": "Is it common to experience depression or high anxiety with PCOS?",
+        "answer": "Yes, women with PCOS are unfortunately much more likely to experience depression and anxiety. This is due to a mix of hormonal imbalances, insulin resistance, and the emotional toll of the symptoms. Please know this is valid and worth discussing with a therapist or doctor.",
+        "severity": "medium"
+    },
+    {
+        "id": 40,
+        "category": "pcos_awareness",
+        "topic": "stress management",
+        "keywords": [
+            "quick relief",
+            "busy",
+            "breathing",
+            "destress"
+        ],
+        "question": "I'm always busy. What is a quick stress-relief trick I can do anywhere?",
+        "answer": "Try physiological sighing: take two quick inhales through your nose, followed by a long, slow exhale through your mouth. Doing this just three times rapidly lowers your heart rate and signals safety to your nervous system.",
+        "severity": "low"
+    }
+]

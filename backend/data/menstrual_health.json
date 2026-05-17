@@ -1,0 +1,702 @@
+[
+    {
+        "id": 1,
+        "category": "menstrual_health",
+        "topic": "cramps",
+        "keywords": [
+            "cramps",
+            "pain",
+            "stomach ache",
+            "relief"
+        ],
+        "question": "What are some natural ways to ease mild period cramps?",
+        "answer": "A warm heating pad on your lower belly or back can work wonders! Gentle movements like walking or easy yoga stretches, staying hydrated, and sipping on warm chamomile or ginger tea are also great natural ways to find relief.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "menstrual_health",
+        "topic": "cramps",
+        "keywords": [
+            "cramps",
+            "medication",
+            "painkillers"
+        ],
+        "question": "Is it safe to take painkillers for my period cramps?",
+        "answer": "Yes, taking over-the-counter pain relievers like ibuprofen or naproxen is generally safe and very effective for period cramps. Just be sure to take them with food and follow the package instructions carefully.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "menstrual_health",
+        "topic": "PMS",
+        "keywords": [
+            "PMS",
+            "premenstrual syndrome",
+            "timeline",
+            "before period"
+        ],
+        "question": "When does PMS usually start?",
+        "answer": "PMS (Premenstrual Syndrome) usually kicks in about 5 to 11 days before your period starts. The symptoms typically go away once your period begins or shortly after.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "menstrual_health",
+        "topic": "PMS",
+        "keywords": [
+            "PMS",
+            "diet",
+            "food",
+            "cravings"
+        ],
+        "question": "What foods should I eat to help with PMS?",
+        "answer": "To help ease PMS, try reaching for complex carbs like whole grains, calcium-rich foods like yogurt, and magnesium-packed snacks like dark chocolate and spinach. Reducing salt and caffeine can also help you feel better.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "menstrual_health",
+        "topic": "bloating",
+        "keywords": [
+            "bloating",
+            "swelling",
+            "water weight",
+            "belly"
+        ],
+        "question": "Why do I feel so bloated during my period?",
+        "answer": "It's completely normal to feel bloated! Hormonal changes, specifically drops in progesterone and estrogen, cause your body to hold onto more water and salt. Staying hydrated and reducing salty snacks can help.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "menstrual_health",
+        "topic": "bloating",
+        "keywords": [
+            "bloating",
+            "relief",
+            "de-bloat",
+            "water"
+        ],
+        "question": "How can I get rid of period bloating quickly?",
+        "answer": "Drinking plenty of water actually helps flush out excess sodium and reduces bloating. You can also try eating potassium-rich foods like bananas, enjoying some peppermint tea, and doing some light cardio.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "menstrual_health",
+        "topic": "fatigue",
+        "keywords": [
+            "fatigue",
+            "tired",
+            "sleepy",
+            "energy"
+        ],
+        "question": "Is it normal to feel exhausted right before my period?",
+        "answer": "Absolutely. The drop in hormones right before your period can make you feel unusually tired. It's your body's way of asking for a little extra rest, so don't hesitate to take a nap or go to bed early.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "menstrual_health",
+        "topic": "fatigue",
+        "keywords": [
+            "fatigue",
+            "energy",
+            "iron",
+            "diet"
+        ],
+        "question": "How can I boost my energy levels during my period?",
+        "answer": "Keep your energy steady by eating small, frequent meals balanced with protein and complex carbs. Since you're losing blood, adding iron-rich foods like spinach, lentils, or red meat can also give you a helpful boost.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "menstrual_health",
+        "topic": "headaches",
+        "keywords": [
+            "headaches",
+            "migraines",
+            "hormonal headache",
+            "head pain"
+        ],
+        "question": "Why do I get a headache on the first day of my period?",
+        "answer": "Hormonal headaches are very common and are triggered by the sudden drop in estrogen right before your period starts. Resting in a dark room, staying hydrated, and using a cold compress can help soothe the pain.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "menstrual_health",
+        "topic": "headaches",
+        "keywords": [
+            "headaches",
+            "prevention",
+            "water",
+            "caffeine"
+        ],
+        "question": "Can I prevent period headaches from happening?",
+        "answer": "While you might not prevent them entirely, keeping a regular sleep schedule, drinking lots of water, and managing stress in the days leading up to your period can make a big difference in reducing their frequency.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "menstrual_health",
+        "topic": "nausea",
+        "keywords": [
+            "nausea",
+            "sick to stomach",
+            "vomiting",
+            "queasy"
+        ],
+        "question": "Is feeling a little queasy during my period normal?",
+        "answer": "Yes, mild nausea is quite normal. The same chemicals (prostaglandins) that cause your uterus to cramp can also affect your stomach and intestines. Sipping ginger tea or eating small, plain crackers can help settle your stomach.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "menstrual_health",
+        "topic": "nausea",
+        "keywords": [
+            "nausea",
+            "food",
+            "stomach",
+            "eating"
+        ],
+        "question": "What should I eat when my period makes me nauseous?",
+        "answer": "Stick to bland, easy-to-digest foods like toast, bananas, rice, or applesauce. Avoid spicy, greasy, or overly sweet foods until your stomach feels a bit more settled.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "menstrual_health",
+        "topic": "irregular periods",
+        "keywords": [
+            "irregular",
+            "late",
+            "cycle length",
+            "tracking"
+        ],
+        "question": "My period is a few days late, should I worry?",
+        "answer": "A variation of a few days is usually nothing to worry about! Stress, travel, illness, or changes in your sleep schedule can easily shift your cycle by a few days.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "menstrual_health",
+        "topic": "irregular periods",
+        "keywords": [
+            "irregular",
+            "teenager",
+            "new period",
+            "cycle"
+        ],
+        "question": "I just started getting my period a year ago and it's irregular. Is that okay?",
+        "answer": "It is completely normal! During the first few years of menstruating, your body is still figuring out its hormonal rhythm. It can take a couple of years for your cycle to become fully regular.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "menstrual_health",
+        "topic": "heavy flow",
+        "keywords": [
+            "heavy flow",
+            "clots",
+            "bleeding",
+            "first days"
+        ],
+        "question": "My period is really heavy on the first two days, is that normal?",
+        "answer": "Yes, having a heavier flow during the first day or two of your period is very common. As long as you aren't bleeding through a pad or tampon every single hour, it's considered a normal part of your cycle.",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "menstrual_health",
+        "topic": "heavy flow",
+        "keywords": [
+            "heavy flow",
+            "nighttime",
+            "leaking",
+            "sleep"
+        ],
+        "question": "How can I prevent leaks at night when my flow is heavy?",
+        "answer": "Try using overnight pads with wings, period underwear, or a menstrual cup, as they are designed to hold more volume. Wearing snug-fitting underwear can also help keep your chosen product securely in place while you sleep.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "menstrual_health",
+        "topic": "light flow",
+        "keywords": [
+            "light flow",
+            "short period",
+            "days",
+            "bleeding"
+        ],
+        "question": "My period only lasts for three days and is very light. Is that okay?",
+        "answer": "Absolutely! A normal period can last anywhere from 2 to 7 days. If your cycle is naturally short and light, that is just your body's unique, healthy rhythm.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "menstrual_health",
+        "topic": "light flow",
+        "keywords": [
+            "light flow",
+            "birth control",
+            "pill",
+            "changes"
+        ],
+        "question": "I recently started the pill and my period is much lighter. Why?",
+        "answer": "Hormonal birth control thins the lining of your uterus, which often results in a much lighter and shorter period. This is a very common and safe side effect of the pill.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "menstrual_health",
+        "topic": "spotting",
+        "keywords": [
+            "spotting",
+            "brown blood",
+            "end of period",
+            "discharge"
+        ],
+        "question": "Why do I have brown spotting at the end of my period?",
+        "answer": "Brown spotting is just older blood that took a little longer to leave your uterus. As the blood oxidizes, it turns brown. It's a completely normal way for your body to finish cleaning itself out.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "menstrual_health",
+        "topic": "spotting",
+        "keywords": [
+            "spotting",
+            "ovulation",
+            "mid-cycle",
+            "light bleeding"
+        ],
+        "question": "Is it normal to have a tiny bit of spotting in the middle of my cycle?",
+        "answer": "Yes, some women experience light spotting during ovulation, which happens roughly in the middle of your cycle. It's caused by a brief drop in estrogen and is usually nothing to worry about.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "menstrual_health",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "crying",
+            "emotional",
+            "hormones"
+        ],
+        "question": "Why do I cry so easily right before my period?",
+        "answer": "Hormonal shifts before your period can affect neurotransmitters like serotonin in your brain, making your emotions feel magnified. It's perfectly okay to feel a bit more sensitive—be gentle with yourself!",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "menstrual_health",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "self-care",
+            "irritability",
+            "calm"
+        ],
+        "question": "How can I manage feeling irritable during PMS?",
+        "answer": "Prioritizing self-care helps a lot. Try taking a warm bath, doing light exercise, prioritizing sleep, and doing activities that relax you. Deep breathing exercises can also help center you when you feel snappy.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "menstrual_health",
+        "topic": "back pain",
+        "keywords": [
+            "back pain",
+            "lower back",
+            "aching",
+            "cramps"
+        ],
+        "question": "Why does my lower back ache when I have my period?",
+        "answer": "The chemicals that cause your uterus to contract can also cause the muscles in your lower back to tense up and ache. It's a very common symptom known as referred pain.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "menstrual_health",
+        "topic": "back pain",
+        "keywords": [
+            "back pain",
+            "stretches",
+            "relief",
+            "massage"
+        ],
+        "question": "What can I do to relieve period back pain?",
+        "answer": "Applying a warm heating pad to your lower back is very effective. Gentle yoga poses like Child's Pose or Cat-Cow can also stretch and relax those muscles, relieving the tension.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "menstrual_health",
+        "topic": "cramps",
+        "keywords": [
+            "cramps",
+            "exercise",
+            "working out",
+            "movement"
+        ],
+        "question": "Is it okay to exercise when I have cramps?",
+        "answer": "Yes! Light to moderate exercise releases endorphins, which are your body's natural painkillers. Activities like walking, swimming, or cycling can actually help reduce cramping.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "menstrual_health",
+        "topic": "PMS",
+        "keywords": [
+            "PMS",
+            "skin",
+            "acne",
+            "breakouts"
+        ],
+        "question": "Why does my skin break out before my period?",
+        "answer": "Before your period, progesterone levels rise, which can increase oil production in your skin and lead to clogged pores and breakouts. Keeping your skin clean and hydrated can help manage it.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "menstrual_health",
+        "topic": "bloating",
+        "keywords": [
+            "bloating",
+            "clothing",
+            "comfort",
+            "tight clothes"
+        ],
+        "question": "Is it bad to wear tight clothes when bloated?",
+        "answer": "It's not medically dangerous, but tight clothes can make bloating feel much more uncomfortable and restrict your digestion. Opting for loose, soft fabrics during your period will keep you much cozier.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "menstrual_health",
+        "topic": "fatigue",
+        "keywords": [
+            "fatigue",
+            "sleep",
+            "insomnia",
+            "night sweats"
+        ],
+        "question": "Why is it hard to sleep on my period even though I'm tired?",
+        "answer": "Hormone fluctuations, along with physical discomfort like cramps or bloating, can disrupt your sleep cycle. Keeping your room cool and establishing a relaxing bedtime routine can help you rest better.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "menstrual_health",
+        "topic": "headaches",
+        "keywords": [
+            "headaches",
+            "screen time",
+            "light sensitivity",
+            "phone"
+        ],
+        "question": "Does looking at my phone make my period headache worse?",
+        "answer": "It can. The bright blue light from screens can strain your eyes and worsen hormonal headaches. Taking breaks from your devices and dimming the brightness can provide some relief.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "menstrual_health",
+        "topic": "irregular periods",
+        "keywords": [
+            "irregular",
+            "stress",
+            "anxiety",
+            "missing period"
+        ],
+        "question": "Can being really stressed out make my period late?",
+        "answer": "Absolutely. High stress levels produce cortisol, which can interfere with the hormones responsible for your cycle. Once your stress levels balance out, your period usually returns to normal.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "menstrual_health",
+        "topic": "heavy flow",
+        "keywords": [
+            "heavy flow",
+            "iron",
+            "anemia",
+            "dizziness"
+        ],
+        "question": "Should I take iron supplements if I have a normal but heavy period?",
+        "answer": "It's a good idea to eat iron-rich foods, but you shouldn't take iron supplements unless directed by a doctor. If you feel dizzy or weak, a doctor can check your iron levels first.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "menstrual_health",
+        "topic": "light flow",
+        "keywords": [
+            "light flow",
+            "color",
+            "pink blood",
+            "brown blood"
+        ],
+        "question": "My period blood is light pink, is that normal?",
+        "answer": "Yes, pink blood is usually just regular period blood mixed with normal cervical fluid. It's very common at the beginning or end of your period when your flow is lighter.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "menstrual_health",
+        "topic": "spotting",
+        "keywords": [
+            "spotting",
+            "sex",
+            "bleeding",
+            "friction"
+        ],
+        "question": "I had a tiny bit of spotting after sex, should I worry?",
+        "answer": "A little spotting after sex can happen due to minor friction or a sensitive cervix, and it's usually harmless. However, if it happens frequently, it's a good idea to mention it to your doctor.",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "menstrual_health",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "communication",
+            "relationships",
+            "PMS"
+        ],
+        "question": "How do I explain my PMS mood swings to my partner?",
+        "answer": "Honesty is the best approach! Let them know that your hormones are shifting and you might feel more sensitive or tired. Communicating your needs, like asking for a little extra patience or a hug, goes a long way.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "menstrual_health",
+        "topic": "back pain",
+        "keywords": [
+            "back pain",
+            "bath",
+            "epsom salt",
+            "relaxation"
+        ],
+        "question": "Does taking a bath help with period back pain?",
+        "answer": "Yes, a warm bath is fantastic for easing muscle tension in your lower back. Adding Epsom salts can provide an extra boost of magnesium, which helps relax cramping muscles.",
+        "severity": "low"
+    },
+    {
+        "id": 36,
+        "category": "menstrual_health",
+        "topic": "cramps",
+        "keywords": [
+            "cramps",
+            "severe pain",
+            "work",
+            "school"
+        ],
+        "question": "My cramps are so bad I have to miss school sometimes. What should I do?",
+        "answer": "While some discomfort is normal, pain that stops you from doing daily activities like school or work isn't something you should have to just endure. It's a good idea to schedule a visit with a doctor to discuss stronger management options.",
+        "severity": "medium"
+    },
+    {
+        "id": 37,
+        "category": "menstrual_health",
+        "topic": "cramps",
+        "keywords": [
+            "cramps",
+            "medication not working",
+            "pain",
+            "doctor"
+        ],
+        "question": "Over-the-counter painkillers aren't helping my cramps at all. Is this normal?",
+        "answer": "If standard doses of ibuprofen or naproxen are providing absolutely no relief, it's worth checking in with a healthcare provider. They can help investigate if there's an underlying reason and offer better solutions.",
+        "severity": "medium"
+    },
+    {
+        "id": 38,
+        "category": "menstrual_health",
+        "topic": "irregular periods",
+        "keywords": [
+            "irregular",
+            "missing months",
+            "absent period",
+            "amenorrhea"
+        ],
+        "question": "I haven't had my period in 3 months, and I know I'm not pregnant. What's wrong?",
+        "answer": "Missing three periods in a row is a signal to check in with a doctor. It can be caused by significant stress, intense exercise, weight changes, or hormonal imbalances like PCOS. A doctor can help you find the root cause safely.",
+        "severity": "medium"
+    },
+    {
+        "id": 39,
+        "category": "menstrual_health",
+        "topic": "irregular periods",
+        "keywords": [
+            "irregular",
+            "frequent periods",
+            "short cycle",
+            "bleeding"
+        ],
+        "question": "I am getting my period every 18 days. Is my cycle too short?",
+        "answer": "A healthy cycle is generally between 21 and 35 days. Getting a full period every 18 days is shorter than average and can leave you feeling fatigued or low on iron. You should mention this to a healthcare provider.",
+        "severity": "medium"
+    },
+    {
+        "id": 40,
+        "category": "menstrual_health",
+        "topic": "heavy flow",
+        "keywords": [
+            "heavy flow",
+            "clots",
+            "large clots",
+            "bleeding"
+        ],
+        "question": "I am passing blood clots the size of a quarter. Should I be concerned?",
+        "answer": "Small clots are normal, but passing clots that are the size of a quarter or larger is a sign of a very heavy flow. It's a good idea to consult a doctor, as they can help manage the bleeding and protect your iron levels.",
+        "severity": "medium"
+    },
+    {
+        "id": 41,
+        "category": "menstrual_health",
+        "topic": "heavy flow",
+        "keywords": [
+            "heavy flow",
+            "long period",
+            "bleeding days",
+            "week"
+        ],
+        "question": "My period has lasted for 9 days and is still going. What should I do?",
+        "answer": "A standard period lasts up to 7 days. Bleeding for more than 8 or 9 days is considered prolonged. You should make an appointment with a healthcare provider to ensure you aren't losing too much blood.",
+        "severity": "medium"
+    },
+    {
+        "id": 42,
+        "category": "menstrual_health",
+        "topic": "spotting",
+        "keywords": [
+            "spotting",
+            "between periods",
+            "irregular bleeding",
+            "mid-cycle"
+        ],
+        "question": "I'm having heavy spotting for several days right in the middle of my cycle. Is this okay?",
+        "answer": "While a day of light ovulation spotting is normal, several days of heavy spotting between periods should be evaluated. It could be related to hormonal changes, a new medication, or something a doctor should check.",
+        "severity": "medium"
+    },
+    {
+        "id": 43,
+        "category": "menstrual_health",
+        "topic": "spotting",
+        "keywords": [
+            "spotting",
+            "pain",
+            "bleeding",
+            "cramping between periods"
+        ],
+        "question": "I have random spotting and sharp pelvic pain between my periods.",
+        "answer": "Spotting accompanied by sharp or persistent pelvic pain outside of your normal period window warrants a medical check-up. A doctor can rule out things like cysts or infections and help you feel better.",
+        "severity": "medium"
+    },
+    {
+        "id": 44,
+        "category": "menstrual_health",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "depression",
+            "sadness",
+            "severe PMS"
+        ],
+        "question": "My PMS makes me feel completely hopeless and deeply sad for days. How can I fix this?",
+        "answer": "When PMS mood changes shift from normal irritability to deep sadness or feeling hopeless, it could be a sign of PMDD (Premenstrual Dysphoric Disorder). Please reach out to a healthcare provider—there are highly effective treatments available to help you.",
+        "severity": "medium"
+    },
+    {
+        "id": 45,
+        "category": "menstrual_health",
+        "topic": "headaches",
+        "keywords": [
+            "headaches",
+            "migraine",
+            "vision",
+            "aura"
+        ],
+        "question": "My period headaches cause blurry vision and make me dizzy.",
+        "answer": "Headaches that cause blurry vision, dizziness, or sensitivity to light are often migraines. Because hormonal migraines can be intense, it's best to consult a doctor who can prescribe specific, safe medications to relieve them.",
+        "severity": "medium"
+    },
+    {
+        "id": 46,
+        "category": "menstrual_health",
+        "topic": "cramps",
+        "keywords": [
+            "cramps",
+            "fainting",
+            "vomiting",
+            "extreme pain"
+        ],
+        "question": "My period cramps are so agonizing that I throw up and feel like I might faint.",
+        "answer": "This level of pain is not normal and you do not have to suffer through it. Extreme pain accompanied by vomiting or fainting could indicate conditions like endometriosis. Please seek medical care from a gynecologist as soon as possible.",
+        "severity": "high"
+    },
+    {
+        "id": 47,
+        "category": "menstrual_health",
+        "topic": "heavy flow",
+        "keywords": [
+            "heavy flow",
+            "soaking pads",
+            "hemorrhage",
+            "excessive bleeding"
+        ],
+        "question": "I am bleeding so heavily that I have to change my super pad every hour for the past 3 hours.",
+        "answer": "Bleeding through a heavy pad or tampon every hour for two or more consecutive hours is a medical emergency. You are losing blood too quickly. Please go to an urgent care or emergency room immediately.",
+        "severity": "high"
+    },
+    {
+        "id": 48,
+        "category": "menstrual_health",
+        "topic": "nausea",
+        "keywords": [
+            "nausea",
+            "fever",
+            "tampon",
+            "TSS",
+            "vomiting"
+        ],
+        "question": "I have my period and I suddenly have a high fever, a rash, and severe vomiting. I'm using a tampon.",
+        "answer": "Remove your tampon immediately and seek emergency medical care right away. These are warning signs of Toxic Shock Syndrome (TSS), a rare but very serious bacterial infection that requires immediate medical treatment.",
+        "severity": "high"
+    },
+    {
+        "id": 49,
+        "category": "menstrual_health",
+        "topic": "back pain",
+        "keywords": [
+            "back pain",
+            "fever",
+            "pelvic pain",
+            "infection"
+        ],
+        "question": "Along with my period, I have severe lower back and pelvic pain, a fever, and foul-smelling discharge.",
+        "answer": "These symptoms are strong warning signs of a pelvic infection, such as Pelvic Inflammatory Disease (PID). This requires prompt medical attention to prevent complications, so please see a doctor or go to an urgent care clinic today.",
+        "severity": "high"
+    },
+    {
+        "id": 50,
+        "category": "menstrual_health",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "suicidal thoughts",
+            "PMDD",
+            "crisis"
+        ],
+        "question": "Right before my period, my mood drops so low that I have thoughts of hurting myself.",
+        "answer": "Your safety is the absolute priority right now. Severe hormonal drops can cause dangerous mood shifts. Please reach out for help immediately by calling or texting a local emergency or crisis lifeline. You don't have to go through this alone, and medical professionals can help you stabilize.",
+        "severity": "high"
+    }
+]

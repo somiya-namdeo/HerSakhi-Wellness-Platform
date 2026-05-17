@@ -14,7 +14,7 @@ const ChatContainer = ({ messages, onSendMessage, isSending }) => {
 
   useEffect(() => {
     scrollToBottom()
-  }, [messages])
+  }, [messages, isSending])
 
   return (
     <motion.div 
@@ -33,7 +33,7 @@ const ChatContainer = ({ messages, onSendMessage, isSending }) => {
           <div className="flex justify-start mb-4">
             <div className="bg-gray-50 text-gray-400 text-xs px-4 py-2 rounded-2xl flex items-center gap-2">
               <Loader2 className="w-3 h-3 animate-spin" />
-              Assistant is thinking...
+              HerSakhi is thinking...
             </div>
           </div>
         )}

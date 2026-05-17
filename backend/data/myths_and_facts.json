@@ -1,0 +1,416 @@
+[
+    {
+        "id": 1,
+        "category": "myths_and_facts",
+        "topic": "periods",
+        "keywords": [
+            "syncing",
+            "friends",
+            "period sync",
+            "menstrual synchrony"
+        ],
+        "question": "Myth or Fact: Women who spend a lot of time together sync their periods.",
+        "answer": "Myth! While it's a very popular belief, scientific studies have shown that menstrual syncing is just a statistical coincidence. Cycles naturally vary in length, so they will occasionally overlap by pure chance.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "myths_and_facts",
+        "topic": "periods",
+        "keywords": [
+            "ocean",
+            "swimming",
+            "sharks",
+            "blood"
+        ],
+        "question": "Myth or Fact: You can't swim in the ocean on your period because the blood attracts sharks.",
+        "answer": "Myth! There is absolutely no scientific evidence that menstrual blood attracts sharks. You can safely swim in the ocean while on your period using a tampon or menstrual cup.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "myths_and_facts",
+        "topic": "periods",
+        "keywords": [
+            "dirty",
+            "toxic",
+            "blood",
+            "stigma"
+        ],
+        "question": "Myth or Fact: Period blood is dirty and toxic.",
+        "answer": "Myth! Period blood is just a harmless mixture of blood, tissue from your uterine lining, mucus, and natural bacteria. It is completely natural, healthy, and not dirty or toxic in any way.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "myths_and_facts",
+        "topic": "periods",
+        "keywords": [
+            "blood loss",
+            "heavy bleeding",
+            "volume"
+        ],
+        "question": "Myth or Fact: You lose a huge amount of blood during your period.",
+        "answer": "Myth! While it can look like a large amount, the average woman only loses about 2 to 3 tablespoons (30 to 50 milliliters) of blood over the entire course of her period.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "myths_and_facts",
+        "topic": "periods",
+        "keywords": [
+            "tampon",
+            "virginity",
+            "hymen",
+            "teens"
+        ],
+        "question": "Myth or Fact: You cannot use a tampon if you are a virgin.",
+        "answer": "Myth! Using a tampon has nothing to do with virginity. The hymen naturally stretches and has an opening that allows period blood to flow out and a tampon to be inserted safely and comfortably.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "myths_and_facts",
+        "topic": "exercise",
+        "keywords": [
+            "exercise",
+            "working out",
+            "cramps",
+            "rest"
+        ],
+        "question": "Myth or Fact: You should avoid exercising when you have your period.",
+        "answer": "Myth! Exercise is actually highly recommended during your period. Moving your body releases endorphins, which act as natural painkillers and can significantly reduce cramps and boost your mood.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "myths_and_facts",
+        "topic": "exercise",
+        "keywords": [
+            "yoga",
+            "inversions",
+            "upside down",
+            "headstand"
+        ],
+        "question": "Myth or Fact: Doing yoga headstands or going upside down on your period is dangerous.",
+        "answer": "Myth! There is no medical evidence that going upside down causes blood to flow backwards or causes endometriosis. It is completely medically safe if it feels physically comfortable for you.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "myths_and_facts",
+        "topic": "exercise",
+        "keywords": [
+            "lifting weights",
+            "heavy lifting",
+            "prolapse",
+            "gym"
+        ],
+        "question": "Myth or Fact: Lifting heavy weights during your period causes pelvic organ prolapse.",
+        "answer": "Myth! Lifting weights is safe during your period. Prolapse is related to pelvic floor weakness, not menstruation. Just ensure you use proper form, breathe correctly, and listen to your energy levels.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "myths_and_facts",
+        "topic": "exercise",
+        "keywords": [
+            "cardio",
+            "stretching",
+            "types of exercise"
+        ],
+        "question": "Myth or Fact: You should only do light stretching and avoid cardio on your period.",
+        "answer": "Myth! You can do whatever type of exercise feels good. If you have the energy for a run, a spin class, or heavy lifting, go for it! Your body is fully capable of high-intensity workouts on your period.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "myths_and_facts",
+        "topic": "exercise",
+        "keywords": [
+            "workout",
+            "heavy flow",
+            "bleeding",
+            "sweat"
+        ],
+        "question": "Myth or Fact: Working out makes your period flow much heavier.",
+        "answer": "Myth! Exercise might cause blood to exit your body a bit faster in that moment due to movement and core engagement, but it does not actually increase the total volume of blood you lose.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "myths_and_facts",
+        "topic": "bathing",
+        "keywords": [
+            "washing hair",
+            "showering",
+            "flow",
+            "stopping period"
+        ],
+        "question": "Myth or Fact: Washing your hair during your period will make your flow stop.",
+        "answer": "Myth! Washing your hair or taking a shower has absolutely no effect on your menstrual flow or your reproductive system. Good hygiene is important and perfectly safe every day of your cycle.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "myths_and_facts",
+        "topic": "bathing",
+        "keywords": [
+            "hot bath",
+            "heat",
+            "bleeding out",
+            "tub"
+        ],
+        "question": "Myth or Fact: Taking a hot bath will make you bleed dangerously heavy.",
+        "answer": "Myth! A hot bath actually helps relax uterine muscles and ease cramps. The water pressure might temporarily slow the flow of blood out of the vagina while you're in the tub, but it is completely safe.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "myths_and_facts",
+        "topic": "bathing",
+        "keywords": [
+            "first day",
+            "showering",
+            "cleaning"
+        ],
+        "question": "Myth or Fact: You shouldn't bathe or shower on the first day of your period.",
+        "answer": "Myth! Bathing and showering are perfectly safe and highly recommended on the first day (and every day) of your period to maintain hygiene, prevent odor, and help you feel relaxed and refreshed.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "myths_and_facts",
+        "topic": "bathing",
+        "keywords": [
+            "douching",
+            "cleaning inside",
+            "vagina",
+            "hygiene"
+        ],
+        "question": "Myth or Fact: Douching is necessary to clean yourself out after your period ends.",
+        "answer": "Myth! The vagina is incredibly smart and completely self-cleaning. Douching disrupts your natural pH balance, washes away good protective bacteria, and can actually cause painful infections.",
+        "severity": "medium"
+    },
+    {
+        "id": 15,
+        "category": "myths_and_facts",
+        "topic": "fertility",
+        "keywords": [
+            "pregnancy",
+            "period sex",
+            "conception"
+        ],
+        "question": "Myth or Fact: You cannot get pregnant if you have sex during your period.",
+        "answer": "Myth! While it is less likely, sperm can live inside the female reproductive tract for up to 5 days. If you have a naturally short cycle, you could ovulate soon after your period ends and get pregnant.",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "myths_and_facts",
+        "topic": "fertility",
+        "keywords": [
+            "age 35",
+            "fertility cliff",
+            "getting older",
+            "babies"
+        ],
+        "question": "Myth or Fact: A woman's fertility drops to zero the moment she turns 35.",
+        "answer": "Myth! While fertility does begin to gradually decline in a woman's late 20s and early 30s, it certainly does not vanish at 35. Many women naturally conceive and have very healthy pregnancies in their late 30s and 40s.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "myths_and_facts",
+        "topic": "fertility",
+        "keywords": [
+            "birth control",
+            "the pill",
+            "infertility",
+            "long term"
+        ],
+        "question": "Myth or Fact: Taking birth control pills for a long time causes permanent infertility.",
+        "answer": "Myth! Hormonal birth control does not permanently impact your long-term fertility. Once you stop taking the pill, your natural hormonal cycle and fertility typically return within a few months.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "myths_and_facts",
+        "topic": "fertility",
+        "keywords": [
+            "day 14",
+            "ovulation timing",
+            "calendar"
+        ],
+        "question": "Myth or Fact: Every woman ovulates exactly on Day 14 of her menstrual cycle.",
+        "answer": "Myth! Day 14 is just a mathematical average based on a textbook 28-day cycle. Ovulation actually occurs about 12 to 16 days before the *next* period starts, so the exact day varies greatly from person to person.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "myths_and_facts",
+        "topic": "food",
+        "keywords": [
+            "sour food",
+            "lemons",
+            "pickles",
+            "cramps"
+        ],
+        "question": "Myth or Fact: Eating sour foods makes period cramps worse.",
+        "answer": "Myth! There is absolutely no scientific link between eating sour foods like lemons, tamarind, or pickles and experiencing worse period cramps. You can safely enjoy your favorite sour snacks.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "myths_and_facts",
+        "topic": "food",
+        "keywords": [
+            "cold water",
+            "ice",
+            "blood clots",
+            "cramps"
+        ],
+        "question": "Myth or Fact: Drinking cold water during your period causes your blood to clot and increases cramps.",
+        "answer": "Myth! The temperature of your drinking water does not affect your menstrual flow or freeze your blood. Staying hydrated with water of any temperature is excellent for your body and helps reduce bloating.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "myths_and_facts",
+        "topic": "food",
+        "keywords": [
+            "sugar",
+            "sweets",
+            "chocolate",
+            "diet"
+        ],
+        "question": "Myth or Fact: You shouldn't eat any sugar at all during your period.",
+        "answer": "Myth! While eating too much refined sugar can cause energy crashes and worsen inflammation, enjoying a sweet treat or some dark chocolate is perfectly fine and can provide a nice, temporary mood boost.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "myths_and_facts",
+        "topic": "food",
+        "keywords": [
+            "iron supplements",
+            "anemia",
+            "vitamins"
+        ],
+        "question": "Myth or Fact: All women need to take iron supplements during their period.",
+        "answer": "Myth! Unless a doctor has specifically diagnosed you with anemia or an iron deficiency, a balanced, healthy diet is usually enough to maintain normal iron levels, even during your menstrual bleeding.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "myths_and_facts",
+        "topic": "PCOS",
+        "keywords": [
+            "PCOS",
+            "ovarian cysts",
+            "ultrasound",
+            "diagnosis"
+        ],
+        "question": "Myth or Fact: If you have PCOS, it means you have large cysts on your ovaries.",
+        "answer": "Myth! Despite the name, you don't actually need to have cysts to be diagnosed with PCOS. The 'cysts' seen on ultrasounds are often just small, partially developed follicles that failed to release an egg, not painful abnormal cysts.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "myths_and_facts",
+        "topic": "PCOS",
+        "keywords": [
+            "PCOS",
+            "infertility",
+            "getting pregnant",
+            "sterile"
+        ],
+        "question": "Myth or Fact: You absolutely cannot get pregnant if you have PCOS.",
+        "answer": "Myth! While PCOS is a common cause of fertility struggles due to irregular ovulation, it certainly does not mean you are sterile. With lifestyle adjustments or medical support to stimulate ovulation, many women with PCOS conceive naturally.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "myths_and_facts",
+        "topic": "PCOS",
+        "keywords": [
+            "PCOS",
+            "weight",
+            "overweight",
+            "lean PCOS"
+        ],
+        "question": "Myth or Fact: PCOS only affects women who are overweight.",
+        "answer": "Myth! While weight gain is a common symptom due to insulin resistance, PCOS affects women of all body sizes. 'Lean PCOS' is very real, and thin women can also struggle with the hormonal imbalances of the condition.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "myths_and_facts",
+        "topic": "PCOS",
+        "keywords": [
+            "PCOS",
+            "cure",
+            "birth control",
+            "treatment"
+        ],
+        "question": "Myth or Fact: Birth control pills will cure your PCOS.",
+        "answer": "Myth! There is currently no complete cure for PCOS. Birth control pills can be a very helpful tool to manage the symptoms and regulate your bleeding, but the underlying hormonal condition remains.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "myths_and_facts",
+        "topic": "mood swings",
+        "keywords": [
+            "PMS",
+            "in your head",
+            "emotions",
+            "fake"
+        ],
+        "question": "Myth or Fact: PMS is all in your head.",
+        "answer": "Myth! PMS is a very real, scientifically proven physiological response. It is caused by the sharp drop in estrogen and progesterone before your period, which directly affects brain chemicals like serotonin and causes real physical and emotional shifts.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "myths_and_facts",
+        "topic": "mood swings",
+        "keywords": [
+            "irrational",
+            "hormonal",
+            "crazy",
+            "emotions"
+        ],
+        "question": "Myth or Fact: Women become completely irrational and incapable on their periods.",
+        "answer": "Myth! While normal hormone shifts can make you feel more emotionally tender, tired, or irritable, they absolutely do not strip away your logic, competence, intelligence, or ability to reason.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "myths_and_facts",
+        "topic": "mood swings",
+        "keywords": [
+            "anger",
+            "PMSing",
+            "valid emotions",
+            "stereotype"
+        ],
+        "question": "Myth or Fact: If a woman is angry, she must be PMSing.",
+        "answer": "Myth! Women are allowed to feel valid anger, frustration, or sadness any day of the month. Dismissing a woman's genuine feelings as just 'PMS' is an unfair and scientifically baseless stereotype.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "myths_and_facts",
+        "topic": "mood swings",
+        "keywords": [
+            "severe mood swings",
+            "PMDD",
+            "suffering",
+            "treatment"
+        ],
+        "question": "Myth or Fact: Severe, debilitating mood swings during PMS are just something you have to live with.",
+        "answer": "Myth! If your mood swings are severe enough to cause deep sadness, hopelessness, or disrupt your daily life (a condition known as PMDD), you do not have to just suffer through it. There are highly effective treatments available.",
+        "severity": "medium"
+    }
+]

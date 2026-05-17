@@ -1,0 +1,288 @@
+[
+    {
+        "id": 1,
+        "category": "emergency_guidance",
+        "topic": "severe bleeding",
+        "keywords": [
+            "heavy bleeding",
+            "soaking pads",
+            "changing every hour",
+            "hemorrhage"
+        ],
+        "question": "I am bleeding so heavily that I have to change my pad every hour. What should I do?",
+        "answer": "Bleeding through a pad or tampon every hour for two or more consecutive hours is considered a medical emergency. Please go to the nearest urgent care or emergency room. It is important to have a healthcare professional evaluate and help manage this level of blood loss.",
+        "severity": "high"
+    },
+    {
+        "id": 2,
+        "category": "emergency_guidance",
+        "topic": "severe bleeding",
+        "keywords": [
+            "blood clots",
+            "large clots",
+            "golf ball",
+            "heavy flow"
+        ],
+        "question": "I am passing blood clots that are larger than a golf ball. Is this safe?",
+        "answer": "Passing clots larger than the size of a golf ball or quarter is a sign of unusually heavy bleeding. Please contact a healthcare provider immediately or visit an urgent care center to ensure your body is not losing too much blood too quickly.",
+        "severity": "high"
+    },
+    {
+        "id": 3,
+        "category": "emergency_guidance",
+        "topic": "severe bleeding",
+        "keywords": [
+            "dizzy",
+            "bleeding",
+            "weak",
+            "pale",
+            "blood loss"
+        ],
+        "question": "My period is very heavy and I am starting to feel dizzy, weak, and short of breath.",
+        "answer": "Feeling dizzy, weak, or short of breath alongside heavy bleeding are signs that your body's iron and blood volume are dropping too low. Please sit or lie down to stay safe, and have someone take you to the nearest emergency room or urgent care.",
+        "severity": "high"
+    },
+    {
+        "id": 4,
+        "category": "emergency_guidance",
+        "topic": "fainting",
+        "keywords": [
+            "fainting",
+            "passed out",
+            "period",
+            "cramps",
+            "loss of consciousness"
+        ],
+        "question": "I passed out from the pain of my period cramps. Do I need to see a doctor?",
+        "answer": "Yes, passing out from pain is your body's way of signaling that the pain is too severe to handle alone. Please reach out to a healthcare provider for an evaluation. You deserve safe, effective pain management and should not have to endure this level of discomfort.",
+        "severity": "high"
+    },
+    {
+        "id": 5,
+        "category": "emergency_guidance",
+        "topic": "fainting",
+        "keywords": [
+            "lightheaded",
+            "standing up",
+            "blacking out",
+            "dizzy"
+        ],
+        "question": "Every time I stand up during my period, my vision goes black and I feel like I will faint.",
+        "answer": "This can be a sign of a significant drop in blood pressure or blood volume. Please stay seated or lying down to prevent a fall. It is highly recommended that you contact a doctor or seek medical care today to check your vital signs and ensure you are safe.",
+        "severity": "high"
+    },
+    {
+        "id": 6,
+        "category": "emergency_guidance",
+        "topic": "toxic shock syndrome",
+        "keywords": [
+            "fever",
+            "rash",
+            "tampon",
+            "TSS",
+            "vomiting"
+        ],
+        "question": "I am wearing a tampon and suddenly have a high fever, diarrhea, and a sunburn-like rash. What is happening?",
+        "answer": "Please remove the tampon immediately and seek emergency medical care. These symptoms can be signs of Toxic Shock Syndrome (TSS), a rare but serious bacterial infection that requires prompt professional treatment to keep you safe.",
+        "severity": "high"
+    },
+    {
+        "id": 7,
+        "category": "emergency_guidance",
+        "topic": "toxic shock syndrome",
+        "keywords": [
+            "forgot tampon",
+            "stuck tampon",
+            "smell",
+            "sick"
+        ],
+        "question": "I forgot a tampon inside me for a few days, and now I feel sick and have a bad smelling discharge.",
+        "answer": "Please do not try to manage this on your own. Go to an urgent care or emergency room to have a healthcare professional safely remove it and evaluate you for any signs of infection. It is a common occurrence, and doctors are there to help you without judgment.",
+        "severity": "high"
+    },
+    {
+        "id": 8,
+        "category": "emergency_guidance",
+        "topic": "extreme pain",
+        "keywords": [
+            "severe pain",
+            "vomiting",
+            "medication not working",
+            "cramps"
+        ],
+        "question": "My pelvic pain is so extreme that I am throwing up, and painkillers are doing nothing.",
+        "answer": "When pain is severe enough to cause vomiting and does not respond to standard medication, it requires medical attention. Please visit an emergency room or urgent care so doctors can safely manage your pain and check for underlying conditions like an ovarian cyst or endometriosis.",
+        "severity": "high"
+    },
+    {
+        "id": 9,
+        "category": "emergency_guidance",
+        "topic": "extreme pain",
+        "keywords": [
+            "sudden pain",
+            "sharp pain",
+            "one side",
+            "pelvic"
+        ],
+        "question": "I suddenly developed a very sharp, blinding pain on one side of my lower stomach.",
+        "answer": "Sudden, sharp, and severe pelvic pain can sometimes indicate an ovarian cyst rupture, ovarian torsion, or an ectopic pregnancy. Please seek emergency medical evaluation right away to ensure your safety and get the proper care.",
+        "severity": "high"
+    },
+    {
+        "id": 10,
+        "category": "emergency_guidance",
+        "topic": "extreme pain",
+        "keywords": [
+            "shoulder pain",
+            "pelvic pain",
+            "ectopic",
+            "pregnancy"
+        ],
+        "question": "I have severe pelvic pain that seems to be spreading up into my shoulder tip.",
+        "answer": "Pelvic pain combined with pain radiating to the tip of your shoulder can be a specific warning sign of a ruptured ectopic pregnancy or internal bleeding. Please call for emergency medical help or go to the nearest emergency room immediately.",
+        "severity": "high"
+    },
+    {
+        "id": 11,
+        "category": "emergency_guidance",
+        "topic": "chest pain",
+        "keywords": [
+            "chest pain",
+            "birth control",
+            "breathing",
+            "shortness of breath",
+            "pill"
+        ],
+        "question": "I am on the birth control pill and just developed sudden chest pain and trouble breathing.",
+        "answer": "Sudden chest pain and shortness of breath, especially when taking hormonal birth control, require immediate emergency medical care, as they can be signs of a blood clot. Please call your local emergency number or go to the nearest emergency room right away.",
+        "severity": "high"
+    },
+    {
+        "id": 12,
+        "category": "emergency_guidance",
+        "topic": "chest pain",
+        "keywords": [
+            "heart racing",
+            "palpitations",
+            "weak",
+            "anxious",
+            "fast heart rate"
+        ],
+        "question": "My heart is racing very fast, my chest feels tight, and I feel incredibly weak.",
+        "answer": "A very fast heart rate accompanied by weakness and chest tightness should always be evaluated by a medical professional. Please seek emergency care. Doctors will check your heart and ensure you receive the appropriate treatment.",
+        "severity": "high"
+    },
+    {
+        "id": 13,
+        "category": "emergency_guidance",
+        "topic": "suicidal thoughts",
+        "keywords": [
+            "suicidal",
+            "PMDD",
+            "hopeless",
+            "hurt myself",
+            "PMS"
+        ],
+        "question": "My PMS makes me feel so hopeless that I am having thoughts of ending my life.",
+        "answer": "Your life is valuable, and you do not have to endure this alone. Severe hormonal shifts can cause dangerous mood drops. Please reach out for immediate support by calling or texting your local suicide and crisis lifeline, or go to the nearest emergency room. Professional help is available right now.",
+        "severity": "high"
+    },
+    {
+        "id": 14,
+        "category": "emergency_guidance",
+        "topic": "suicidal thoughts",
+        "keywords": [
+            "self-harm",
+            "cutting",
+            "depression",
+            "crisis"
+        ],
+        "question": "I am feeling an overwhelming urge to self-harm because my emotions are out of control today.",
+        "answer": "Please know that this overwhelming feeling is a medical symptom, and you deserve a safe space to get through it. Reach out to a crisis hotline or a trusted loved one immediately, or visit an emergency room. They can help you stay safe until this intense wave passes.",
+        "severity": "high"
+    },
+    {
+        "id": 15,
+        "category": "emergency_guidance",
+        "topic": "severe dehydration",
+        "keywords": [
+            "vomiting",
+            "fluids",
+            "keep water down",
+            "dehydration"
+        ],
+        "question": "My period pain has caused me to throw up all day, and I can't even keep a sip of water down.",
+        "answer": "Being unable to keep any fluids down for an extended period can quickly lead to severe dehydration. Please go to an urgent care or emergency room. They can safely administer fluids through an IV and give you medication to stop the nausea and pain.",
+        "severity": "high"
+    },
+    {
+        "id": 16,
+        "category": "emergency_guidance",
+        "topic": "severe dehydration",
+        "keywords": [
+            "dark urine",
+            "confusion",
+            "dizzy",
+            "no pee"
+        ],
+        "question": "I haven't peed in hours, my mouth is completely dry, and I feel confused and dizzy.",
+        "answer": "These are signs of severe dehydration, which requires medical attention. Please seek care at an urgent care center or emergency room as soon as possible so healthcare professionals can safely restore your body's hydration levels.",
+        "severity": "high"
+    },
+    {
+        "id": 17,
+        "category": "emergency_guidance",
+        "topic": "emergency symptoms",
+        "keywords": [
+            "fever",
+            "pelvic pain",
+            "infection",
+            "chills"
+        ],
+        "question": "I have severe lower stomach pain, a high fever, and chills.",
+        "answer": "A high fever combined with severe pelvic pain can be a sign of a pelvic infection, such as Pelvic Inflammatory Disease (PID) or an infected cyst. Please visit an emergency room or urgent care today for an evaluation and antibiotics if needed.",
+        "severity": "high"
+    },
+    {
+        "id": 18,
+        "category": "emergency_guidance",
+        "topic": "emergency symptoms",
+        "keywords": [
+            "pregnant",
+            "bleeding",
+            "cramping",
+            "pregnancy"
+        ],
+        "question": "I know I am pregnant, but I just started bleeding heavily with severe cramps.",
+        "answer": "Any heavy bleeding or severe cramping during a known pregnancy requires immediate medical evaluation. Please go to the nearest emergency room or contact your obstetrician right away. Healthcare professionals will gently examine you to provide the best possible care.",
+        "severity": "high"
+    },
+    {
+        "id": 19,
+        "category": "emergency_guidance",
+        "topic": "emergency symptoms",
+        "keywords": [
+            "headache",
+            "vision changes",
+            "blurry vision",
+            "migraine"
+        ],
+        "question": "I have the worst headache of my life, and my vision is suddenly blurry.",
+        "answer": "A sudden, severe headache accompanied by vision changes should be checked by a doctor immediately, as it can indicate a serious neurological issue or severe blood pressure changes. Please seek emergency medical care to be safely evaluated.",
+        "severity": "high"
+    },
+    {
+        "id": 20,
+        "category": "emergency_guidance",
+        "topic": "emergency symptoms",
+        "keywords": [
+            "discharge",
+            "foul smell",
+            "green",
+            "pain"
+        ],
+        "question": "I suddenly have a foul-smelling, green discharge along with intense pelvic pain and a fever.",
+        "answer": "These symptoms are strong indicators of an active bacterial infection in your reproductive tract. Please seek medical attention at an urgent care or emergency room right away to receive a proper diagnosis and the necessary treatment to heal.",
+        "severity": "high"
+    }
+]

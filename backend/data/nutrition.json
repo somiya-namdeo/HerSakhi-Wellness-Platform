@@ -1,0 +1,564 @@
+[
+    {
+        "id": 1,
+        "category": "nutrition",
+        "topic": "iron-rich foods",
+        "keywords": [
+            "iron",
+            "anemia",
+            "spinach",
+            "lentils",
+            "meat"
+        ],
+        "question": "What are the best foods to eat if I need more iron?",
+        "answer": "Great natural sources of iron include leafy greens like spinach, lentils, beans, tofu, and lean red meat. Fortified cereals and pumpkin seeds are also fantastic options!",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "nutrition",
+        "topic": "iron-rich foods",
+        "keywords": [
+            "iron absorption",
+            "vitamin C",
+            "citrus",
+            "diet"
+        ],
+        "question": "How can I help my body absorb iron better from my food?",
+        "answer": "Pair your iron-rich foods with a source of Vitamin C! Squeezing lemon over your spinach salad, or eating strawberries with your fortified cereal, helps your body absorb the iron much more easily.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "nutrition",
+        "topic": "iron-rich foods",
+        "keywords": [
+            "vegetarian",
+            "vegan",
+            "plant-based",
+            "iron"
+        ],
+        "question": "What are the best plant-based sources of iron?",
+        "answer": "If you are eating plant-based, focus on lentils, chickpeas, tofu, quinoa, and dark leafy greens. Snacking on cashews and dried apricots is also a great way to boost your intake.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "nutrition",
+        "topic": "iron-rich foods",
+        "keywords": [
+            "iron deficiency",
+            "fatigue",
+            "tired",
+            "low iron"
+        ],
+        "question": "How do I know if I might need more iron in my diet?",
+        "answer": "Feeling unusually exhausted, weak, or dizzy, and noticing pale skin or cold hands and feet can be gentle signs your body needs more iron. It's very common, especially during your period!",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "nutrition",
+        "topic": "hydration",
+        "keywords": [
+            "water",
+            "hydration",
+            "daily intake",
+            "drinking"
+        ],
+        "question": "How much water should I drink every day?",
+        "answer": "A great general goal is about 8 to 10 glasses (roughly 2 to 2.5 liters) a day. Listen to your body, though—you might need more if you are exercising or if the weather is hot.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "nutrition",
+        "topic": "hydration",
+        "keywords": [
+            "water alternatives",
+            "flavor",
+            "tea",
+            "hydration"
+        ],
+        "question": "I don't really like drinking plain water. How else can I stay hydrated?",
+        "answer": "That's okay! Try infusing your water with slices of cucumber, lemon, or fresh berries. Herbal teas (hot or iced) and sparkling water are also excellent, delicious ways to reach your daily fluid goals.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "nutrition",
+        "topic": "hydration",
+        "keywords": [
+            "water",
+            "period",
+            "cramps",
+            "benefits"
+        ],
+        "question": "Does drinking more water actually help with my period?",
+        "answer": "Yes, it really does! Staying well-hydrated helps thin out your blood, which can ease cramping. Counterintuitively, it also signals your body to stop holding onto extra fluid, which reduces bloating.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "nutrition",
+        "topic": "hydration",
+        "keywords": [
+            "hydrating foods",
+            "fruits",
+            "vegetables",
+            "water content"
+        ],
+        "question": "Can I get water from the foods I eat?",
+        "answer": "Absolutely! About 20% of your daily water intake comes from food. Snack on water-rich fruits and veggies like watermelon, strawberries, cucumbers, and celery for a crunchy hydration boost.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "nutrition",
+        "topic": "foods during periods",
+        "keywords": [
+            "period food",
+            "first day",
+            "comfort food",
+            "meals"
+        ],
+        "question": "What is the best thing to eat on the first day of my period?",
+        "answer": "Warm, comforting, and easy-to-digest foods are your best friends. Think of warm oatmeal, ginger tea, cozy vegetable soups, or a gentle chicken broth to soothe your stomach and body.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "nutrition",
+        "topic": "foods during periods",
+        "keywords": [
+            "cramps",
+            "omega-3",
+            "salmon",
+            "anti-inflammatory"
+        ],
+        "question": "Are there specific foods that help relieve period cramps?",
+        "answer": "Yes! Foods rich in Omega-3 fatty acids act as natural anti-inflammatories to soothe cramps. Try adding salmon, chia seeds, walnuts, or flaxseeds to your meals a few days before and during your period.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "nutrition",
+        "topic": "foods during periods",
+        "keywords": [
+            "dark chocolate",
+            "period cravings",
+            "magnesium",
+            "sweets"
+        ],
+        "question": "Is it okay to eat dark chocolate on my period?",
+        "answer": "Not only is it okay, it's actually beneficial! Dark chocolate (70% cocoa or higher) is rich in magnesium, which helps relax your muscles, and it contains compounds that give your mood a gentle lift.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "nutrition",
+        "topic": "foods during periods",
+        "keywords": [
+            "mood swings",
+            "carbs",
+            "serotonin",
+            "happiness"
+        ],
+        "question": "What should I eat to help balance my mood swings?",
+        "answer": "Complex carbohydrates help your brain release serotonin, the 'feel-good' hormone. Reach for sweet potatoes, brown rice, whole-grain bread, or oats to help keep your mood and energy steady.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "nutrition",
+        "topic": "bloating reduction",
+        "keywords": [
+            "bloating",
+            "potassium",
+            "bananas",
+            "de-bloat"
+        ],
+        "question": "What foods can help me get rid of period bloating?",
+        "answer": "Potassium is a superstar for reducing bloating because it helps flush out extra sodium. Bananas, avocados, sweet potatoes, and spinach are delicious, potassium-rich options to add to your plate.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "nutrition",
+        "topic": "bloating reduction",
+        "keywords": [
+            "salt",
+            "sodium",
+            "bloating",
+            "water retention"
+        ],
+        "question": "Does eating salty food make my bloating worse?",
+        "answer": "Yes, consuming too much salt (sodium) causes your body to hold onto extra water, which leads to that puffy, bloated feeling. Try swapping salty chips for unsalted nuts or fresh fruit when snacking.",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "nutrition",
+        "topic": "bloating reduction",
+        "keywords": [
+            "beans",
+            "gas",
+            "bloating",
+            "legumes"
+        ],
+        "question": "Should I avoid beans if I feel bloated?",
+        "answer": "Beans are super healthy, but they contain complex sugars that can cause gas and bloating. If you're already bloated, you might want to eat smaller portions. Rinsing canned beans thoroughly also helps reduce the gas-causing sugars!",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "nutrition",
+        "topic": "bloating reduction",
+        "keywords": [
+            "drinks",
+            "tea",
+            "peppermint",
+            "digestion"
+        ],
+        "question": "What is the best drink to settle a bloated stomach?",
+        "answer": "Peppermint tea is excellent for a bloated belly, as it relaxes the muscles of your digestive tract. Ginger tea and chamomile are also incredibly soothing and help reduce gas.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "nutrition",
+        "topic": "magnesium",
+        "keywords": [
+            "magnesium",
+            "benefits",
+            "muscles",
+            "relaxation"
+        ],
+        "question": "Why is magnesium so important for women's health?",
+        "answer": "Magnesium is a vital mineral that acts like a natural relaxant for your body. It helps ease muscle cramps, supports deep sleep, and can even help stabilize your mood during PMS.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "nutrition",
+        "topic": "magnesium",
+        "keywords": [
+            "magnesium foods",
+            "nuts",
+            "seeds",
+            "diet"
+        ],
+        "question": "What are the best foods to eat to get more magnesium?",
+        "answer": "You can find plenty of magnesium in pumpkin seeds, almonds, cashews, spinach, black beans, and dark chocolate. A handful of nuts is a perfect, quick magnesium boost!",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "nutrition",
+        "topic": "magnesium",
+        "keywords": [
+            "magnesium",
+            "PMS",
+            "irritability",
+            "hormones"
+        ],
+        "question": "Can eating magnesium-rich foods help with PMS?",
+        "answer": "Yes! Studies suggest that getting enough magnesium can significantly reduce PMS symptoms like breast tenderness, mood swings, and irritability. It’s a wonderful tool for hormonal balance.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "nutrition",
+        "topic": "magnesium",
+        "keywords": [
+            "magnesium",
+            "sleep",
+            "evening snack",
+            "bedtime"
+        ],
+        "question": "Is there a best time of day to eat magnesium-rich foods?",
+        "answer": "While it's good anytime, eating magnesium-rich foods in the late afternoon or evening is ideal. Because it relaxes your muscles and calms your nervous system, it can help you get a much better night's sleep.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "nutrition",
+        "topic": "calcium",
+        "keywords": [
+            "calcium",
+            "PMS",
+            "bones",
+            "health"
+        ],
+        "question": "Why do I need calcium in my daily diet?",
+        "answer": "Calcium is famous for keeping your bones and teeth strong, but it’s also a powerful tool for your cycle! Adequate calcium intake has been shown to reduce PMS symptoms like cramping and mood swings.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "nutrition",
+        "topic": "calcium",
+        "keywords": [
+            "dairy-free",
+            "calcium",
+            "vegan",
+            "plant-based"
+        ],
+        "question": "I don't eat dairy. How can I get enough calcium?",
+        "answer": "There are amazing non-dairy sources of calcium! Chia seeds, almonds, kale, broccoli, edamame, and calcium-set tofu are fantastic. Many plant milks and orange juices are also fortified with extra calcium.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "nutrition",
+        "topic": "calcium",
+        "keywords": [
+            "dairy",
+            "yogurt",
+            "milk",
+            "cheese"
+        ],
+        "question": "What are the healthiest dairy sources of calcium?",
+        "answer": "Greek yogurt and plain yogurt are top choices because they provide calcium along with gut-friendly probiotics. Cottage cheese and regular milk are also excellent, nutritious options.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "nutrition",
+        "topic": "energy foods",
+        "keywords": [
+            "energy",
+            "fatigue",
+            "tired",
+            "stamina"
+        ],
+        "question": "What should I eat when I feel completely drained of energy?",
+        "answer": "To fight fatigue, avoid sugar spikes and go for foods that offer sustained energy. Oatmeal, eggs, bananas, and a handful of mixed nuts provide a steady, long-lasting fuel source for your body.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "nutrition",
+        "topic": "energy foods",
+        "keywords": [
+            "afternoon slump",
+            "snack",
+            "energy boost",
+            "work"
+        ],
+        "question": "What is a good snack to beat the afternoon energy crash?",
+        "answer": "An apple paired with a tablespoon of peanut or almond butter is perfect. The apple provides crisp, natural energy, while the healthy fats and protein in the nut butter keep you full and focused.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "nutrition",
+        "topic": "energy foods",
+        "keywords": [
+            "tired after eating",
+            "food coma",
+            "carbs",
+            "balance"
+        ],
+        "question": "Why do I feel so sleepy right after I eat a big meal?",
+        "answer": "Meals heavy in refined carbs or sugars cause your blood sugar to spike and then crash, making you sleepy. Try balancing your meals with more protein, healthy fats, and fiber to keep your energy stable.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "nutrition",
+        "topic": "energy foods",
+        "keywords": [
+            "breakfast",
+            "morning",
+            "fuel",
+            "healthy start"
+        ],
+        "question": "What is a good breakfast for all-day energy?",
+        "answer": "A balanced breakfast is key. Try scrambled eggs with a handful of spinach on whole-grain toast, or a bowl of oatmeal topped with berries and chia seeds. Protein plus fiber equals steady morning energy!",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "nutrition",
+        "topic": "foods to avoid",
+        "keywords": [
+            "avoid",
+            "processed food",
+            "period",
+            "cramps"
+        ],
+        "question": "Are there foods I should try to avoid during my period?",
+        "answer": "It's helpful to limit highly processed, very salty, or deep-fried foods. These can increase inflammation in your body, which might make your cramps and bloating feel worse.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "nutrition",
+        "topic": "foods to avoid",
+        "keywords": [
+            "dairy",
+            "milk",
+            "cramps",
+            "inflammation"
+        ],
+        "question": "Does eating dairy make period cramps worse?",
+        "answer": "It depends on the person! For some women, dairy can increase inflammation and worsen cramps. If you notice your cramps are worse after eating cheese or milk, try cutting back during your cycle to see if it helps.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "nutrition",
+        "topic": "foods to avoid",
+        "keywords": [
+            "spicy food",
+            "stomach",
+            "digestion",
+            "spices"
+        ],
+        "question": "Should I avoid spicy food when I have my period?",
+        "answer": "If your stomach gets easily upset or you experience diarrhea during your period (which is very common!), taking a break from hot, spicy foods can give your digestive system some much-needed rest.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "nutrition",
+        "topic": "foods to avoid",
+        "keywords": [
+            "carbonation",
+            "soda",
+            "sparkling water",
+            "bloating"
+        ],
+        "question": "Do carbonated drinks make you more bloated?",
+        "answer": "Yes, the little bubbles in sodas and sparkling waters are just trapped gas. When you drink them, that gas ends up in your stomach, which can make you feel puffy and bloated.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "nutrition",
+        "topic": "caffeine",
+        "keywords": [
+            "caffeine",
+            "coffee",
+            "cramps",
+            "anxiety"
+        ],
+        "question": "Should I stop drinking coffee on my period?",
+        "answer": "You don't have to stop completely, but reducing it might help. Caffeine restricts blood vessels, which can make cramps worse, and it can also heighten PMS anxiety. Try sticking to one cup a day.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "nutrition",
+        "topic": "caffeine",
+        "keywords": [
+            "coffee alternatives",
+            "energy",
+            "matcha",
+            "green tea"
+        ],
+        "question": "What can I drink instead of coffee for a morning boost?",
+        "answer": "Green tea or matcha are excellent alternatives. They contain a lower amount of caffeine plus an amino acid called L-theanine, which gives you a calm, focused energy without the jittery coffee crash.",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "nutrition",
+        "topic": "caffeine",
+        "keywords": [
+            "caffeine",
+            "breast tenderness",
+            "sore breasts",
+            "PMS"
+        ],
+        "question": "Does caffeine make my breasts sore before my period?",
+        "answer": "For many women, yes. Caffeine can make breast tissue more sensitive to hormone changes. If you struggle with sore breasts during PMS, cutting back on coffee a week before your period might bring relief.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "nutrition",
+        "topic": "sugar cravings",
+        "keywords": [
+            "sugar",
+            "cravings",
+            "PMS",
+            "sweets",
+            "hormones"
+        ],
+        "question": "Why do I crave so much sugar right before my period?",
+        "answer": "It's all hormones! Before your period, estrogen and progesterone levels drop, which can lower your serotonin (your happy hormone). Your body craves sugar because it provides a quick, temporary serotonin boost.",
+        "severity": "low"
+    },
+    {
+        "id": 36,
+        "category": "nutrition",
+        "topic": "sugar cravings",
+        "keywords": [
+            "healthy sweets",
+            "cravings",
+            "fruit",
+            "alternatives"
+        ],
+        "question": "What is a healthy way to satisfy my period sugar cravings?",
+        "answer": "Try reaching for nature's candy! Fresh berries, a Medjool date stuffed with a little peanut butter, or a bowl of plain yogurt drizzled with honey are sweet treats that won't cause a sugar crash.",
+        "severity": "low"
+    },
+    {
+        "id": 37,
+        "category": "nutrition",
+        "topic": "sugar cravings",
+        "keywords": [
+            "sugar",
+            "symptoms",
+            "cramps",
+            "mood"
+        ],
+        "question": "Does eating too much sugar make period symptoms worse?",
+        "answer": "Unfortunately, yes. High amounts of refined sugar can increase inflammation in your body, which can worsen cramping. It also causes blood sugar crashes, making mood swings and fatigue feel heavier.",
+        "severity": "low"
+    },
+    {
+        "id": 38,
+        "category": "nutrition",
+        "topic": "healthy snacks",
+        "keywords": [
+            "late night",
+            "snack",
+            "sleep",
+            "midnight"
+        ],
+        "question": "What is a healthy snack if I get hungry right before bed?",
+        "answer": "A small bowl of tart cherries or a piece of whole-grain toast with a slice of turkey are great choices. They are light on the stomach and actually contain compounds that help your body prepare for sleep.",
+        "severity": "low"
+    },
+    {
+        "id": 39,
+        "category": "nutrition",
+        "topic": "healthy snacks",
+        "keywords": [
+            "work snacks",
+            "desk",
+            "easy snack",
+            "healthy"
+        ],
+        "question": "What are some easy, healthy snacks I can keep at my desk?",
+        "answer": "Keep things simple and non-perishable! A jar of raw almonds or walnuts, roasted chickpeas, or a bag of low-sugar trail mix are perfect for quick, brain-boosting munching while you work.",
+        "severity": "low"
+    },
+    {
+        "id": 40,
+        "category": "nutrition",
+        "topic": "healthy snacks",
+        "keywords": [
+            "meal prep",
+            "snacks",
+            "energy bites",
+            "quick"
+        ],
+        "question": "What is a healthy snack I can make ahead of time for busy days?",
+        "answer": "No-bake energy bites are fantastic! Just mix rolled oats, peanut butter, a little honey, and chia seeds. Roll them into balls and keep them in the fridge for a sweet, filling grab-and-go snack.",
+        "severity": "low"
+    }
+]

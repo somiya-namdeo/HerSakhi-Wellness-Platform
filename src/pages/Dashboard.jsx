@@ -11,31 +11,41 @@ import { motion } from 'framer-motion'
 import { getStoredUser } from '../utils/userHelpers'
 import { useState, useEffect } from 'react'
 import { getFullPrediction } from '../api/predictionApi'
+import { getCycleLogs } from '../api/cycleApi'
+import { getWellnessLogs } from '../api/wellnessApi'
 
 const Dashboard = () => {
   const user = getStoredUser();
   const firstName = user?.full_name ? user.full_name.split(' ')[0] : 'User';
 
   const [prediction, setPrediction] = useState(null)
+  const [cycleLogs, setCycleLogs] = useState([])
+  const [wellnessLogs, setWellnessLogs] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
-    const fetchPrediction = async () => {
+    const fetchData = async () => {
       try {
         if (user?.id) {
-          const data = await getFullPrediction(user.id)
-          setPrediction(data)
+          const [predData, cycleData, wellnessData] = await Promise.all([
+            getFullPrediction(user.id),
+            getCycleLogs(user.id),
+            getWellnessLogs(user.id).catch(() => ({ logs: [] })) // Handle potential 404s gracefully
+          ]);
+          setPrediction(predData);
+          setCycleLogs(cycleData?.logs || []);
+          setWellnessLogs(wellnessData?.logs || []);
         }
       } catch (err) {
-        console.error("Failed to fetch predictions:", err)
+        console.error("Failed to fetch dashboard data:", err)
         setError("Complete onboarding to generate predictions.")
       } finally {
         setLoading(false)
       }
     }
     
-    fetchPrediction()
+    fetchData()
   }, [user?.id])
 
   return (
@@ -98,8 +108,8 @@ const Dashboard = () => {
 
           {/* Bottom Row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-12">
-            <WeeklyTrends />
-            <AIInsights />
+            <WeeklyTrends cycleLogs={cycleLogs} wellnessLogs={wellnessLogs} />
+            <AIInsights prediction={prediction} />
           </div>
           
         </main>

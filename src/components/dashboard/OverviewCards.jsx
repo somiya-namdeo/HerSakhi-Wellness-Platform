@@ -1,5 +1,6 @@
 import { Calendar as CalendarIcon, Heart, TrendingUp } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { calculateDaysUntil, formatDaysUntil, formatFullDate, formatDateRange } from '../../utils/dateHelpers'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -15,40 +16,7 @@ const cardVariants = {
 }
 
 const OverviewCards = ({ prediction }) => {
-  // Format dates nicely, e.g. "May 19, 2026"
-  const formatDate = (dateString) => {
-    if (!dateString) return '';
-    return new Date(dateString).toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    });
-  }
-
-  // Calculate days remaining until next period
-  const getDaysRemaining = () => {
-    if (!prediction?.next_period_date) return 0;
-    const today = new Date();
-    // Normalize to midnight
-    today.setHours(0, 0, 0, 0);
-    const nextPeriod = new Date(prediction.next_period_date);
-    nextPeriod.setHours(0, 0, 0, 0);
-    
-    const diffTime = nextPeriod - today;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays;
-  }
-
-  const daysRemaining = getDaysRemaining();
-  
-  // Format fertile window, e.g. "May 25-30"
-  const formatWindow = (startStr, endStr) => {
-    if (!startStr || !endStr) return '';
-    const start = new Date(startStr);
-    const end = new Date(endStr);
-    const month = start.toLocaleDateString('en-US', { month: 'short' });
-    return `${month} ${start.getDate()}-${end.getDate()}`;
-  }
+  const daysRemaining = calculateDaysUntil(prediction?.next_period_date);
 
   return (
     <motion.div 
@@ -67,9 +35,13 @@ const OverviewCards = ({ prediction }) => {
         </div>
         <h3 className="font-poppins font-semibold text-xl mb-1">Next Period</h3>
         <div className="text-3xl font-bold font-poppins mb-2">
-          {daysRemaining > 0 ? `in ${daysRemaining} days` : daysRemaining === 0 ? 'Today' : 'Overdue'}
+          {formatDaysUntil(daysRemaining)}
         </div>
-        <p className="text-white/80 text-sm">Expected on {formatDate(prediction?.next_period_date)}</p>
+        <p className="text-white/80 text-sm">
+          {prediction?.next_period_date
+            ? `Expected on ${formatFullDate(prediction.next_period_date)}`
+            : 'Track more cycles to improve prediction.'}
+        </p>
         
         <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-500"></div>
       </motion.div>
@@ -80,30 +52,36 @@ const OverviewCards = ({ prediction }) => {
           <div className="bg-white/20 p-3 rounded-2xl backdrop-blur-sm">
             <Heart size={24} className="text-white" />
           </div>
-          <span className="bg-white/20 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm">Low</span>
+          <span className="bg-white/20 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm">Prediction</span>
         </div>
         <h3 className="font-poppins font-semibold text-xl mb-1">Fertility Window</h3>
-        <div className="text-xl font-bold font-poppins mb-2 mt-4">Not in fertile phase</div>
+        <div className="text-lg font-bold font-poppins mb-2 mt-4 leading-snug">
+          {formatDateRange(prediction?.fertile_window_start, prediction?.fertile_window_end)}
+        </div>
         <p className="text-white/80 text-sm mt-2">
-          Next window: {formatWindow(prediction?.fertile_window_start, prediction?.fertile_window_end)}
+          {prediction?.fertile_window_start ? 'Estimated window' : 'Track more cycles to improve prediction.'}
         </p>
         
         <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-500"></div>
       </motion.div>
 
-      {/* Card 3: Current Phase / Confidence */}
+      {/* Card 3: Cycle Length */}
       <motion.div variants={cardVariants} className="bg-gradient-to-br from-[#FDBA74] to-[#FED7AA] rounded-3xl p-6 sm:p-8 text-white shadow-lg shadow-peach/20 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
         <div className="flex justify-between items-start mb-6">
           <div className="bg-white/20 p-3 rounded-2xl backdrop-blur-sm">
             <TrendingUp size={24} className="text-white" />
           </div>
           <span className="bg-white/20 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm">
-            {prediction?.predicted_cycle_length} Days
+            {prediction?.predicted_cycle_length ? `${prediction.predicted_cycle_length} Days` : '—'}
           </span>
         </div>
         <h3 className="font-poppins font-semibold text-xl mb-1">Cycle Length</h3>
-        <div className="text-xl font-bold font-poppins mb-2 mt-4">Avg {prediction?.predicted_cycle_length} Days</div>
-        <p className="text-white/80 text-sm mt-2">Prediction Confidence: {prediction?.confidence_score}%</p>
+        <div className="text-xl font-bold font-poppins mb-2 mt-4">
+          {prediction?.predicted_cycle_length ? `Avg ${prediction.predicted_cycle_length} Days` : '—'}
+        </div>
+        <p className="text-white/80 text-sm mt-2">
+          {prediction?.confidence_score ? `Prediction Confidence: ${prediction.confidence_score}%` : 'Track more cycles to improve prediction.'}
+        </p>
         
         <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-500"></div>
       </motion.div>
@@ -112,3 +90,4 @@ const OverviewCards = ({ prediction }) => {
 }
 
 export default OverviewCards
+

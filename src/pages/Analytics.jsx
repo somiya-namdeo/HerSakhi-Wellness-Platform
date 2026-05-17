@@ -109,26 +109,33 @@ const deriveAnalytics = (logs, insights) => {
 
   // --- AI recommendations -----------------------------------------------
   const recommendations = []
-  if (insights?.recommendation) {
-    recommendations.push({ label: 'Cycle Insight', text: insights.recommendation, style: 'primary' })
-  }
-  if (insights?.wellness_insight) {
-    recommendations.push({ label: 'Wellness Tip',  text: insights.wellness_insight, style: 'pink' })
-  }
-  if (topSymptom) {
-    recommendations.push({
-      label: 'Symptom Alert',
-      text: `${topSymptom} is your most reported symptom. Consider tracking triggers and consulting your doctor if it persists.`,
-      style: 'peach',
+  const styleCycle = ['primary', 'pink', 'peach', 'gray']
+  
+  if (insights?.recommendations && insights.recommendations.length > 0) {
+    insights.recommendations.forEach((recText, idx) => {
+      recommendations.push({
+        label: idx === 0 ? 'Cycle Insight' : (idx === 1 ? 'Wellness Tip' : 'Health Suggestion'),
+        text: recText,
+        style: styleCycle[idx % styleCycle.length]
+      })
     })
+  } else {
+    // Fallback if no recommendations from backend
+    if (insights?.recommendation) {
+      recommendations.push({ label: 'Cycle Insight', text: insights.recommendation, style: 'primary' })
+    }
+    if (insights?.wellness_insight) {
+      recommendations.push({ label: 'Wellness Tip',  text: insights.wellness_insight, style: 'pink' })
+    }
+    if (topSymptom) {
+      recommendations.push({
+        label: 'Symptom Alert',
+        text: `${topSymptom} is your most reported symptom. Consider tracking triggers and consulting your doctor if it persists.`,
+        style: 'peach',
+      })
+    }
   }
-  if (moodSeries.length > 0 && avgMoodScore < 5) {
-    recommendations.push({
-      label: 'Mood Support',
-      text: 'Your mood scores are on the lower side. Try light walking, journaling, or connecting with loved ones.',
-      style: 'gray',
-    })
-  }
+
   if (recommendations.length === 0) {
     recommendations.push(
       { label: 'Get Started', text: 'Start logging daily to unlock personalised AI recommendations tailored to your cycle.', style: 'primary' }
@@ -149,6 +156,9 @@ const deriveAnalytics = (logs, insights) => {
     radarData,
     recommendations,
     hasEnoughData: total >= 1,
+    risk_flags: insights?.risk_flags || [],
+    wellness_insight: insights?.wellness_insight || '',
+    symptom_summary: insights?.symptom_summary || ''
   }
 }
 

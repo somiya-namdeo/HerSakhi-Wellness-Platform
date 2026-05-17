@@ -1,0 +1,562 @@
+[
+    {
+        "id": 1,
+        "category": "mental_wellness",
+        "topic": "stress",
+        "keywords": [
+            "stress",
+            "overwhelmed",
+            "calm",
+            "quick relief"
+        ],
+        "question": "What can I do when I feel completely overwhelmed by stress?",
+        "answer": "When everything feels like too much, try taking a 'box breath': inhale for 4 seconds, hold for 4, exhale for 4, and hold for 4. Stepping away for just five minutes to drink a glass of water or feel the fresh air can also help reset your nervous system.",
+        "severity": "low"
+    },
+    {
+        "id": 2,
+        "category": "mental_wellness",
+        "topic": "stress",
+        "keywords": [
+            "stress",
+            "physical symptoms",
+            "tension",
+            "body"
+        ],
+        "question": "Is it normal for my body to hurt when I'm stressed?",
+        "answer": "Yes, it is very common. Stress often shows up physically as a tight jaw, tense shoulders, or a heavy chest. Taking a warm shower or doing some gentle neck stretches can help release that built-up physical tension.",
+        "severity": "low"
+    },
+    {
+        "id": 3,
+        "category": "mental_wellness",
+        "topic": "stress",
+        "keywords": [
+            "stress",
+            "work",
+            "office",
+            "break"
+        ],
+        "question": "How can I quickly destress while sitting at my desk?",
+        "answer": "Try the 'tense and release' method! Tense your shoulders up to your ears for a few seconds, then let them drop completely. Combine this with closing your eyes and taking three deep, slow breaths. It’s a wonderful, quick reset.",
+        "severity": "low"
+    },
+    {
+        "id": 4,
+        "category": "mental_wellness",
+        "topic": "stress",
+        "keywords": [
+            "stress",
+            "mindset",
+            "worry",
+            "control"
+        ],
+        "question": "How do I stop stressing about things I can't control?",
+        "answer": "It's so hard, but try making a physical list of what is in your control and what isn't. Gently give yourself permission to focus only on the things you can change, and visualize letting the rest float away like leaves on a river.",
+        "severity": "low"
+    },
+    {
+        "id": 5,
+        "category": "mental_wellness",
+        "topic": "anxiety",
+        "keywords": [
+            "anxiety",
+            "nervous",
+            "worry",
+            "no reason"
+        ],
+        "question": "Why do I feel anxious even when nothing is wrong?",
+        "answer": "It is completely normal to feel a sudden wave of anxiety. Sometimes our nervous system gets stuck in 'alert' mode due to lack of sleep, hormones, or too much caffeine. Be gentle with yourself and know that this feeling will pass.",
+        "severity": "low"
+    },
+    {
+        "id": 6,
+        "category": "mental_wellness",
+        "topic": "anxiety",
+        "keywords": [
+            "anxiety",
+            "grounding",
+            "panic",
+            "54321"
+        ],
+        "question": "What is a good grounding technique for when I feel panicked?",
+        "answer": "The 5-4-3-2-1 method is wonderful. Look around and name 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste. It helps anchor your mind back to the present moment.",
+        "severity": "low"
+    },
+    {
+        "id": 7,
+        "category": "mental_wellness",
+        "topic": "anxiety",
+        "keywords": [
+            "anxiety",
+            "morning",
+            "waking up",
+            "dread"
+        ],
+        "question": "Why is my anxiety always worse right when I wake up?",
+        "answer": "Morning anxiety is often caused by a natural spike in cortisol, the 'awake' hormone, combined with low blood sugar. Drinking some water and having a small, protein-rich snack soon after waking can help steady your nerves.",
+        "severity": "low"
+    },
+    {
+        "id": 8,
+        "category": "mental_wellness",
+        "topic": "anxiety",
+        "keywords": [
+            "anxiety",
+            "chest",
+            "breathing",
+            "tightness"
+        ],
+        "question": "My chest feels tight from anxiety, how can I soothe it?",
+        "answer": "Try placing one hand gently on your heart and the other on your belly. Breathe deeply so that your belly rises, not your chest. This signals your brain that you are safe, which helps release that tight, anxious feeling.",
+        "severity": "low"
+    },
+    {
+        "id": 9,
+        "category": "mental_wellness",
+        "topic": "emotional changes",
+        "keywords": [
+            "crying",
+            "emotional",
+            "tears",
+            "sensitivity"
+        ],
+        "question": "Is it okay that I've been crying so easily lately?",
+        "answer": "Absolutely. Crying is your body's natural, healthy way of releasing built-up emotions, stress, or adjusting to hormone changes. Treat yourself with the same kindness you would show a good friend who is feeling tender.",
+        "severity": "low"
+    },
+    {
+        "id": 10,
+        "category": "mental_wellness",
+        "topic": "emotional changes",
+        "keywords": [
+            "overwhelmed",
+            "emotions",
+            "small things",
+            "frustration"
+        ],
+        "question": "Why am I getting so upset over tiny things?",
+        "answer": "When you are tired, stressed, or experiencing hormonal shifts, your emotional 'cup' is already full. A tiny thing is just the drop that makes it overflow. Take a step back, rest, and know your reaction is valid.",
+        "severity": "low"
+    },
+    {
+        "id": 11,
+        "category": "mental_wellness",
+        "topic": "emotional changes",
+        "keywords": [
+            "hormones",
+            "emotions",
+            "cycle",
+            "feelings"
+        ],
+        "question": "Can my cycle really change my personality?",
+        "answer": "It doesn't change your personality, but hormonal shifts can definitely change the lens through which you view the world! It's very normal to feel more outgoing during ovulation and more introspective or sensitive before your period.",
+        "severity": "low"
+    },
+    {
+        "id": 12,
+        "category": "mental_wellness",
+        "topic": "emotional changes",
+        "keywords": [
+            "validating",
+            "feelings",
+            "crazy",
+            "upset"
+        ],
+        "question": "Sometimes I feel crazy for being this emotional. How do I stop?",
+        "answer": "First, please know you are not crazy. Your feelings are real and they matter. Instead of trying to stop them, try sitting with them. Say to yourself, 'I am feeling overwhelmed right now, and that is okay.' Acceptance brings relief.",
+        "severity": "low"
+    },
+    {
+        "id": 13,
+        "category": "mental_wellness",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "happy to sad",
+            "shifting moods",
+            "feelings"
+        ],
+        "question": "I go from happy to sad in minutes. What's going on?",
+        "answer": "Rapid mood shifts can happen due to fatigue, a drop in blood sugar, or hormonal fluctuations. Try eating a small snack, drinking some water, and giving yourself permission to just lay low for a bit while your mood stabilizes.",
+        "severity": "low"
+    },
+    {
+        "id": 14,
+        "category": "mental_wellness",
+        "topic": "mood swings",
+        "keywords": [
+            "mood swings",
+            "PMS",
+            "irritability",
+            "anger"
+        ],
+        "question": "How can I stop snapping at people during PMS?",
+        "answer": "Awareness is half the battle! When you feel that surge of irritability, pause and take a deep breath before speaking. It also helps to kindly tell your loved ones, 'I'm feeling a bit sensitive today, I might need some extra patience.'",
+        "severity": "low"
+    },
+    {
+        "id": 15,
+        "category": "mental_wellness",
+        "topic": "mood swings",
+        "keywords": [
+            "tracking",
+            "moods",
+            "journaling",
+            "patterns"
+        ],
+        "question": "Is there a benefit to tracking my daily moods?",
+        "answer": "Yes! Tracking your moods alongside your menstrual cycle or daily habits helps you spot patterns. You might realize you always feel low on day 24 of your cycle, which helps you plan for extra rest and self-care on those days.",
+        "severity": "low"
+    },
+    {
+        "id": 16,
+        "category": "mental_wellness",
+        "topic": "mood swings",
+        "keywords": [
+            "partner",
+            "mood swings",
+            "communication",
+            "relationship"
+        ],
+        "question": "How do I explain my emotional shifts to my partner?",
+        "answer": "Be open and simple. You can say, 'My hormones are shifting right now, which is making me feel really emotional. I don't need you to fix it, I just need a hug and some understanding.' Clear communication builds empathy.",
+        "severity": "low"
+    },
+    {
+        "id": 17,
+        "category": "mental_wellness",
+        "topic": "burnout",
+        "keywords": [
+            "burnout",
+            "exhaustion",
+            "empty",
+            "tired"
+        ],
+        "question": "How do I know if I'm just tired or actually burned out?",
+        "answer": "While tiredness usually goes away after a good night's sleep, burnout feels like a deeper, lingering exhaustion. If you feel emotionally empty, detached from things you used to love, or constantly drained, you might be experiencing burnout.",
+        "severity": "low"
+    },
+    {
+        "id": 18,
+        "category": "mental_wellness",
+        "topic": "burnout",
+        "keywords": [
+            "burnout",
+            "recovery",
+            "rest",
+            "healing"
+        ],
+        "question": "What is the first step to recovering from burnout?",
+        "answer": "The first step is radical rest without guilt. Give yourself permission to do the bare minimum for a little while. Prioritize sleep, simple nourishing meals, and stepping away from unnecessary obligations to let your energy refill.",
+        "severity": "low"
+    },
+    {
+        "id": 19,
+        "category": "mental_wellness",
+        "topic": "burnout",
+        "keywords": [
+            "boundaries",
+            "saying no",
+            "guilt",
+            "people pleasing"
+        ],
+        "question": "I feel guilty saying no to people, but I'm so exhausted. What do I do?",
+        "answer": "Remember that saying 'no' to others is often saying 'yes' to your own well-being. Try a soft boundary like, 'I would love to help, but I don't have the capacity right now.' Protecting your energy is a necessary part of self-care.",
+        "severity": "low"
+    },
+    {
+        "id": 20,
+        "category": "mental_wellness",
+        "topic": "burnout",
+        "keywords": [
+            "work-life balance",
+            "disconnect",
+            "work stress",
+            "evening"
+        ],
+        "question": "How do I disconnect from work stress in the evening?",
+        "answer": "Create a 'closing ritual' at the end of your day. It could be shutting down your laptop, writing tomorrow's to-do list, or changing into comfy clothes. This signals to your brain that the workday is officially over and it's time to relax.",
+        "severity": "low"
+    },
+    {
+        "id": 21,
+        "category": "mental_wellness",
+        "topic": "sleep",
+        "keywords": [
+            "sleep",
+            "racing thoughts",
+            "insomnia",
+            "nighttime"
+        ],
+        "question": "I can't fall asleep because my mind keeps racing. Help!",
+        "answer": "Keep a notepad by your bed. When you have a racing thought or a worry, write it down. Tell your brain, 'It's on paper now, I don't need to hold onto it until tomorrow.' Then, focus on the physical feeling of your blankets.",
+        "severity": "low"
+    },
+    {
+        "id": 22,
+        "category": "mental_wellness",
+        "topic": "sleep",
+        "keywords": [
+            "sleep",
+            "waking up tired",
+            "rest",
+            "fatigue"
+        ],
+        "question": "Why do I still feel exhausted after sleeping for 8 hours?",
+        "answer": "Sleep quality matters just as much as quantity! Stress, staring at screens before bed, or sleeping in a room that is too warm can prevent you from reaching deep, restorative sleep phases. Try keeping your room cool and dark.",
+        "severity": "low"
+    },
+    {
+        "id": 23,
+        "category": "mental_wellness",
+        "topic": "sleep",
+        "keywords": [
+            "bedtime routine",
+            "sleep hygiene",
+            "wind down",
+            "relax"
+        ],
+        "question": "What does a good wind-down routine look like?",
+        "answer": "A gentle routine could include turning down the lights an hour before bed, swapping your phone for a book, and doing some light stretching. The goal is to do calming activities that signal to your body that rest is approaching.",
+        "severity": "low"
+    },
+    {
+        "id": 24,
+        "category": "mental_wellness",
+        "topic": "sleep",
+        "keywords": [
+            "sleep",
+            "hormones",
+            "PMS",
+            "period insomnia"
+        ],
+        "question": "Is it normal to have trouble sleeping right before my period?",
+        "answer": "Yes, it's very common! The drop in progesterone right before your period can disrupt your sleep and even slightly raise your body temperature. Keeping a fan on and taking a warm bath before bed can help counter this.",
+        "severity": "low"
+    },
+    {
+        "id": 25,
+        "category": "mental_wellness",
+        "topic": "overthinking",
+        "keywords": [
+            "overthinking",
+            "worrying",
+            "mind",
+            "spiraling"
+        ],
+        "question": "How can I stop my brain from overthinking every little detail?",
+        "answer": "When you catch yourself spiraling, say 'pause' out loud. Ask yourself: 'Is this thought helpful right now?' If it's not, try distracting your brain with a sensory activity, like holding an ice cube or listening to a podcast.",
+        "severity": "low"
+    },
+    {
+        "id": 26,
+        "category": "mental_wellness",
+        "topic": "overthinking",
+        "keywords": [
+            "overthinking",
+            "past mistakes",
+            "embarrassment",
+            "ruminating"
+        ],
+        "question": "I keep replaying an embarrassing moment in my head. How do I stop?",
+        "answer": "We've all been there! Remind yourself that people are generally focused on their own lives and likely don't even remember the moment. Forgive your past self, take a deep breath, and gently bring your focus back to what you are doing right now.",
+        "severity": "low"
+    },
+    {
+        "id": 27,
+        "category": "mental_wellness",
+        "topic": "overthinking",
+        "keywords": [
+            "overthinking",
+            "decision making",
+            "choices",
+            "stuck"
+        ],
+        "question": "I get so overwhelmed making decisions. What should I do?",
+        "answer": "Try the '10-10-10' rule. Ask yourself: How will I feel about this decision in 10 minutes? 10 months? 10 years? This helps put things into perspective and often reveals that the stakes are lower than your anxious mind is telling you.",
+        "severity": "low"
+    },
+    {
+        "id": 28,
+        "category": "mental_wellness",
+        "topic": "overthinking",
+        "keywords": [
+            "journaling",
+            "brain dump",
+            "clutter",
+            "writing"
+        ],
+        "question": "Can journaling really help with an overactive mind?",
+        "answer": "Absolutely. Doing a 'brain dump'—writing down every single thought without filtering or judging it—gets the mental clutter out of your head and onto the page. It’s like cleaning out a messy closet for your brain.",
+        "severity": "low"
+    },
+    {
+        "id": 29,
+        "category": "mental_wellness",
+        "topic": "sadness during periods",
+        "keywords": [
+            "sadness",
+            "PMS",
+            "crying",
+            "depressed"
+        ],
+        "question": "Why do I feel a deep, heavy sadness the week before my period?",
+        "answer": "That heavy sadness is often caused by the sharp drop in estrogen and progesterone, which can lower your brain's levels of serotonin (the happiness chemical). It's a physiological response, not a personal failing. Be extra gentle with yourself.",
+        "severity": "low"
+    },
+    {
+        "id": 30,
+        "category": "mental_wellness",
+        "topic": "sadness during periods",
+        "keywords": [
+            "sadness",
+            "period",
+            "lonely",
+            "hopeless"
+        ],
+        "question": "I feel so lonely and down during my period. What can I do?",
+        "answer": "First, wrap yourself in comfort. Watch a favorite feel-good movie, wear your softest clothes, and eat nourishing foods. If you feel up to it, text a friend just to say hi. Remind yourself that this is a temporary hormonal cloud.",
+        "severity": "low"
+    },
+    {
+        "id": 31,
+        "category": "mental_wellness",
+        "topic": "sadness during periods",
+        "keywords": [
+            "self-compassion",
+            "sadness",
+            "PMS",
+            "grace"
+        ],
+        "question": "How do I show myself grace when my PMS makes me feel miserable?",
+        "answer": "Speak to yourself like you would a child or a best friend who is sick. Say, 'It makes sense that I'm feeling low right now. My body is working hard.' Lower your expectations for the day and let rest be your priority.",
+        "severity": "low"
+    },
+    {
+        "id": 32,
+        "category": "mental_wellness",
+        "topic": "sadness during periods",
+        "keywords": [
+            "sadness",
+            "timeline",
+            "relief",
+            "period starts"
+        ],
+        "question": "When does the emotional fog of PMS usually go away?",
+        "answer": "For most women, the emotional fog and sadness begin to lift within a few days after their period starts. As your hormone levels begin to rise again, your mood and energy usually follow suit.",
+        "severity": "low"
+    },
+    {
+        "id": 33,
+        "category": "mental_wellness",
+        "topic": "self-care",
+        "keywords": [
+            "self-care",
+            "basics",
+            "definition",
+            "wellness"
+        ],
+        "question": "What does real self-care look like? Is it just bubble baths?",
+        "answer": "Bubble baths are great, but real self-care is often simpler! It's drinking a glass of water, going to bed early, setting a boundary, or eating a vegetable. It's any act that treats your future self with kindness and respect.",
+        "severity": "low"
+    },
+    {
+        "id": 34,
+        "category": "mental_wellness",
+        "topic": "self-care",
+        "keywords": [
+            "low energy",
+            "self-care",
+            "tired",
+            "easy"
+        ],
+        "question": "How do I practice self-care when I have zero energy?",
+        "answer": "Focus on 'low-lift' self-care. Wipe your face with a damp cloth instead of doing a full skincare routine, lie on the floor and stretch your legs, or simply listen to a calming song. Small comforts count as self-care.",
+        "severity": "low"
+    },
+    {
+        "id": 35,
+        "category": "mental_wellness",
+        "topic": "self-care",
+        "keywords": [
+            "emotional self-care",
+            "feelings",
+            "processing",
+            "check in"
+        ],
+        "question": "What is emotional self-care?",
+        "answer": "Emotional self-care is checking in with your feelings. It looks like taking a moment to ask yourself, 'What do I need right now?' and then honoring that answer, whether it's crying, laughing, resting, or seeking comfort.",
+        "severity": "low"
+    },
+    {
+        "id": 36,
+        "category": "mental_wellness",
+        "topic": "motivation",
+        "keywords": [
+            "motivation",
+            "slump",
+            "lazy",
+            "doing nothing"
+        ],
+        "question": "I have absolutely no motivation to do anything today. Is that bad?",
+        "answer": "Not at all. Sometimes a lack of motivation is your body's clever way of forcing you to take a break. If you can, embrace the slow day. Resting now will actually help your motivation return naturally tomorrow.",
+        "severity": "low"
+    },
+    {
+        "id": 37,
+        "category": "mental_wellness",
+        "topic": "motivation",
+        "keywords": [
+            "gentle productivity",
+            "small steps",
+            "overwhelmed",
+            "tasks"
+        ],
+        "question": "How can I get things done when I feel completely unmotivated?",
+        "answer": "Try the 'five-minute rule.' Commit to doing a task for just five minutes. If you want to stop after five minutes, you can. Often, just starting is the hardest part, and the momentum will carry you forward gently.",
+        "severity": "low"
+    },
+    {
+        "id": 38,
+        "category": "mental_wellness",
+        "topic": "motivation",
+        "keywords": [
+            "forgiveness",
+            "unproductive",
+            "guilt",
+            "rest"
+        ],
+        "question": "How do I stop feeling guilty about having an unproductive day?",
+        "answer": "Remind yourself that your worth is not measured by your productivity. We are human beings, not machines! Having a quiet, unstructured day is vital for your mental health and creativity. You are allowed to just 'be'.",
+        "severity": "low"
+    },
+    {
+        "id": 39,
+        "category": "mental_wellness",
+        "topic": "relaxation",
+        "keywords": [
+            "relaxing",
+            "unwind",
+            "peace",
+            "calm down"
+        ],
+        "question": "I don't know how to truly relax. Where do I start?",
+        "answer": "Start by putting away your phone and finding a comfortable spot. Try doing something that uses your hands but rests your mind, like coloring, knitting, or making a cup of tea. Relaxation takes practice, so go slow.",
+        "severity": "low"
+    },
+    {
+        "id": 40,
+        "category": "mental_wellness",
+        "topic": "relaxation",
+        "keywords": [
+            "hobbies",
+            "relaxing",
+            "fun",
+            "creative"
+        ],
+        "question": "What are some relaxing hobbies I can try at home?",
+        "answer": "Reading fiction, doing jigsaw puzzles, indoor gardening, baking, or painting by numbers are all wonderful, low-pressure hobbies. They help anchor your mind in the present moment and bring a gentle sense of peace.",
+        "severity": "low"
+    }
+]

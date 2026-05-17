@@ -25,6 +25,7 @@ Expected Supabase table — 'predictions':
 
 from pydantic import BaseModel
 from datetime import date
+from typing import List
 
 
 class NextCycleResponse(BaseModel):
@@ -47,6 +48,8 @@ class InsightsResponse(BaseModel):
     symptom_summary: str
     wellness_insight: str
     recommendation: str
+    risk_flags: List[str] = []
+    recommendations: List[str] = []
 
 
 class FullPredictionResponse(BaseModel):
@@ -54,6 +57,8 @@ class FullPredictionResponse(BaseModel):
     next_period_date: date
     period_start: date
     period_end: date
+    predicted_cycle_length: int
+    period_length: int
     ovulation_date: date
     fertile_window_start: date
     fertile_window_end: date
@@ -61,5 +66,7 @@ class FullPredictionResponse(BaseModel):
     regularity_score: int
     symptom_summary: str
     recommendation: str
+    risk_flags: List[str] = []
+    recommendations: List[str] = []
 
     model_config = {"from_attributes": True}
