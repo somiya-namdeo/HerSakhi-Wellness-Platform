@@ -8,13 +8,16 @@ import AIAssistant from './pages/AIAssistant'
 import PeriodTracker from './pages/PeriodTracker'
 import Analytics from './pages/Analytics'
 import HealthTips from './pages/HealthTips'
+import MythBusters from './pages/MythBusters'
 import Emergency from './pages/Emergency'
 import Profile from './pages/Profile'
 import ProtectedRoute from './components/ProtectedRoute'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-background text-dark">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -50,6 +53,11 @@ function App() {
           <Route path="/health-tips" element={
             <ProtectedRoute>
               <HealthTips />
+            </ProtectedRoute>
+          } />
+          <Route path="/myth-busters" element={
+            <ProtectedRoute>
+              <MythBusters />
             </ProtectedRoute>
           } />
           <Route path="/emergency" element={

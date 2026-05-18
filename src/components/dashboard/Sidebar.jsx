@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Heart, LayoutDashboard, Calendar as CalendarIcon, Sparkles, LineChart, BookOpen, AlertCircle, User, LogOut, Menu, X } from 'lucide-react'
+import { Heart, LayoutDashboard, Calendar as CalendarIcon, Sparkles, LineChart, BookOpen, HelpCircle, AlertCircle, User, LogOut, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { logoutUser } from '../../utils/userHelpers'
@@ -10,6 +10,7 @@ const navItems = [
   { name: 'AI Assistant', path: '/assistant', icon: Sparkles },
   { name: 'Analytics', path: '/analytics', icon: LineChart },
   { name: 'Health Tips', path: '/health-tips', icon: BookOpen },
+  { name: 'Myth Busters', path: '/myth-busters', icon: HelpCircle },
   { name: 'Emergency', path: '/emergency', icon: AlertCircle },
   { name: 'Profile', path: '/profile', icon: User },
 ]
