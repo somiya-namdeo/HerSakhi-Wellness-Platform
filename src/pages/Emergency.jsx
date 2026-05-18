@@ -1,12 +1,10 @@
 import Sidebar from '../components/dashboard/Sidebar'
 import Topbar from '../components/dashboard/Topbar'
 import EmergencyHero from '../components/emergency/EmergencyHero'
-import EmergencyAlert from '../components/emergency/EmergencyAlert'
 import HotlineCards from '../components/emergency/HotlineCards'
 import PersonalContacts from '../components/emergency/PersonalContacts'
-import NearbyHealthcare from '../components/emergency/NearbyHealthcare'
 import SafetyResources from '../components/emergency/SafetyResources'
-import SafetyMatters from '../components/emergency/SafetyMatters'
+import SafetyTips from '../components/emergency/SafetyTips'
 
 const Emergency = () => {
   return (
@@ -20,19 +18,15 @@ const Emergency = () => {
           
           <EmergencyHero />
           
-          <EmergencyAlert />
-          
           <HotlineCards />
 
-          {/* Two Column Layout for Contacts & Healthcare */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+          <div className="mb-10">
             <PersonalContacts />
-            <NearbyHealthcare />
           </div>
 
           <SafetyResources />
           
-          <SafetyMatters />
+          <SafetyTips />
 
         </main>
       </div>
