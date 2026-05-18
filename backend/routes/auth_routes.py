@@ -12,7 +12,8 @@ Authentication endpoints exposed under the /auth prefix.
 from fastapi import APIRouter, Depends, status
 
 from models.user_models import UserRegister, UserLogin, AuthResponse, UserOut
-from services.auth_service import register_user, login_user
+from services.auth_service import register_user, login_user, change_password_service, delete_account_service
+from pydantic import BaseModel, Field
 from utils.security import get_current_user
 from database.supabase_client import supabase
 from fastapi import HTTPException
@@ -108,3 +109,43 @@ async def get_me(user_id: str = Depends(get_current_user)):
 async def logout(user_id: str = Depends(get_current_user)):
     """Acknowledge logout — instruct the client to discard its JWT."""
     return {"message": "Logged out successfully. Please delete your token on the client."}
+
+
+# ---------------------------------------------------------------------------
+# Change Password & Delete Account
+# ---------------------------------------------------------------------------
+
+class ChangePasswordRequest(BaseModel):
+    user_id: str = Field(..., description="UUID of the user")
+    current_password: str = Field(..., description="Current plain-text password")
+    new_password: str = Field(..., min_length=8, description="New plain-text password (min 8 chars)")
+
+
+@router.post(
+    "/change-password",
+    status_code=status.HTTP_200_OK,
+    summary="Change user password",
+    description="Verifies the current password and sets a new hashed password in the profiles table.",
+)
+async def change_password(payload: ChangePasswordRequest):
+    """Change user password after client validation."""
+    return await change_password_service(payload.user_id, payload.current_password, payload.new_password)
+
+
+class DeleteAccountRequest(BaseModel):
+    user_id: str = Field(..., description="UUID of the user")
+    password: str = Field(..., description="User password for verification")
+    confirmation_text: str = Field(..., description="Must be exactly 'DELETE'")
+
+
+@router.delete(
+    "/delete-account",
+    status_code=status.HTTP_200_OK,
+    summary="Delete user account with password verification",
+    description="Safely removes all user data from child tables and profiles table after verifying password.",
+)
+async def delete_account(payload: DeleteAccountRequest):
+    """Delete a user account and cascade delete all child references after verifying password."""
+    return await delete_account_service(payload.user_id, payload.password, payload.confirmation_text)
+
+

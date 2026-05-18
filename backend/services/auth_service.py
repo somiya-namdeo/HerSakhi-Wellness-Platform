@@ -165,3 +165,114 @@ async def login_user(payload: UserLogin) -> AuthResponse:
             created_at=user.get("created_at"),
         ),
     )
+
+
+# ---------------------------------------------------------------------------
+# Change Password & Delete Account
+# ---------------------------------------------------------------------------
+
+async def change_password_service(user_id: str, current_pass: str, new_pass: str):
+    """Verify and update a user's password using bcrypt."""
+    try:
+        result = (
+            supabase.table("profiles")
+            .select("id, password_hash")
+            .eq("id", user_id)
+            .single()
+            .execute()
+        )
+    except Exception:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found."
+        )
+
+    if not result.data:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found."
+        )
+
+    user = result.data
+
+    if not verify_password(current_pass, user["password_hash"]):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Incorrect current password."
+        )
+
+    hashed_new = hash_password(new_pass)
+
+    try:
+        supabase.table("profiles").update({"password_hash": hashed_new}).eq("id", user_id).execute()
+    except Exception as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to update password in database: {exc}"
+        )
+
+    return {"message": "Password changed successfully."}
+
+
+async def delete_account_service(user_id: str, password: str, confirmation_text: str):
+    """Verify password, check text, and cascade delete user records safely across all tables."""
+    if confirmation_text != "DELETE":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Confirmation text must be exactly 'DELETE'."
+        )
+
+    try:
+        result = (
+            supabase.table("profiles")
+            .select("id, password_hash")
+            .eq("id", user_id)
+            .single()
+            .execute()
+        )
+    except Exception:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found."
+        )
+
+    if not result.data:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found."
+        )
+
+    user = result.data
+
+    if not verify_password(password, user["password_hash"]):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Incorrect password."
+        )
+
+    # Cascade delete child tables first
+    tables_to_delete = [
+        "chat_history",
+        "cycle_logs",
+        "wellness_logs",
+        "predictions",
+        "onboarding_data"
+    ]
+
+    for table in tables_to_delete:
+        try:
+            supabase.table(table).delete().eq("user_id", user_id).execute()
+        except Exception as exc:
+            # Handle missing tables gracefully without crashing
+            print(f"Skipping deletion for table {table}: {exc}")
+
+    try:
+        supabase.table("profiles").delete().eq("id", user_id).execute()
+    except Exception as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to delete profile: {exc}"
+        )
+
+    return {"message": "Account deleted successfully."}
+

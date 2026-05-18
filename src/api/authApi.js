@@ -115,3 +115,56 @@ export const getCurrentUser = async (token) => {
 
   return response.json();
 };
+
+// ---------------------------------------------------------------------------
+// Change Password
+// ---------------------------------------------------------------------------
+
+/**
+ * Update a user's password in the database.
+ *
+ * @param {{ user_id: string, current_password: string, new_password: str }} payload
+ * @returns {Promise<{ message: string }>}
+ * @throws {Error} with user-readable message
+ */
+export const changePassword = async (payload) => {
+  const response = await fetch(`${BASE_URL}/auth/change-password`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    const message = await parseErrorDetail(response);
+    throw new Error(message);
+  }
+
+  return response.json();
+};
+
+// ---------------------------------------------------------------------------
+// Delete Account
+// ---------------------------------------------------------------------------
+
+/**
+ * Delete a user's account and cascade all associated tables after password verification.
+ *
+ * @param {{ user_id: string, password: string, confirmation_text: string }} payload
+ * @returns {Promise<{ message: string }>}
+ * @throws {Error} with user-readable message
+ */
+export const deleteAccount = async (payload) => {
+  const response = await fetch(`${BASE_URL}/auth/delete-account`, {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    const message = await parseErrorDetail(response);
+    throw new Error(message);
+  }
+
+  return response.json();
+};
+

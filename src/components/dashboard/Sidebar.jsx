@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Heart, LayoutDashboard, Calendar as CalendarIcon, Sparkles, LineChart, BookOpen, HelpCircle, AlertCircle, User, LogOut, Menu, X } from 'lucide-react'
+import { LayoutDashboard, Calendar as CalendarIcon, Sparkles, LineChart, BookOpen, HelpCircle, AlertCircle, User, LogOut, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { logoutUser } from '../../utils/userHelpers'
@@ -21,10 +21,12 @@ const Sidebar = () => {
 
   const SidebarContent = () => (
     <div className="flex flex-col h-full bg-white border-r border-primary/5 px-6 py-8">
-      <Link to="/" className="flex items-center gap-2 mb-12 hover:opacity-90 transition-opacity">
-        <div className="bg-gradient-to-br from-primary to-softPink p-2 rounded-xl text-white shadow-soft">
-          <Heart size={28} fill="currentColor" strokeWidth={0} />
-        </div>
+      <Link to="/" className="flex items-center gap-2.5 mb-12 hover:opacity-90 transition-opacity">
+        <img 
+          src="/src/assets/hersakhi-logo.png" 
+          alt="HerSakhi" 
+          className="w-10 h-10 object-contain shrink-0" 
+        />
         <span className="font-poppins font-bold text-2xl text-dark tracking-tight">
           HerSakhi
         </span>

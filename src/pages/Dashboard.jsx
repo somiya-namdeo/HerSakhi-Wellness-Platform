@@ -48,6 +48,78 @@ const Dashboard = () => {
     fetchData()
   }, [user?.id])
 
+  const getWellnessScoreString = (cycles, wellness) => {
+    if ((!cycles || cycles.length === 0) && (!wellness || wellness.length === 0)) return "Start tracking";
+    
+    const totalLogs = (cycles ? cycles.length : 0) + (wellness ? wellness.length : 0);
+    if (totalLogs < 3) return "Not enough data";
+    
+    // Calculate score
+    let score = 7.0; // Start with a positive baseline
+    
+    // 1. Consistency (up to +1.5)
+    score += Math.min(1.5, totalLogs * 0.1);
+    
+    // 2. Pain level impact (deduct up to 1.5)
+    const logsWithPain = cycles ? cycles.filter(c => typeof c.pain_level === 'number') : [];
+    if (logsWithPain.length > 0) {
+      const avgPain = logsWithPain.reduce((sum, c) => sum + c.pain_level, 0) / logsWithPain.length;
+      // Assume pain_level is on a 1-5 or 1-10 scale. If 1-5, avgPain is max 5.
+      const maxPainScale = Math.max(...logsWithPain.map(c => c.pain_level), 5);
+      score -= (avgPain / maxPainScale) * 1.5;
+    }
+    
+    // 3. Hydration impact (+1.0 to -1.0)
+    const logsWithHydration = wellness ? wellness.filter(w => typeof w.hydration === 'number') : [];
+    if (logsWithHydration.length > 0) {
+      const avgHydration = logsWithHydration.reduce((sum, w) => sum + w.hydration, 0) / logsWithHydration.length;
+      if (avgHydration >= 8) {
+        score += 1.0;
+      } else if (avgHydration >= 5) {
+        score += 0.5;
+      } else {
+        score -= (1.0 - (avgHydration / 8));
+      }
+    }
+    
+    // 4. Sleep impact (+1.0 to -1.0)
+    const logsWithSleep = wellness ? wellness.filter(w => typeof w.sleep_hours === 'number') : [];
+    if (logsWithSleep.length > 0) {
+      const avgSleep = logsWithSleep.reduce((sum, w) => sum + w.sleep_hours, 0) / logsWithSleep.length;
+      if (avgSleep >= 7 && avgSleep <= 9) {
+        score += 1.0;
+      } else if (avgSleep >= 6 && avgSleep < 7) {
+        score += 0.3;
+      } else {
+        score -= 0.7;
+      }
+    }
+    
+    // 5. Energy and Stress (+1.0 to -1.5)
+    const logsWithEnergy = wellness ? wellness.filter(w => typeof w.energy_level === 'number') : [];
+    const logsWithStress = wellness ? wellness.filter(w => typeof w.stress_level === 'number') : [];
+    
+    if (logsWithEnergy.length > 0) {
+      const avgEnergy = logsWithEnergy.reduce((sum, w) => sum + w.energy_level, 0) / logsWithEnergy.length;
+      score += (avgEnergy / 5) * 1.0 - 0.5;
+    }
+    if (logsWithStress.length > 0) {
+      const avgStress = logsWithStress.reduce((sum, w) => sum + w.stress_level, 0) / logsWithStress.length;
+      score -= (avgStress / 5) * 1.0;
+    }
+    
+    // 6. Reminders bonus (+0.5)
+    try {
+      const reminders = JSON.parse(localStorage.getItem('hersakhi_reminders') || '{}');
+      const enabledCount = Object.values(reminders).filter(Boolean).length;
+      score += (enabledCount / 5) * 0.5;
+    } catch (e) {}
+    
+    // Clamp between 1.0 and 10.0
+    const finalScore = Math.max(1.0, Math.min(10.0, score));
+    return `${finalScore.toFixed(1)}/10`;
+  };
+
   return (
     <div className="min-h-screen bg-background flex font-inter">
       <Sidebar />
@@ -73,7 +145,9 @@ const Dashboard = () => {
             <div className="flex items-center gap-2 bg-white px-4 py-2.5 rounded-full shadow-sm border border-primary/10 w-fit">
               <Sparkles size={16} className="text-primary" />
               <span className="text-sm font-medium text-gray-600">Wellness Score:</span>
-              <span className="text-sm font-bold text-primary">8.5/10</span>
+              <span className="text-sm font-bold text-primary">
+                {getWellnessScoreString(cycleLogs, wellnessLogs)}
+              </span>
             </div>
           </motion.div>
 

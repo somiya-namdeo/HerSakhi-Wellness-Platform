@@ -1,4 +1,4 @@
-import { Heart, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -8,9 +8,11 @@ const Navbar = () => {
         
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="bg-primary/20 p-2 rounded-full flex items-center justify-center bg-gradient-to-br from-primary to-secondary/50 text-white">
-            <Heart size={20} fill="currentColor" strokeWidth={0} />
-          </div>
+          <img 
+            src="/src/assets/hersakhi-logo.png" 
+            alt="HerSakhi" 
+            className="w-8 h-8 object-contain shrink-0" 
+          />
           <span className="font-poppins font-semibold text-xl text-dark tracking-tight">
             HerSakhi
           </span>
