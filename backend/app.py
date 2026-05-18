@@ -43,11 +43,11 @@ app = FastAPI(
 # CORS — allow the Vite dev server (and deployed frontend) to reach the API
 # ---------------------------------------------------------------------------
 origins = [
-    "http://localhost:5173",   # Vite default dev port
-    "http://localhost:3000",   # Alternate dev port
+    "http://localhost:5173",
+    "http://localhost:3000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:3000",
-    # Add your production frontend URL here when deploying
+    "https://her-sakhi-wellness-platform.vercel.app",
 ]
 
 app.add_middleware(
