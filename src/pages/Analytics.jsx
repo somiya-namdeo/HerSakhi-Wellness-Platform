@@ -11,14 +11,10 @@ import AIRecommendations from '../components/analytics/AIRecommendations'
 import { getUserCycleLogs, getUserPredictionInsights } from '../api/analyticsApi'
 import { getUser } from '../api/api'
 
-// ---------------------------------------------------------------------------
-// Mood → numeric score mapping
-// ---------------------------------------------------------------------------
+// Map mood strings to numeric scores for charts
 const MOOD_SCORE = { Happy: 8, Neutral: 5, Sad: 2 }
 
-// ---------------------------------------------------------------------------
-// Derive all analytics from raw logs + prediction insights
-// ---------------------------------------------------------------------------
+// Compute analytics metrics from daily logs and backend insights
 const deriveAnalytics = (logs, insights) => {
   const total = logs.length
 
@@ -162,9 +158,7 @@ const deriveAnalytics = (logs, insights) => {
   }
 }
 
-// ===========================================================================
-// Analytics Page
-// ===========================================================================
+// Main Analytics Page Component
 const Analytics = () => {
   const [cycleLogs,  setCycleLogs]  = useState([])
   const [insights,   setInsights]   = useState(null)

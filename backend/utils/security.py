@@ -20,20 +20,16 @@ from fastapi.security import OAuth2PasswordBearer
 
 load_dotenv()
 
-# ---------------------------------------------------------------------------
 # Configuration
-# ---------------------------------------------------------------------------
 SECRET_KEY: str = os.getenv("JWT_SECRET_KEY", "change-me-in-production")
 ALGORITHM: str = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 hours
 
-# ---------------------------------------------------------------------------
 # Password hashing
-# ---------------------------------------------------------------------------
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def hash_password(plain_password: str) -> str:
-    """Return a bcrypt hash of *plain_password*."""
+    """Return a bcrypt hash of plain_password."""
     if not plain_password:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -54,7 +50,7 @@ def hash_password(plain_password: str) -> str:
         )
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    """Return True if *plain_password* matches *hashed_password*."""
+    """Return True if plain_password matches hashed_password."""
     if not plain_password or not hashed_password:
         return False
     if len(plain_password.encode('utf-8')) > 72:
@@ -64,22 +60,11 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     except Exception:
         return False
 
-# ---------------------------------------------------------------------------
 # JWT helpers
-# ---------------------------------------------------------------------------
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:
-    """
-    Encode *data* into a signed JWT.
-
-    Args:
-        data:          Payload dict (should include a ``sub`` key with user id).
-        expires_delta: Token lifetime; defaults to ACCESS_TOKEN_EXPIRE_MINUTES.
-
-    Returns:
-        Encoded JWT string.
-    """
+    """Encode payload dict data into a signed JWT."""
     to_encode = data.copy()
     expire = datetime.utcnow() + (
         expires_delta if expires_delta else timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
@@ -88,12 +73,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
 def decode_access_token(token: str) -> dict:
-    """
-    Decode and verify a JWT.
-
-    Raises:
-        HTTPException 401 if token is invalid or expired.
-    """
+    """Decode and verify a JWT, raising 410 on invalid token."""
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
@@ -105,19 +85,8 @@ def decode_access_token(token: str) -> dict:
     except JWTError:
         raise credentials_exception
 
-# ---------------------------------------------------------------------------
-# FastAPI dependency — inject current authenticated user id into routes
-# ---------------------------------------------------------------------------
+# FastAPI dependency to inject current authenticated user ID into routes
 def get_current_user(token: str = Depends(oauth2_scheme)) -> str:
-    """
-    FastAPI dependency that extracts the authenticated user's id from the Bearer token.
-
-    Usage::
-
-        @router.get("/me")
-        def get_me(user_id: str = Depends(get_current_user)):
-            ...
-    """
     payload = decode_access_token(token)
     user_id: Optional[str] = payload.get("sub")
     if user_id is None:

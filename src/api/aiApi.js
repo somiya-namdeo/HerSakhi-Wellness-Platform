@@ -1,9 +1,3 @@
-/**
- * src/api/aiApi.js
- * -----------------
- * API functions for the HerSakhi AI Assistant.
- */
-
 import { BASE_URL } from "./api";
 
 const parseErrorDetail = async (response) => {
@@ -19,12 +13,6 @@ const parseErrorDetail = async (response) => {
   }
 };
 
-/**
- * Send a message to the AI and receive a mock response + saved turn.
- * @param {string} userId
- * @param {string} userMessage
- * @returns {Promise<object>} ChatTurnResponse
- */
 export const sendChatMessage = async (userId, userMessage) => {
   const response = await fetch(`${BASE_URL}/ai/chat`, {
     method: "POST",
@@ -40,11 +28,6 @@ export const sendChatMessage = async (userId, userMessage) => {
   return response.json();
 };
 
-/**
- * Fetch historical messages for a user.
- * @param {string} userId
- * @returns {Promise<object[]>} ChatHistoryItem[]
- */
 export const getChatHistory = async (userId) => {
   const response = await fetch(`${BASE_URL}/ai/history/${userId}`, {
     method: "GET",
