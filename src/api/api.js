@@ -6,8 +6,7 @@
  * All other API modules import BASE_URL from here so the
  * backend address only ever needs to change in one place.
  */
-
-export const BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://hersakhi-wellness-platform.onrender.com";
+export const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 /** localStorage keys — use these everywhere instead of raw strings */
 export const TOKEN_KEY = "hersakhi_token";
