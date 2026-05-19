@@ -34,11 +34,35 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def hash_password(plain_password: str) -> str:
     """Return a bcrypt hash of *plain_password*."""
-    return pwd_context.hash(plain_password)
+    if not plain_password:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Password cannot be empty.",
+        )
+    # Bcrypt maximum password length is 72 bytes. Check and raise a clean validation error if exceeded.
+    if len(plain_password.encode('utf-8')) > 72:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Password cannot be longer than 72 bytes.",
+        )
+    try:
+        return pwd_context.hash(plain_password)
+    except Exception as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error hashing password: {exc}",
+        )
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """Return True if *plain_password* matches *hashed_password*."""
-    return pwd_context.verify(plain_password, hashed_password)
+    if not plain_password or not hashed_password:
+        return False
+    if len(plain_password.encode('utf-8')) > 72:
+        return False
+    try:
+        return pwd_context.verify(plain_password, hashed_password)
+    except Exception:
+        return False
 
 # ---------------------------------------------------------------------------
 # JWT helpers
