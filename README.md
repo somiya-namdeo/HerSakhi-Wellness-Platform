@@ -30,7 +30,7 @@ graph TD
     Client[React Frontend] -->|REST APIs + JWT| API[FastAPI Application Server]
     API -->|Session Management| DB[Supabase Database]
     API -->|Prompt Analysis & Context| Gemini[Google Gemini AI Engine]
-    API -->|Local Statistical Calculations| ML[Cycle Analytics Module]
+    API -->|Cycle Prediction & Analytics| ML[Cycle Analytics Module]
 ```
 
 ---
