@@ -119,7 +119,7 @@ The following screenshots demonstrate the core system modules of the active HerS
 
 A video walkthrough of the complete system functionality can be accessed here:
 
-[Watch Demo Video](README-assets/demo-video/hersakhi-platform-demo.mp4)
+[Watch Demo Video](https://youtu.be/zDbNtHS8q1A)
 
 ---
 
