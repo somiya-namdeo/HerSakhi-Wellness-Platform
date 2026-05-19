@@ -7,7 +7,7 @@
  * backend address only ever needs to change in one place.
  */
 
-export const BASE_URL = "https://hersakhi-wellness-platform.onrender.com";
+export const BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://hersakhi-wellness-platform.onrender.com";
 
 /** localStorage keys — use these everywhere instead of raw strings */
 export const TOKEN_KEY = "hersakhi_token";
