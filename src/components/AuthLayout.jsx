@@ -1,5 +1,6 @@
 import { Heart, ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import logo from "../assets/hersakhi-logo.png"
 
 const AuthLayout = ({ children }) => {
   return (
@@ -11,11 +12,13 @@ const AuthLayout = ({ children }) => {
 
       {/* Left Branding - Hidden on small screens */}
       <div className="hidden lg:flex lg:w-1/2 p-12 flex-col justify-center max-w-2xl mx-auto">
-        <Link to="/" className="flex items-center gap-2 mb-12">
-          <div className="bg-primary/20 p-2 rounded-full flex items-center justify-center bg-gradient-to-br from-primary to-secondary/50 text-white">
-            <Heart size={24} fill="currentColor" strokeWidth={0} />
-          </div>
-          <span className="font-poppins font-semibold text-2xl text-dark tracking-tight">
+        <Link to="/" className="flex items-center gap-2.5 mb-12 hover:opacity-90 transition-opacity">
+          <img 
+            src={logo} 
+            alt="HerSakhi" 
+            className="w-10 h-10 object-contain shrink-0" 
+          />
+          <span className="font-poppins font-bold text-2xl text-dark tracking-tight">
             HerSakhi
           </span>
         </Link>
