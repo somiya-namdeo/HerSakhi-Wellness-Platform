@@ -137,24 +137,27 @@ HerSakhi utilizes Google Gemini to provide privacy-first, context-aware wellness
 ```text
 HerSakhi-Project/
 ├── backend/
-│   ├── routes/             # FastAPI endpoint routers
-│   ├── services/           # Supabase and Gemini business logic
-│   ├── utils/              # Security, JWT, and validator utilities
-│   ├── app.py              # Main application server entrypoint
-│   ├── requirements.txt    # Python backend dependencies
-│   └── runtime.txt         # Production Python engine definition
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── runtime.txt
 ├── src/
-│   ├── api/                # Axios and fetch client connectors
-│   ├── assets/             # Branding logos, images, and static graphics
-│   ├── components/         # Reusable design system UI components
-│   ├── pages/              # Main routing view pages
-│   ├── App.jsx             # React entry wrapper and route configurations
-│   ├── main.jsx            # DOM render mount point
-│   └── index.css           # Global typography and tailwind layout configurations
-├── public/                 # Static web assets
-├── package.json            # Node project configuration
-├── tailwind.config.js      # Tailwind style guidelines
-└── README.md               # Product documentation
+│   ├── api/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── README-assets/
+│   ├── screenshots/
+│   └── demo-video/
+├── package.json
+├── tailwind.config.js
+└── README.md
 ```
 
 ---
