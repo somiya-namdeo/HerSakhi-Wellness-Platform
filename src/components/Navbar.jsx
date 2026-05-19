@@ -1,5 +1,6 @@
 import { Menu } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import logo from "../assets/hersakhi-logo.png"
 
 const Navbar = () => {
   return (
@@ -7,11 +8,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2.5 hover:opacity-90 transition-opacity">
           <img 
-            src="/src/assets/hersakhi-logo.png" 
-            alt="HerSakhi" 
-            className="w-8 h-8 object-contain shrink-0" 
+            src={logo} 
+            alt="HerSakhi Logo" 
+            className="w-10 h-10 object-contain shrink-0" 
           />
           <span className="font-poppins font-semibold text-xl text-dark tracking-tight">
             HerSakhi

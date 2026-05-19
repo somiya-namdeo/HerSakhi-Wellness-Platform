@@ -3,6 +3,7 @@ import { LayoutDashboard, Calendar as CalendarIcon, Sparkles, LineChart, BookOpe
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { logoutUser } from '../../utils/userHelpers'
+import logo from "../../assets/hersakhi-logo.png"
 
 const navItems = [
   { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
@@ -23,8 +24,8 @@ const Sidebar = () => {
     <div className="flex flex-col h-full bg-white border-r border-primary/5 px-6 py-8">
       <Link to="/" className="flex items-center gap-2.5 mb-12 hover:opacity-90 transition-opacity">
         <img 
-          src="/src/assets/hersakhi-logo.png" 
-          alt="HerSakhi" 
+          src={logo} 
+          alt="HerSakhi Logo" 
           className="w-10 h-10 object-contain shrink-0" 
         />
         <span className="font-poppins font-bold text-2xl text-dark tracking-tight">
