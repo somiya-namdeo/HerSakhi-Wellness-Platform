@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-background px-6 pt-12 lg:px-12 lg:pt-20 pb-20">
+    <section id="home" className="relative w-full overflow-hidden bg-background px-6 pt-12 lg:px-12 lg:pt-20 pb-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
         
         {/* Left Content */}
