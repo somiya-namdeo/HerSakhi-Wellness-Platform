@@ -24,6 +24,7 @@ from routes.cycle_routes import router as cycle_router
 from routes.prediction_routes import router as prediction_router
 from routes.ai_routes import router as ai_router
 from routes.wellness_routes import router as wellness_router
+from routes.health_routes import router as health_router
 
 # ---------------------------------------------------------------------------
 # App initialisation
@@ -67,6 +68,7 @@ app.include_router(cycle_router,      prefix="/cycles",      tags=["Cycle Tracki
 app.include_router(prediction_router, prefix="/predictions", tags=["ML Predictions"])
 app.include_router(ai_router,         prefix="/ai",          tags=["AI Chatbot"])
 app.include_router(wellness_router,   prefix="/wellness",    tags=["Wellness Tracking"])
+app.include_router(health_router,     prefix="",             tags=["Health Monitoring"])
 
 # ---------------------------------------------------------------------------
 # Health-check endpoints
