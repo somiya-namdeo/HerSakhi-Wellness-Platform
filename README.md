@@ -252,7 +252,7 @@ The FastAPI backend is deployed on a Linux container environment hosted on Rende
 ---
 
 ## Author
-* Somiya Namdeo - Somiya-Namdeo
+* Somiya Namdeo
 
 ---
 
